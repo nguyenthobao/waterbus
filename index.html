@@ -27,6 +27,7 @@
     <link href="css/pretty-checkbox.min.css" rel="stylesheet">
     <link href="css/creative.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/pretty-checkbox.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
         header.masthead {
@@ -89,9 +90,9 @@
 
                         <div class="arrows-block">
                             <a id="raceFilter:switchStops" href="#" class="ui-commandlink ui-widget">
-                            <label style="cursor:pointer !important">
-                                <span class="arrows"></span>
-                            </label>
+                                <label style="cursor:pointer !important">
+                                    <span class="arrows"></span>
+                                </label>
                             </a>
                         </div>
 
@@ -121,7 +122,7 @@
 
                     <div class="row check-list">
                         <div class="pretty p-default p-thick p-pulse">
-                            <input type="checkbox" />
+                            <input type="checkbox" id="isRound"/>
                             <div class="state p-warning-o">
                                 <label>Khứ hồi</label>
                             </div>
@@ -337,7 +338,62 @@
 
 <!-- Custom scripts for this template -->
 <script src="js/creative.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery.ui.datepicker-vi.js"></script>
+<script>
+    var isRound = 0;
+    var departureDate = $('#departureDate');
+    var departureBackDate = $('#departureBackDate');
+    $(document).ready(function () {
+        departureDate.datepicker({
+            dateFormat: 'dd/mm/yy',
+            minDate: 0,
+            onSelect: function (dateStr) {
+                changeDate(dateStr);
+            }
+        });
 
+        departureBackDate.datepicker({
+            dateFormat: 'dd/mm/yy'
+        });
+
+        departureDate.datepicker("setDate", new Date());
+
+        $('#isRound').change(function () {
+            if ($(this).is(":checked")) {
+                isRound = 1;
+                departureBackDate.prop('disabled', false);
+                changeDate(departureDate.val());
+            } else {
+                isRound = 0;
+                departureBackDate.prop('disabled', true);
+            }
+        })
+    });
+
+    function changeDate(dateStr) {
+        if (dateStr === '') {
+            return;
+        }
+        var date_Str = '';
+        for (var i = 0; i < 10; i++) {
+
+            if (i == 1 || i == 0) {
+                date_Str += dateStr.charAt(i + 3);
+            } else if (i == 3 || i == 4) {
+                date_Str += dateStr.charAt(i - 3);
+            }
+            else date_Str += dateStr.charAt(i);
+        }
+        if (isRound == 1) {
+            departureBackDate.datepicker("option", {
+                minDate: new Date(date_Str)
+            });
+            departureBackDate.val(dateStr);
+        }
+    }
+
+</script>
 </body>
 
 </html>
