@@ -68,7 +68,7 @@
             padding-right: 0;
         }
 
-        .no-padding-right {
+        .no-padding {
             padding-right: 0;
         }
 
@@ -93,7 +93,7 @@
             background: #fff url(img/waterbus/calendar_icon_to.png) no-repeat 14px 17px;
         }
 
-        .seart_btn {
+        .search_btn {
             width: 65px;
             height: 145px;
             background: #fe7e00 url(img/waterbus/search_icon.png) center no-repeat;
@@ -103,11 +103,73 @@
             position: absolute;
             top: -37px;
             right: -89px;
+            cursor: pointer;
         }
 
         .logo {
             width: 107px;
             height: 50px;
+        }
+
+        .select-seat {
+            padding-left: 0;
+            margin-left: 15px;
+        }
+
+        .search_btn .search_btn-text {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .my-auto {
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 0 !important;
+                max-width: 100% !important;
+            }
+            .search-form-wrapper {
+                width: 100%;
+                padding: 0 5%;
+                height: auto;
+            }
+
+            .form-input {
+                margin: 5px 0 5px 0;
+            }
+
+            .no-padding {
+                margin: 5px 0 5px 0;
+            }
+
+            .padding-responsive {
+                padding-left: 0;
+            }
+
+            .arrows-block {
+                display: none;
+            }
+
+            .search_btn {
+                width: 200px;
+                height: 50px;
+                background: #fe7e00 url(img/waterbus/search_icon.png) 155px no-repeat;
+                border: none;
+                border-radius: 4px;
+                position: relative;
+                right: inherit;
+                top: 40px;
+                display: block !important;
+                color: #fff;
+                font-size: 19px;
+                margin: 0 auto;
+                padding-right: 13px;
+            }
+
+            .search_btn .search_btn-text {
+                font-size: 26px;
+                position: relative;
+                display: block;
+            }
         }
     </style>
 </head>
@@ -160,7 +222,7 @@
             <div class="search-form-wrapper">
                 <form action="#">
                     <div class="row finder">
-                        <div id="finder-from" class="col-md-3">
+                        <div id="finder-from" class="col-lg-3 col-md-12">
                             <input type="text" class="form-control form-input" id="startPoint" placeholder="Điểm đi">
                         </div>
 
@@ -172,18 +234,18 @@
                             </a>
                         </div>
 
-                        <div id="finder-to" class="col-md-3">
+                        <div id="finder-to" class="col-lg-3 col-md-12">
                             <input type="text" class="form-control form-input" id="endPoint" placeholder="Điểm đến">
                         </div>
 
-                        <div class="finder no-padding-right col-md-2">
+                        <div class="finder no-padding padding-responsive col-lg-2 col-md-6">
                             <input type="text" readonly class="form-control form-input" id="departureDate">
                         </div>
 
-                        <div class="finder no-padding-right col-md-2">
+                        <div class="finder no-padding col-lg-2 col-md-6">
                             <input type="text" readonly disabled class="form-control form-input" id="departureBackDate">
                         </div>
-                        <div class="finder no-padding-right col-md-1">
+                        <div class="finder no-padding select-seat col-lg-1 col-md-12">
                             <select class="form-control form-select" id="seats">
                                 <option>1</option>
                                 <option>2</option>
@@ -195,7 +257,9 @@
                             </select>
                         </div>
                     </div>
-                    <button class="seart_btn"></button>
+                    <button class="search_btn">
+                        <span class="search_btn-text">Search</span>
+                    </button>
                 </form>
             </div>
         </div>

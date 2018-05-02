@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d613a7ee-4ff7-4bd6-a533-bfc4da5e7629" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/waterbus/1521110812_logowater.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/waterbus/SWB-HP2018.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/waterbus/calendar_icon_to.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/waterbus/icon_A_destination.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/waterbus/icon_B_destination.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/waterbus/passagers_icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/waterbus/reverse_icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/img/waterbus/search_icon.png" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/css/creative.css" afterPath="$PROJECT_DIR$/css/creative.css" />
       <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +17,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="208" column="35" lean-forward="false" selection-start-line="208" selection-start-column="34" selection-end-line="208" selection-end-column="35" />
+            <state relative-caret-position="281">
+              <caret line="153" column="29" lean-forward="true" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
               <folding>
                 <element signature="n#style#0;n#label#0;n#a#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -60,7 +51,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>header</find>
+      <find>no-padding-right</find>
     </findStrings>
+    <replaceStrings>
+      <replace>no-padding</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -175,12 +170,20 @@
       <option name="presentableId" value="Default" />
       <updated>1525137947019</updated>
       <workItem from="1525137948441" duration="258000" />
-      <workItem from="1525226265626" duration="9337000" />
+      <workItem from="1525226265626" duration="14360000" />
     </task>
+    <task id="LOCAL-00001" summary="tam xong giao dien box dat ve, chua co chuc nang">
+      <created>1525235725509</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1525235725509</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9595000" />
+    <option name="totallyTimeSpent" value="14618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -212,6 +215,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="tam xong giao dien box dat ve, chua co chuc nang" />
+    <MESSAGE value="responsive md" />
+    <option name="LAST_COMMIT_MESSAGE" value="responsive md" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -246,8 +254,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="208" column="35" lean-forward="false" selection-start-line="208" selection-start-column="34" selection-end-line="208" selection-end-column="35" />
+        <state relative-caret-position="281">
+          <caret line="153" column="29" lean-forward="true" selection-start-line="153" selection-start-column="29" selection-end-line="153" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#label#0;n#a#0;n#div#1;n#div#0;n#form#0;n#div#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
