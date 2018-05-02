@@ -24,6 +24,7 @@
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
+    <link href="css/pretty-checkbox.min.css" rel="stylesheet">
     <link href="css/creative.css" rel="stylesheet">
     <style>
         .search-form-wrapper {
@@ -61,6 +62,7 @@
         .form-input[disabled] {
             background-color: #7b7a81 !important;
             cursor: default;
+            border-color: #7b7a81;
         }
 
         #finder-from, #finder-to {
@@ -72,9 +74,13 @@
             padding-right: 0;
         }
 
+        #seats {
+            width: 90px;
+        }
+
         .form-select {
             cursor: pointer;
-            padding: 0 0 0 35px;
+            padding: 0 0 0 50px;
             border: none;
             border-radius: 0;
             height: 53px !important;
@@ -120,7 +126,15 @@
             display: none;
         }
 
+        .check-list {
+            display: flex;
+            padding-top: 15px;
+        }
+
         @media screen and (max-width: 768px) {
+            #seats {
+                width: 100%;
+            }
             .my-auto {
                 margin-left: 0;
                 margin-right: 0;
@@ -130,7 +144,7 @@
             .search-form-wrapper {
                 width: 100%;
                 padding: 0 5%;
-                height: auto;
+                height: 450px;
             }
 
             .form-input {
@@ -171,7 +185,24 @@
                 display: block;
             }
         }
+
+        @media screen and (max-width: 425px) {
+            #finder-from, #finder-to, .check-list {
+                 padding-left: 15px;
+                 padding-right: 15px;
+            }
+
+            .padding-responsive, .select-seat {
+                padding-left: 15px;
+            }
+
+            .no-padding {
+                padding-right: 15px;
+            }
+        }
+
     </style>
+    <link rel="stylesheet" href="css/pretty-checkbox.min.css">
 </head>
 
 <body id="page-top">
@@ -222,7 +253,7 @@
             <div class="search-form-wrapper">
                 <form action="#">
                     <div class="row finder">
-                        <div id="finder-from" class="col-lg-3 col-md-12">
+                        <div id="finder-from" class="col-12 col-md-12 col-lg-3">
                             <input type="text" class="form-control form-input" id="startPoint" placeholder="Điểm đi">
                         </div>
 
@@ -234,18 +265,18 @@
                             </a>
                         </div>
 
-                        <div id="finder-to" class="col-lg-3 col-md-12">
+                        <div id="finder-to" class="col-12 col-md-12 col-lg-3">
                             <input type="text" class="form-control form-input" id="endPoint" placeholder="Điểm đến">
                         </div>
 
-                        <div class="finder no-padding padding-responsive col-lg-2 col-md-6">
+                        <div class="finder no-padding padding-responsive col-6 col-md-6 col-lg-2">
                             <input type="text" readonly class="form-control form-input" id="departureDate">
                         </div>
 
-                        <div class="finder no-padding col-lg-2 col-md-6">
+                        <div class="finder no-padding col-6 col-md-6 col-lg-2">
                             <input type="text" readonly disabled class="form-control form-input" id="departureBackDate">
                         </div>
-                        <div class="finder no-padding select-seat col-lg-1 col-md-12">
+                        <div class="finder no-padding select-seat col-12 col-md-12 col-lg-1">
                             <select class="form-control form-select" id="seats">
                                 <option>1</option>
                                 <option>2</option>
@@ -257,6 +288,16 @@
                             </select>
                         </div>
                     </div>
+
+                    <div class="row check-list">
+                        <div class="pretty p-default p-thick p-pulse">
+                            <input type="checkbox" />
+                            <div class="state p-warning-o">
+                                <label>Khứ hồi</label>
+                            </div>
+                        </div>
+                    </div>
+
                     <button class="search_btn">
                         <span class="search_btn-text">Search</span>
                     </button>
