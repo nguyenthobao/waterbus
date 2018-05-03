@@ -91,7 +91,7 @@
                         </div>
 
                         <div class="arrows-block">
-                            <a id="raceFilter:switchStops" href="#" class="ui-commandlink ui-widget">
+                            <a id="switchPoint" href="#">
                                 <label style="cursor:pointer !important">
                                     <span class="arrows"></span>
                                 </label>
@@ -352,6 +352,7 @@
     var endPointHidden = $('#endPointHidden');
     $(document).ready(function () {
 
+        /*Autocomplete startPoint*/
         startPoint.autocomplete({
             source: function (request, response) {
                 $.ajax({
@@ -365,7 +366,7 @@
                     }
                 });
             },
-            select: function(event, ui){
+            select: function (event, ui) {
                 startPoint.val(ui.item.districtName);
                 startPointHidden.val(ui.item.districtId);
                 return false;
@@ -376,6 +377,7 @@
                 .appendTo(ul);
         };
 
+        /*Autocomplete endPoint*/
         endPoint.autocomplete({
             source: function (request, response) {
                 $.ajax({
@@ -389,7 +391,7 @@
                     }
                 });
             },
-            select: function(event, ui){
+            select: function (event, ui) {
                 endPoint.val(ui.item.districtName);
                 endPointHidden.val(ui.item.districtId);
                 return false;
@@ -400,34 +402,48 @@
                 .appendTo(ul);
         };
 
+        $("#switchPoint").click(function () {
+            var tempInput = startPoint.val();
+            var tempHiden = startPointHidden.val();
 
-    departureDate.datepicker({
-        dateFormat: 'dd/mm/yy',
-        minDate: 0,
-        onSelect: function (dateStr) {
-            changeDate(dateStr);
-        }
+            startPoint.val(endPoint.val());
+            startPointHidden.val(endPointHidden.val());
+
+            endPoint.val(tempInput);
+            endPointHidden.val(tempHiden);
+
+            return false;
+        });
+
+        /*Datepicker departureDate*/
+        departureDate.datepicker({
+            dateFormat: 'dd/mm/yy',
+            minDate: 0,
+            onSelect: function (dateStr) {
+                changeDate(dateStr);
+            }
+        });
+
+        /*Datepicker back date*/
+        departureBackDate.datepicker({
+            dateFormat: 'dd/mm/yy'
+        });
+
+        departureDate.datepicker("setDate", new Date());
+
+        $('#isRound').change(function () {
+            if ($(this).is(":checked")) {
+                isRound = 1;
+                departureBackDate.prop('disabled', false);
+                changeDate(departureDate.val());
+            } else {
+                isRound = 0;
+                departureBackDate.prop('disabled', true);
+            }
+        })
     });
 
-    departureBackDate.datepicker({
-        dateFormat: 'dd/mm/yy'
-    });
-
-    departureDate.datepicker("setDate", new Date());
-
-    $('#isRound').change(function () {
-        if ($(this).is(":checked")) {
-            isRound = 1;
-            departureBackDate.prop('disabled', false);
-            changeDate(departureDate.val());
-        } else {
-            isRound = 0;
-            departureBackDate.prop('disabled', true);
-        }
-    })
-    })
-    ;
-
+    /*Change date by departureDate*/
     function changeDate(dateStr) {
         if (dateStr === '') {
             return;
