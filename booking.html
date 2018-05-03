@@ -31,7 +31,9 @@
     <link rel="stylesheet" href="css/styles.css">
     <style>
         header.masthead {
-            background-image: url("img/waterbus/SWB-HP2018.jpg");
+            background-image: url("img/img-sg/BINHAN.jpg");
+            min-height: 0;
+            height: 40vh;
         }
     </style>
 </head>
@@ -41,7 +43,7 @@
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <a class="navbar-brand js-scroll-trigger" href="index.html">
             <img src="http://cdn.anvui.vn/uploadv2/web/32/3273/news/2018/03/15/10/46/1521110812_logowater.png"
                  class="img-responsive logo" alt="Logo">
         </a>
@@ -80,8 +82,14 @@
             </div>
         </div>
         <!--SEARCH ROUTE-->
+        <style>
+            .search-small-form {
+                margin-top: 25px;
+                background: none;
+            }
+        </style>
         <div class="row">
-            <div class="search-form-wrapper">
+            <div class="search-small-form">
                 <form action="#">
                     <input type="hidden" name="startPoint" id="startPointHidden">
                     <input type="hidden" name="endPoint" id="endPointHidden">
@@ -121,19 +129,6 @@
                             </select>
                         </div>
                     </div>
-
-                    <div class="row check-list">
-                        <div class="pretty p-default p-thick p-pulse">
-                            <input type="checkbox" id="isRound"/>
-                            <div class="state p-warning-o">
-                                <label>Khứ hồi</label>
-                            </div>
-                        </div>
-                    </div>
-
-                    <button class="search_btn">
-                        <span class="search_btn-text">Search</span>
-                    </button>
                 </form>
             </div>
         </div>
@@ -141,183 +136,7 @@
     </div>
 </header>
 
-<section id="services">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">Địa điểm du lịch nổi bật</h2>
-                <hr class="my-4">
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="block col-12 col-lg-4 col-md-6">
-                <span>Du lịch sông</span>
-                <figure>
-                    <img src="img/waterbus/SWB-HP2018.jpg" class="img-fluid">
-                </figure>
-            </div>
-            <div class="block col-12 col-lg-4 col-md-6">
-                <span>Bến phà SGW</span>
-                <figure>
-                    <img src="img/img-sg/BACHDANG-STATION.jpg" class="img-fluid">
-                </figure>
-            </div>
-            <div class="block col-12 col-lg-4 col-md-6">
-                <span>BUS Sông</span>
-                <figure>
-                    <img src="img/img-sg/BINHAN.jpg" class="img-fluid">
-                </figure>
-            </div>
-            <div class="block col-12 col-lg-4 col-md-6">
-                <span>Tàu du lịch</span>
-                <figure>
-                    <img src="img/img-sg/BusSong.jpg" class="img-fluid">
-                </figure>
-            </div>
-            <div class="block col-12 col-lg-4 col-md-6">
-                <span>Nhà hàng trên sông</span>
-                <figure>
-                    <img src="img/img-sg/DSC_7554.jpg" class="img-fluid">
-                </figure>
-            </div>
-            <div class="block col-12 col-lg-4 col-md-6">
-                <span>Dịch vụ du lịch trên sông</span>
-                <figure>
-                    <img src="img/img-sg/IMG_6201.jpg" class="img-fluid">
-                </figure>
-            </div>
-            <div class="block col-12 col-lg-4 col-md-6">
-                <span>Điểm du lịch mới</span>
-                <figure>
-                    <img src="img/img-sg/IMG_6731.jpg" class="img-fluid">
-                </figure>
-            </div>
-            <div class="block col-12 col-lg-4 col-md-6">
-                <span>Tàu du lịch cao cấp trên sông Sài Gòn</span>
-                <figure>
-                    <img src="img/img-sg/SWB-HPNY.jpg" class="img-fluid">
-                </figure>
-            </div>
-        </div>
-    </div>
-</section>
 
-<section id="list-route">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 mx-auto text-center">
-                <h4 class="section-heading">Các chuyến đi nổi bật của năm 2018</h4>
-                <hr class="my-4">
-            </div>
-            <div class="content-route col-lg-12">
-                <!--<div class="block col-12 col-xl-6 col-lg-12">
-                    <div class="from">
-                        <span class="city">
-                            Ga Tàu Thủy Bạch Đằng
-                        </span>
-                    </div>
-                    <div class="arrow"></div>
-                    <div class="to">
-                         <span class="city">
-                             Ga Tàu Thủy Bình An
-                        </span>
-                    </div>
-                    <a class="btn" href="#">Chọn</a>
-                </div>
-                <div class="block col-12 col-xl-6 col-lg-12">
-                    <div class="from">
-                        <span class="city">
-                            Ga Tàu Thủy Bạch Đằng
-                        </span>
-                    </div>
-                    <div class="arrow"></div>
-                    <div class="to">
-                         <span class="city">
-                             Ga Tàu Thủy Bình An
-                        </span>
-                    </div>
-                    <a class="btn" href="#">Chọn</a>
-                </div>
-                <div class="block col-12 col-xl-6 col-lg-12">
-                    <div class="from">
-                        <span class="city">
-                            Ga Tàu Thủy Bạch Đằng
-                        </span>
-                    </div>
-                    <div class="arrow"></div>
-                    <div class="to">
-                         <span class="city">
-                             Ga Tàu Thủy Bình An
-                        </span>
-                    </div>
-                    <a class="btn" href="#">Chọn</a>
-                </div>
-                <div class="block col-12 col-xl-6 col-lg-12">
-                    <div class="from">
-                        <span class="city">
-                            Ga Tàu Thủy Bạch Đằng
-                        </span>
-                    </div>
-                    <div class="arrow"></div>
-                    <div class="to">
-                         <span class="city">
-                             Ga Tàu Thủy Bình An
-                        </span>
-                    </div>
-                    <a class="btn" href="#">Chọn</a>
-                </div>
-                <div class="block col-12 col-xl-6 col-lg-12">
-                    <div class="from">
-                        <span class="city">
-                            Ga Tàu Thủy Bạch Đằng
-                        </span>
-                    </div>
-                    <div class="arrow"></div>
-                    <div class="to">
-                         <span class="city">
-                             Ga Tàu Thủy Bình An
-                        </span>
-                    </div>
-                    <a class="btn" href="#">Chọn</a>
-                </div>-->
-            </div>
-        </div>
-    </div>
-</section>
-
-<style>
-    footer {
-        width: 100%;
-    }
-
-    footer .features {
-        text-align: center;
-        padding: 54px 0 0 0;
-    }
-
-    footer .features .column > span {
-        display: block;
-    }
-
-    footer .features .column .title {
-        color: #fff;
-        font-size: 16px;
-    }
-
-    footer .features .column .text {
-        color: #f8deab;
-        font-size: 12px;
-        padding: 20px 0 0 0;
-        line-height: 19px;
-    }
-
-    footer .footer-content {
-        margin-top: 80px;
-        text-align: center;
-    }
-</style>
 <footer class="bg-dark text-white">
     <div class="container">
         <div class="features row">
@@ -356,7 +175,6 @@
 <script src="js/creative.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/jquery.ui.datepicker-vi.js"></script>
-<script src="js/core.js"></script>
 </body>
 
 </html>
