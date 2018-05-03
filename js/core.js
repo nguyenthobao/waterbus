@@ -10,6 +10,18 @@ var systemId = $("base").attr("id");
 
 $(document).ready(function () {
 
+    /*Get all point*/
+    $.ajax({
+        type: 'POST',
+        url: 'https://dobody-anvui.appspot.com/point/get_province_and_point',
+        dataType: "json",
+        data: JSON.stringify({companyId: systemId}),
+        success: function (data) {
+            listDistrict = data.results.result[0].listDistrict;
+            makeQuickRoute(listDistrict);
+        }
+    });
+
     /*Autocomplete startPoint*/
     startPoint.autocomplete({
         source: function (request, response) {
@@ -122,4 +134,27 @@ function changeDate(dateStr) {
         });
         departureBackDate.val(dateStr);
     }
+}
+
+/*Make quick route select*/
+function makeQuickRoute(data) {
+    html = '';
+    $.each(data, function (key, item) {
+        console.log(item);
+        html += '<div class="block col-12 col-xl-6 col-lg-12">';
+            html += '<div class="from">';
+                html += '<span class="city">';
+                    html += item.districtName;
+                html += '</span>';
+            html += '</div>';
+            html += '<div class="arrow"></div>';
+            html += '<div class="to">';
+                html += '<span class="city">';
+                    html += 'Ga Tàu Thủy Bình An';
+                html += '</span>';
+            html += '</div>';
+            html += '<a class="btn" href="#">Chọn</a>'
+        html += '</div>';
+    });
+    $('.content-route').html(html);
 }
