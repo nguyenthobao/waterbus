@@ -303,6 +303,11 @@ body {
     text-decoration: none;
 }
 
+.content-route .block a:hover {
+    background-color: #1853b8;
+    color: #fff;
+}
+
 @media screen and (max-width: 1280px) {
     .content-route .block {
         width: 100%;
