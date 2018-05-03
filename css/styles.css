@@ -244,6 +244,8 @@ body {
     display: inline-block;
 }
 .content-route .block {
+    width: 540px;
+    margin: 0 10px 0 0;
     background: #fff;
     box-shadow: 3px 3px 15px rgba(0,0,0,0.10);
     border-radius: 4px;
@@ -303,6 +305,7 @@ body {
 
 @media screen and (max-width: 1280px) {
     .content-route .block {
+        width: 100%;
         height: auto;
     }
     .content-route .block .from {
