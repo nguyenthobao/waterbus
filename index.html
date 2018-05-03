@@ -83,6 +83,8 @@
         <div class="row">
             <div class="search-form-wrapper">
                 <form action="#">
+                    <input type="hidden" name="startPoint" id="startPointHidden">
+                    <input type="hidden" name="endPoint" id="endPointHidden">
                     <div class="row finder">
                         <div id="finder-from" class="col-12 col-md-12 col-lg-3">
                             <input type="text" class="form-control form-input" id="startPoint" placeholder="Điểm đi">
@@ -344,32 +346,87 @@
     var isRound = 0;
     var departureDate = $('#departureDate');
     var departureBackDate = $('#departureBackDate');
+    var startPoint = $('#startPoint');
+    var endPoint = $('#endPoint');
+    var startPointHidden = $('#startPointHidden');
+    var endPointHidden = $('#endPointHidden');
     $(document).ready(function () {
-        departureDate.datepicker({
-            dateFormat: 'dd/mm/yy',
-            minDate: 0,
-            onSelect: function (dateStr) {
-                changeDate(dateStr);
+
+        startPoint.autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://dobody-anvui.appspot.com/point/get_province_and_point',
+                    dataType: "json",
+                    data: JSON.stringify({companyId: 'TC03j1IanqGKIUS'}),
+                    success: function (data) {
+                        listDistrict = data.results.result[0].listDistrict;
+                        response(listDistrict);
+                    }
+                });
+            },
+            select: function(event, ui){
+                startPoint.val(ui.item.districtName);
+                startPointHidden.val(ui.item.districtId);
+                return false;
             }
-        });
+        }).autocomplete("instance")._renderItem = function (ul, item) {
+            return $("<li>")
+                .append("<div>" + item.districtName + "</div>")
+                .appendTo(ul);
+        };
 
-        departureBackDate.datepicker({
-            dateFormat: 'dd/mm/yy'
-        });
-
-        departureDate.datepicker("setDate", new Date());
-
-        $('#isRound').change(function () {
-            if ($(this).is(":checked")) {
-                isRound = 1;
-                departureBackDate.prop('disabled', false);
-                changeDate(departureDate.val());
-            } else {
-                isRound = 0;
-                departureBackDate.prop('disabled', true);
+        endPoint.autocomplete({
+            source: function (request, response) {
+                $.ajax({
+                    type: 'POST',
+                    url: 'https://dobody-anvui.appspot.com/point/get_province_and_point',
+                    dataType: "json",
+                    data: JSON.stringify({companyId: 'TC03j1IanqGKIUS'}),
+                    success: function (data) {
+                        listDistrict = data.results.result[0].listDistrict;
+                        response(listDistrict);
+                    }
+                });
+            },
+            select: function(event, ui){
+                endPoint.val(ui.item.districtName);
+                endPointHidden.val(ui.item.districtId);
+                return false;
             }
-        })
+        }).autocomplete("instance")._renderItem = function (ul, item) {
+            return $("<li>")
+                .append("<div data-id='" + item.districtId + "'>" + item.districtName + "</div>")
+                .appendTo(ul);
+        };
+
+
+    departureDate.datepicker({
+        dateFormat: 'dd/mm/yy',
+        minDate: 0,
+        onSelect: function (dateStr) {
+            changeDate(dateStr);
+        }
     });
+
+    departureBackDate.datepicker({
+        dateFormat: 'dd/mm/yy'
+    });
+
+    departureDate.datepicker("setDate", new Date());
+
+    $('#isRound').change(function () {
+        if ($(this).is(":checked")) {
+            isRound = 1;
+            departureBackDate.prop('disabled', false);
+            changeDate(departureDate.val());
+        } else {
+            isRound = 0;
+            departureBackDate.prop('disabled', true);
+        }
+    })
+    })
+    ;
 
     function changeDate(dateStr) {
         if (dateStr === '') {
