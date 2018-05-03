@@ -1,3 +1,7 @@
+body {
+    background: #f5f6f8;
+}
+
 .search-form-wrapper {
     background: rgba(0, 0, 0, 0.47);
     width: 100%;
@@ -232,5 +236,143 @@
     }
     100% {
         opacity: 1;
+    }
+}
+
+/*Các chuyến đi nổi bật*/
+.content-route, .block, .block > div, .block > a {
+    display: inline-block;
+}
+.content-route .block {
+    background: #fff;
+    box-shadow: 3px 3px 15px rgba(0,0,0,0.10);
+    border-radius: 4px;
+    padding: 10px;
+    text-align: left;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 18px;
+    height: 70px;
+}
+
+.content-route .block .from {
+    width: 180px;
+    padding: 0 0 0 20px;
+    height: 50px;
+    position: relative;
+}
+
+.content-route .block .to {
+    width: 160px;
+    height: 50px;
+    position: relative;
+}
+
+.content-route .block .city {
+    color: #000;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+}
+
+.content-route .block .arrow {
+    background: url(../img/waterbus/destination_arrow_icon.png) no-repeat center;
+    padding: 10px 0 0 0;
+    width: 50px;
+    height: 100%;
+    margin-left: 10px;
+}
+
+.content-route .block a {
+    border: #1853b8 1px solid;
+    background: transparent;
+    color: #1853b8;
+    border-radius: 6px;
+    position: absolute;
+    font-weight: bold;
+    font-size: 15px!important;
+    top: 20px;
+    padding: 3px 20px 3px 20px;
+    height: auto;
+    right: 27px;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1280px) {
+    .content-route .block {
+        height: auto;
+    }
+    .content-route .block .from {
+        width: 350px;
+    }
+    .content-route .block .to {
+        width: 350px;
+    }
+
+    .content-route .block .arrow {
+        background-size: 20px;
+        padding-top: 40px;
+    }
+
+    .content-route .block .city {
+        font-size: 18px;
+    }
+
+    .content-route .block a {
+        font-size: 21px !important;
+        top: 18px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .content-route .block {
+        text-align: center;
+        height: auto;
+    }
+
+    .content-route .block .from, .content-route .block .to {
+        text-align: left;
+        width: 40%;
+        margin-bottom: 10px;
+    }
+
+    .content-route .block .arrow {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .content-route .block a {
+        font-size: 14px !important;
+        top: 4px;
+        width: 100%;
+        position: relative;
+        right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .content-route .block .from, .content-route .block .to {
+        margin-bottom: 35px;
+    }
+    .content-route .block .arrow {
+        margin-left: 0;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .content-route .block .from, .content-route .block .to {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .content-route .block .arrow {
+        padding-top: 20px;
+        transform: rotate(90deg);
+        margin-bottom: 0;
     }
 }
