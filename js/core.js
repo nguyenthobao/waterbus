@@ -9,6 +9,16 @@ var endPointHidden = $('#endPointHidden');
 var systemId = $("base").attr("id");
 
 $(document).ready(function () {
+    /*If has session storage, fill to input*/
+    if(sessionStorage.length > 0) {
+        startPoint.val(sessionStorage.startPoint);
+        startPointHidden.val(sessionStorage.startPointHidden);
+
+        endPoint.val(sessionStorage.endPoint);
+        endPointHidden.val(sessionStorage.endPointHidden);
+
+        // departureDate.datepicker("setDate", sessionStorage.departureDate);
+    }
 
     /*Get all point*/
     $.ajax({
