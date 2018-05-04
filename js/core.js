@@ -141,6 +141,36 @@ $(document).ready(function () {
 
         return false;
     });
+
+    /*Redirect booking search result*/
+    $('#search-trip').click(function () {
+
+        if (typeof(Storage) !== "undefined") {
+            /*Save route info to to sessionStorage*/
+            sessionStorage.startPoint = startPoint.val();
+            sessionStorage.startPointHidden = startPointHidden.val();
+            sessionStorage.endPoint = endPoint.val();
+            sessionStorage.endPointHidden = endPointHidden.val();
+            sessionStorage.departureDate = departureDate.val();
+            sessionStorage.departureBackDate = departureBackDate.val();
+            sessionStorage.seats = $('#seats').val();
+            sessionStorage.isRound = isRound;
+
+            window.location.replace("booking.html");
+        } else {
+            alert('Phiên bản trình duyệt quá cũ, vui lòng nâng cấp để sử dụng đủ các chức năng');
+        }
+
+
+    });
+
+    /*Event back button*/
+    $('.back-to-home').click(function () {
+        sessionStorage.clear();
+        window.location.replace("index.html");
+        return false;
+    });
+
 });
 
 $('body').on('click', '.selectRoute', function () {
