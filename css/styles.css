@@ -459,3 +459,152 @@ footer .footer-content {
     padding: 15px 55px;
     right: -8px;
 }
+
+#select-trip {
+    padding-top: 0;
+}
+
+.big_header {
+    width: 100%;
+    padding: 15px;
+    font-size: 23px;
+    color: #222;
+    font-family: Calibri, sans-serif;
+    font-weight: normal;
+    margin: 0 0 25px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    line-height: 30px;
+}
+
+.big_header_booking_blue {
+    background-color: #1854bb;
+    color: #fff;
+}
+
+#clock {
+    position: relative;
+    top: 5px;
+    display: inline-block;
+}
+
+.big_header.big_header_booking_blue .result-bold {
+    font-weight: 700;
+}
+
+.races-table {
+    position: relative;
+    background: #fff;
+    border: #dcdcdc solid 1px;
+    padding: 15px;
+    border-radius: 0;
+    border-color: #ddd;
+    width: 100%;
+}
+
+#search_result_direct thead {
+    background: #a0b7dd;
+    color: #fff;
+    height: 65px;
+    font-size: 14px;
+    text-align: center;
+    padding: 26px;
+}
+
+#search_result_direct thead th {
+    padding: 26px 0;
+}
+
+#search_result_direct .time {
+    width: 120px;
+    text-align: center;
+    font-size: 33px;
+    letter-spacing: -2px;
+    color: #1853b8;
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+#search_result_direct .time .date {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    padding-top: 5px;
+    color: #8f9196;
+    letter-spacing: 0.01em;
+    font-family: 'Calibri', sans-serif;
+}
+
+#search_result_direct .route {
+    text-align: left;
+}
+
+#search_result_direct .route .place-from, #search_result_direct .route .place-to {
+    color: #000;
+    font-size: 18px;
+    padding: 30px 3px 0 3px;
+    width: 40%;
+}
+
+#search_result_direct .route .place-to {
+    float: right;
+}
+
+#search_result_direct .route .trip {
+    display: inline-block;
+}
+
+#search_result_direct .route .pace-departure-time {
+    background: url(img/waterbus/destination_arrow_icon.png) no-repeat center;
+    margin: 0 auto;
+    height: 6px;
+    border-radius: 8px;
+    width: 10%;
+    overflow: hidden;
+}
+
+#search_result_direct td.price {
+    text-align: right;
+}
+
+.seats-count {
+    display: block;
+    color: #767676;
+    font-size: 13px;
+}
+
+.select-trip {
+    cursor: pointer;
+    font-weight: 700;
+    background: #82c401;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 12px 18px;
+    width: 160px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+.race-info {
+    background-color: #eff2f9;
+}
+
+.race-info i {
+    color: #497dd0;
+}
+
+.race-info td a {
+    padding: 10px;
+    color: #111111;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 990px) {
+    .search-form-wrapper {
+        display: none;
+    }
+}
