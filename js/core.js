@@ -135,6 +135,12 @@ $(document).ready(function () {
     for (i = 1; i <= 8; i++) {
         $('#seats').append('<option value="' + i + '">' + i + '</option>');
     }
+
+    $('.route-detail').click(function () {
+        $('#routeDetailModal').modal('show');
+
+        return false;
+    });
 });
 
 $('body').on('click', '.selectRoute', function () {
