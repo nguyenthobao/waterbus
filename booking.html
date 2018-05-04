@@ -33,7 +33,13 @@
         header.masthead {
             background-image: url("img/img-sg/BINHAN.jpg");
             min-height: 0;
-            height: 40vh;
+            height: 220px;
+        }
+
+        @media screen and (max-width: 990px) {
+            .search-form-wrapper {
+                display: none;
+            }
         }
     </style>
 </head>
@@ -72,29 +78,18 @@
 </nav>
 
 <header class="masthead text-center text-white d-flex">
-    <div class="container my-auto">
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <h3 class="text-uppercase">
-                    <strong>Tìm chuyến đi của bạn</strong>
-                </h3>
-                <hr>
-            </div>
-        </div>
+    <div class="container my-auto booking">
         <!--SEARCH ROUTE-->
         <style>
-            .search-small-form {
-                margin-top: 25px;
-                background: none;
-            }
+
         </style>
         <div class="row">
-            <div class="search-small-form">
+            <div class="search-form-wrapper">
                 <form action="#">
                     <input type="hidden" name="startPoint" id="startPointHidden">
                     <input type="hidden" name="endPoint" id="endPointHidden">
                     <div class="row finder">
-                        <div id="finder-from" class="col-12 col-md-12 col-lg-3">
+                        <div id="finder-from" class="col-12 col-md-12 col-lg-2">
                             <input type="text" class="form-control form-input" id="startPoint" placeholder="Điểm đi">
                         </div>
 
@@ -106,7 +101,7 @@
                             </a>
                         </div>
 
-                        <div id="finder-to" class="col-12 col-md-12 col-lg-3">
+                        <div id="finder-to" class="col-12 col-md-12 col-lg-2">
                             <input type="text" class="form-control form-input" id="endPoint" placeholder="Điểm đến">
                         </div>
 
@@ -117,17 +112,23 @@
                         <div class="finder no-padding col-6 col-md-6 col-lg-2">
                             <input type="text" readonly disabled class="form-control form-input" id="departureBackDate">
                         </div>
+
                         <div class="finder no-padding select-seat col-12 col-md-12 col-lg-1">
-                            <select class="form-control form-select" id="seats">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>7</option>
-                                <option>8</option>
+                            <select class="form-control form-select" id="type">
+                                <option value="0">Một chiều</option>
+                                <option value="1">Khứ hồi</option>
                             </select>
                         </div>
+
+                        <div class="finder no-padding select-seat col-12 col-md-12 col-lg-1">
+                            <select class="form-control form-select" id="seats">
+
+                            </select>
+                        </div>
+
+                        <button class="search_btn col-lg-1" type="button">
+                            <span class="search_btn-text">Search</span>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -135,6 +136,7 @@
         <!--END SEARCH ROUTE-->
     </div>
 </header>
+
 
 
 <footer class="bg-dark text-white">
@@ -175,6 +177,7 @@
 <script src="js/creative.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/jquery.ui.datepicker-vi.js"></script>
+<script src="js/core.js"></script>
 </body>
 
 </html>

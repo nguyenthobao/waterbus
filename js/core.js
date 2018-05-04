@@ -119,7 +119,22 @@ $(document).ready(function () {
             isRound = 0;
             departureBackDate.prop('disabled', true);
         }
-    })
+    });
+
+    $('#type').change(function () {
+        isRound = $(this).val();
+        if (isRound == 1) {
+            departureBackDate.prop('disabled', false);
+            changeDate(departureDate.val());
+        } else {
+            departureBackDate.prop('disabled', true);
+        }
+    });
+
+    /*Build number seats*/
+    for (i = 1; i <= 8; i++) {
+        $('#seats').append('<option value="' + i + '">' + i + '</option>');
+    }
 });
 
 $('body').on('click', '.selectRoute', function () {
@@ -135,7 +150,7 @@ $('body').on('click', '.selectRoute', function () {
 
     $('html, body').animate({
         scrollTop: $(".masthead").offset().top
-    },2000);
+    }, 2000);
 
     return false;
 });
