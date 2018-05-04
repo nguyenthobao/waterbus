@@ -13,12 +13,20 @@ $(document).ready(function () {
     /*Get all point*/
     $.ajax({
         type: 'POST',
-        url: 'https://dobody-anvui.appspot.com/point/get_province_and_point',
+        url: 'https://dobody-anvui.appspot.com/route/getListWayAvailable',
         dataType: "json",
         data: JSON.stringify({companyId: systemId}),
         success: function (data) {
-            listDistrict = data.results.result[0].listDistrict;
-            makeQuickRoute(listDistrict);
+            listWay = data.results.listWay;
+            mergeListWay = [];
+            count = 0;
+            $.each(listWay, function (key, val) {
+                $.each(val, function (k, v) {
+                    mergeListWay[count] = v;
+                    count++;
+                });
+            });
+            makeQuickRoute(mergeListWay);
         }
     });
 
@@ -72,6 +80,7 @@ $(document).ready(function () {
             .appendTo(ul);
     };
 
+    /*Switch start and endPoint*/
     $("#switchPoint").click(function () {
         var tempInput = startPoint.val();
         var tempHiden = startPointHidden.val();
@@ -113,6 +122,24 @@ $(document).ready(function () {
     })
 });
 
+$('body').on('click', '.selectRoute', function () {
+    var inPointName = $(this).data('inpointname');
+    var inPointId = $(this).data('inpoint');
+    var offPointName = $(this).data('offpointname');
+    var offPointId = $(this).data('offpoint');
+
+    startPoint.val(inPointName);
+    startPointHidden.val(inPointId);
+    endPoint.val(offPointName);
+    endPointHidden.val(offPointId);
+
+    $('html, body').animate({
+        scrollTop: $(".masthead").offset().top
+    },2000);
+
+    return false;
+});
+
 /*Change date by departureDate*/
 function changeDate(dateStr) {
     if (dateStr === '') {
@@ -140,20 +167,23 @@ function changeDate(dateStr) {
 function makeQuickRoute(data) {
     html = '';
     $.each(data, function (key, item) {
-        console.log(item);
         html += '<div class="block col-12 col-xl-6 col-lg-12">';
-            html += '<div class="from">';
-                html += '<span class="city">';
-                    html += item.districtName;
-                html += '</span>';
-            html += '</div>';
-            html += '<div class="arrow"></div>';
-            html += '<div class="to">';
-                html += '<span class="city">';
-                    html += 'Ga Tàu Thủy Bình An';
-                html += '</span>';
-            html += '</div>';
-            html += '<a class="btn" href="#">Chọn</a>'
+        html += '<div class="from">';
+        html += '<span class="city">';
+        html += item.inPoint.pointName;
+        html += '</span>';
+        html += '</div>';
+        html += '<div class="arrow"></div>';
+        html += '<div class="to">';
+        html += '<span class="city">';
+        html += item.offPoint.pointName;
+        html += '</span>';
+        html += '</div>';
+        html += '<a class="selectRoute btn" ' +
+            'data-inpointname="' + item.inPoint.pointName + '" ' +
+            'data-inpoint="' + item.inPoint.pointId + '" ' +
+            'data-offpointname="' + item.offPoint.pointName + '" ' +
+            'data-offpoint="' + item.offPoint.pointId + '" href="#">Chọn</a>'
         html += '</div>';
     });
     $('.content-route').html(html);
