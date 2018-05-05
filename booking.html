@@ -145,110 +145,253 @@
             </span>
         </div>
     </div>
+    <style>
+        .tab-route {
+            margin-top: -15px;
+            margin-bottom: 15px;
+        }
+
+        .hasReturn {
+            background-color: #84abec;
+        }
+
+        .nav-tabs .nav-link {
+            color: #8f9196;
+            padding: 18px 0;
+            text-align: center;
+            width: calc(50% - 4px);
+            border: 0;
+            background-color: #FFFFFF;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+
+        .nav-tabs .nav-link.active {
+            color: #ffffff;
+            background-color: #84abec
+        }
+    </style>
     <div class="container">
         <div class="row">
-            <div class="panel panel-default races-table">
-                <table id="search_result_direct" class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th>Khởi hành</th>
-                            <th></th>
-                            <th>Kết thúc</th>
-                            <th>Giá</th>
-                        </tr>
-                    </thead>
-                    <tbody class="border-left border-right">
-                        <tr>
-                            <td class="time">18:00
-                                <span class="date">04/05/2018
+            <div class="panel panel-default races-table hasReturn">
+                <nav class="tab-route">
+                    <div class="nav nav-tabs row" id="nav-tab" role="tablist">
+                        <a class="col-6 nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#one-way" role="tab" aria-controls="nav-home" aria-selected="true">Chuyến đi</a>
+                        <a class="col-6 nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#return" role="tab" aria-controls="nav-profile" aria-selected="false">Chuyến về</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="one-way" role="tabpanel" aria-labelledby="nav-one-way-tab">
+                        <!--Chuyen di-->
+                        <table id="search_result_direct" class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Khởi hành</th>
+                                <th></th>
+                                <th>Kết thúc</th>
+                                <th>Giá</th>
+                            </tr>
+                            </thead>
+                            <tbody class="border-left border-right">
+                            <tr>
+                                <td class="time">18:00
+                                    <span class="date">04/05/2018
                                          </span>
-                            </td>
-                            <td class="route">
-                                <div class="place-from trip">
-                                    <span>Ga Tàu Thủy Bạch Đằng</span>
-                                </div>
-                                <div class="pace-departure-time trip"></div>
-                                <div class="place-to trip">Ga Tàu Thủy Bình An
-                                </div>
-                            </td>
-                            <td class="time">22:15
-                                <span class="date">04/05/2018
+                                </td>
+                                <td class="route">
+                                    <div class="place-from trip">
+                                        <span>Ga Tàu Thủy Bạch Đằng</span>
+                                    </div>
+                                    <div class="pace-departure-time trip"></div>
+                                    <div class="place-to trip">Ga Tàu Thủy Bình An
+                                    </div>
+                                </td>
+                                <td class="time">22:15
+                                    <span class="date">04/05/2018
                                          </span>
-                            </td>
-                            <td class="price border-right">
-                                <span class="seats-count">30 Ghế trống</span>
-                                <button type="button" class="btn select-trip">
-                                    <span class="money"><i class="fa fa-money"></i> 300.000 VND</span>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="race-info">
-                            <td colspan="4" class="border-left border-right">
-                                <a href="#" class="route-detail" title="Chi tiết chuyến"><i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết chuyến</a>
-                            </td>
-                        </tr>
+                                </td>
+                                <td class="price border-right">
+                                    <span class="seats-count">30 Ghế trống</span>
+                                    <button type="button" class="btn select-trip">
+                                        <span class="money"><i class="fa fa-money"></i> 300.000 VND</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="race-info">
+                                <td colspan="4" class="border-left border-right">
+                                    <a href="#" class="route-detail" title="Chi tiết chuyến"><i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết chuyến</a>
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td class="time">18:00
-                                <span class="date">04/05/2018
+                            <tr>
+                                <td class="time">18:00
+                                    <span class="date">04/05/2018
                                          </span>
-                            </td>
-                            <td class="route">
-                                <div class="place-from trip">
-                                    <span>Ga Tàu Thủy Bạch Đằng</span>
-                                </div>
-                                <div class="pace-departure-time trip"></div>
-                                <div class="place-to trip">Ga Tàu Thủy Bình An
-                                </div>
-                            </td>
-                            <td class="time">22:15
-                                <span class="date">04/05/2018
+                                </td>
+                                <td class="route">
+                                    <div class="place-from trip">
+                                        <span>Ga Tàu Thủy Bạch Đằng</span>
+                                    </div>
+                                    <div class="pace-departure-time trip"></div>
+                                    <div class="place-to trip">Ga Tàu Thủy Bình An
+                                    </div>
+                                </td>
+                                <td class="time">22:15
+                                    <span class="date">04/05/2018
                                          </span>
-                            </td>
-                            <td class="price border-right">
-                                <span class="seats-count">30 Ghế trống</span>
-                                <button type="button" class="btn select-trip">
-                                    <span class="money"><i class="fa fa-money"></i> 300.000 VND</span>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="race-info">
-                            <td colspan="4" class="border-left border-right">
-                                <a href="#" class="route-detail" title="Chi tiết chuyến"><i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết chuyến</a>
-                            </td>
-                        </tr>
+                                </td>
+                                <td class="price border-right">
+                                    <span class="seats-count">30 Ghế trống</span>
+                                    <button type="button" class="btn select-trip">
+                                        <span class="money"><i class="fa fa-money"></i> 300.000 VND</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="race-info">
+                                <td colspan="4" class="border-left border-right">
+                                    <a href="#" class="route-detail" title="Chi tiết chuyến"><i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết chuyến</a>
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td class="time">18:00
-                                <span class="date">04/05/2018
+                            <tr>
+                                <td class="time">18:00
+                                    <span class="date">04/05/2018
                                          </span>
-                            </td>
-                            <td class="route">
-                                <div class="place-from trip">
-                                    <span>Ga Tàu Thủy Bạch Đằng</span>
-                                </div>
-                                <div class="pace-departure-time trip"></div>
-                                <div class="place-to trip">Ga Tàu Thủy Bình An
-                                </div>
-                            </td>
-                            <td class="time">22:15
-                                <span class="date">04/05/2018
+                                </td>
+                                <td class="route">
+                                    <div class="place-from trip">
+                                        <span>Ga Tàu Thủy Bạch Đằng</span>
+                                    </div>
+                                    <div class="pace-departure-time trip"></div>
+                                    <div class="place-to trip">Ga Tàu Thủy Bình An
+                                    </div>
+                                </td>
+                                <td class="time">22:15
+                                    <span class="date">04/05/2018
                                          </span>
-                            </td>
-                            <td class="price border-right">
-                                <span class="seats-count">30 Ghế trống</span>
-                                <button type="button" class="btn select-trip">
-                                    <span class="money"><i class="fa fa-money"></i> 300.000 VND</span>
-                                </button>
-                            </td>
-                        </tr>
-                        <tr class="race-info">
-                            <td colspan="4" class="border-left border-right">
-                                <a href="#" class="route-detail" title="Chi tiết chuyến"><i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết chuyến</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                                </td>
+                                <td class="price border-right">
+                                    <span class="seats-count">30 Ghế trống</span>
+                                    <button type="button" class="btn select-trip">
+                                        <span class="money"><i class="fa fa-money"></i> 300.000 VND</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="race-info">
+                                <td colspan="4" class="border-left border-right">
+                                    <a href="#" class="route-detail" title="Chi tiết chuyến"><i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết chuyến</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!--Ket thuc Chuyen di-->
+                    </div>
+                    <div class="tab-pane fade" id="return" role="tabpanel" aria-labelledby="nav-return-tab">
+                        <!--Chuyen ve-->
+                        <table id="search_result_return" class="table table-hover">
+                            <thead>
+                            <tr>
+                                <th>Khởi hành</th>
+                                <th></th>
+                                <th>Kết thúc</th>
+                                <th>Giá</th>
+                            </tr>
+                            </thead>
+                            <tbody class="border-left border-right">
+                            <tr>
+                                <td class="time">18:00
+                                    <span class="date">04/05/2018
+                                         </span>
+                                </td>
+                                <td class="route">
+                                    <div class="place-from trip">
+                                        <span>Ga Tàu Thủy Bạch Đằng</span>
+                                    </div>
+                                    <div class="pace-departure-time trip"></div>
+                                    <div class="place-to trip">Ga Tàu Thủy Bình An
+                                    </div>
+                                </td>
+                                <td class="time">22:15
+                                    <span class="date">04/05/2018
+                                         </span>
+                                </td>
+                                <td class="price border-right">
+                                    <span class="seats-count">30 Ghế trống</span>
+                                    <button type="button" class="btn select-trip">
+                                        <span class="money"><i class="fa fa-money"></i> 300.000 VND</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="race-info">
+                                <td colspan="4" class="border-left border-right">
+                                    <a href="#" class="route-detail" title="Chi tiết chuyến"><i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết chuyến</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="time">18:00
+                                    <span class="date">04/05/2018
+                                         </span>
+                                </td>
+                                <td class="route">
+                                    <div class="place-from trip">
+                                        <span>Ga Tàu Thủy Bạch Đằng</span>
+                                    </div>
+                                    <div class="pace-departure-time trip"></div>
+                                    <div class="place-to trip">Ga Tàu Thủy Bình An
+                                    </div>
+                                </td>
+                                <td class="time">22:15
+                                    <span class="date">04/05/2018
+                                         </span>
+                                </td>
+                                <td class="price border-right">
+                                    <span class="seats-count">30 Ghế trống</span>
+                                    <button type="button" class="btn select-trip">
+                                        <span class="money"><i class="fa fa-money"></i> 300.000 VND</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="race-info">
+                                <td colspan="4" class="border-left border-right">
+                                    <a href="#" class="route-detail" title="Chi tiết chuyến"><i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết chuyến</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="time">18:00
+                                    <span class="date">04/05/2018
+                                         </span>
+                                </td>
+                                <td class="route">
+                                    <div class="place-from trip">
+                                        <span>Ga Tàu Thủy Bạch Đằng</span>
+                                    </div>
+                                    <div class="pace-departure-time trip"></div>
+                                    <div class="place-to trip">Ga Tàu Thủy Bình An
+                                    </div>
+                                </td>
+                                <td class="time">22:15
+                                    <span class="date">04/05/2018
+                                         </span>
+                                </td>
+                                <td class="price border-right">
+                                    <span class="seats-count">30 Ghế trống</span>
+                                    <button type="button" class="btn select-trip">
+                                        <span class="money"><i class="fa fa-money"></i> 300.000 VND</span>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr class="race-info">
+                                <td colspan="4" class="border-left border-right">
+                                    <a href="#" class="route-detail" title="Chi tiết chuyến"><i class="fa fa-info-circle" aria-hidden="true"></i> Chi tiết chuyến</a>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <!--Ket thuc Chuyen ve-->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -352,6 +495,22 @@
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/jquery.ui.datepicker-vi.js"></script>
 <script src="js/core.js"></script>
+<script>
+    var isRound = 0;
+    $(document).ready(function () {
+        if(sessionStorage.length > 0) {
+            isRound = sessionStorage.isRound;
+        }
+
+        if (isRound == 1) {
+            $('.races-table').addClass('hasReturn');
+            $('.tab-route').show();
+        } else {
+            $('.races-table').removeClass('hasReturn');
+            $('.tab-route').hide();
+        }
+    });
+</script>
 </body>
 
 </html>

@@ -527,7 +527,11 @@ footer .footer-content {
     width: 100%;
 }
 
-#search_result_direct thead {
+#search_result_direct, #search_result_return {
+    background: #fff;
+}
+
+#search_result_direct thead, #search_result_return thead {
     background: #a0b7dd;
     color: #fff;
     height: 65px;
@@ -536,11 +540,11 @@ footer .footer-content {
     padding: 26px;
 }
 
-#search_result_direct thead th {
+#search_result_direct thead th , #search_result_return thead th {
     padding: 26px 0;
 }
 
-#search_result_direct .time {
+#search_result_direct .time, #search_result_return .time {
     width: 120px;
     text-align: center;
     font-size: 33px;
@@ -550,7 +554,7 @@ footer .footer-content {
     font-weight: 300;
 }
 
-#search_result_direct .time .date {
+#search_result_direct .time .date, #search_result_return .time .date {
     text-align: center;
     display: block;
     font-size: 14px;
@@ -560,26 +564,30 @@ footer .footer-content {
     font-family: 'Calibri', sans-serif;
 }
 
-#search_result_direct .route {
+#search_result_direct .route, #search_result_return .route {
     text-align: left;
 }
 
-#search_result_direct .route .place-from, #search_result_direct .route .place-to {
+#search_result_direct .route .place-from, #search_result_direct .route .place-to,
+#search_result_return .route .place-from, #search_result_return .route .place-to
+{
     color: #000;
     font-size: 18px;
     padding: 30px 3px 0 3px;
     width: 40%;
 }
 
-#search_result_direct .route .place-to {
+#search_result_direct .route .place-to, #search_result_return .route .place-to{
     float: right;
 }
 
-#search_result_direct .route .trip {
+#search_result_direct .route .trip, #search_result_return .route .trip {
     display: inline-block;
 }
 
-#search_result_direct .route .pace-departure-time {
+#search_result_direct .route .pace-departure-time,
+#search_result_return .route .pace-departure-time
+{
     background: url(../img/waterbus/destination_arrow_icon.png) no-repeat center;
     margin: 0 auto;
     height: 6px;
@@ -588,7 +596,7 @@ footer .footer-content {
     overflow: hidden;
 }
 
-#search_result_direct td.price {
+#search_result_direct td.price, #search_result_return td.price {
     text-align: right;
 }
 
