@@ -498,6 +498,11 @@
 <script>
     var isRound = 0;
     $(document).ready(function () {
+
+        $('html, body').animate({
+            scrollTop: $("#select-trip").offset().top - 75
+        }, 1500);
+
         if(sessionStorage.length > 0) {
             isRound = sessionStorage.isRound;
         }
