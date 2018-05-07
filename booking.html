@@ -79,7 +79,7 @@
     <div class="container my-auto booking">
         <!--SEARCH ROUTE-->
         <div class="row">
-            <div class="search-form-wrapper">
+            <div class="search-form-wrapper" id="form-booking">
                 <form action="#">
                     <input type="hidden" name="startPoint" id="startPointHidden">
                     <input type="hidden" name="endPoint" id="endPointHidden">
@@ -170,8 +170,21 @@
             color: #ffffff;
             background-color: #84abec
         }
+
+        .customer-info {
+            margin: 20px 10px 20px 10px;
+        }
+
+        .required {
+            color: #F44336;
+        }
+
+        .note-form {
+            font-size: 14px;
+            font-style: italic;
+        }
     </style>
-    <div class="container">
+    <div class="container" id="choose-trip" style="display: none;">
         <div class="row">
             <div class="panel panel-default races-table hasReturn">
                 <nav class="tab-route">
@@ -288,7 +301,7 @@
                     </div>
                     <div class="tab-pane fade" id="return" role="tabpanel" aria-labelledby="nav-return-tab">
                         <!--Chuyen ve-->
-                        <table id="search_result_return" class="table table-hover">
+                        <table id="search_result_return" class="table table-responsive table-hover">
                             <thead>
                             <tr>
                                 <th>Khởi hành</th>
@@ -390,6 +403,78 @@
                             </tbody>
                         </table>
                         <!--Ket thuc Chuyen ve-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container" id="payment" style="display: block">
+        <div class="card row" style="flex-direction: row;">
+            <div class="col-12 col-xl-6">
+                <div class="card customer-info" id="card-oneway">
+                    <div class="card-header">Ga Tàu Thủy Bạch Đằng - Ga Tàu Thủy Bình An</div>
+                    <div class="card-body">
+                        <span class="note-form">(<span class="required">*</span>) : Thông tin bắt buộc</span>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="fullnameOneWay">Họ tên (<span class="required">*</span>)</label>
+                                <input type="text" class="form-control" id="fullnameOneWay" placeholder="Họ và tên">
+                            </div>
+                            <div class="form-group">
+                                <label for="phonenumberOneWay">Số điện thoại (<span class="required">*</span>)</label>
+                                <input type="text" class="form-control" id="phonenumberOneWay" placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-group">
+                                <label for="emailOneWay">Email (<span class="required">*</span>)</label>
+                                <input type="email" class="form-control" id="emailOneWay" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="promotionOneWay">Khuyến mãi</label>
+                                <input type="text" class="form-control col-8" id="promotionOneWay" placeholder="Mã khuyến mãi">
+                            </div>
+                            <div class="form-group">
+                                <label for="noteOneWay">Ghi chú</label>
+                                <textarea class="form-control" id="noteOneWay" rows="3" placeholder="Yêu cầu của bạn"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="card customer-info" id="card-return">
+                    <div class="card-header">Ga Tàu Thủy Bình An - Ga Tàu Thủy Bạch Đằng</div>
+                    <div class="card-body">
+                        <span class="note-form">(<span class="required">*</span>) : Thông tin bắt buộc</span>
+                        <form action="#">
+                            <div class="form-group">
+                                <label for="fullnameReturn">Họ tên (<span class="required">*</span>)</label>
+                                <input type="text" class="form-control" id="fullnameReturn" placeholder="Họ và tên">
+                            </div>
+                            <div class="form-group">
+                                <label for="phonenumberReturn">Số điện thoại (<span class="required">*</span>)</label>
+                                <input type="text" class="form-control" id="phonenumberReturn" placeholder="Số điện thoại">
+                            </div>
+                            <div class="form-group">
+                                <label for="emailReturn">Email (<span class="required">*</span>)</label>
+                                <input type="email" class="form-control" id="emailReturn" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <label for="promotionReturn">Khuyến mãi</label>
+                                <input type="text" class="form-control col-8" id="promotionReturn" placeholder="Mã khuyến mãi">
+                            </div>
+                            <div class="form-group">
+                                <label for="noteReturn">Ghi chú</label>
+                                <textarea class="form-control" id="noteReturn" rows="3" placeholder="Yêu cầu của bạn"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-xl-6">
+                <div class="card customer-info">
+                    <div class="card-header">Thông tin chuyến đi</div>
+                    <div class="card-body">
+                        <table class="table-responsive">
+
+                        </table>
                     </div>
                 </div>
             </div>

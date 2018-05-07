@@ -190,6 +190,17 @@ $(document).ready(function () {
         return false;
     });
 
+    /*Event focusout customer input*/
+    $('#fullnameOneWay').focusout(function () {
+        $('#fullnameReturn').val($(this).val());
+    });
+    $('#phonenumberOneWay').focusout(function () {
+        $('#phonenumberReturn').val($(this).val());
+    });
+    $('#emailOneWay').focusout(function () {
+        $('#emailReturn').val($(this).val());
+    });
+
 });
 
 $('body').on('click', '.selectRoute', function () {

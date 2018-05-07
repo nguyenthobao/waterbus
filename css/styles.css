@@ -636,7 +636,7 @@ footer .footer-content {
 }
 
 @media screen and (max-width: 990px) {
-    .search-form-wrapper {
+    #form-booking {
         display: none;
     }
 }
