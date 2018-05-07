@@ -680,11 +680,11 @@ footer .footer-content {
 }
 
 .content div.line:first-of-type .point {
-    background: #fff url(img/waterbus/icon_A_destination_blue.png) no-repeat 0 1px;
+    background: #fff url(../img/waterbus/icon_A_destination_blue.png) no-repeat 0 1px;
 }
 
 .content div.line:last-of-type .point {
-    background: #fff url(img/waterbus/icon_B_destination_blue.png) no-repeat 0px 1px;
+    background: #fff url(../img/waterbus/icon_B_destination_blue.png) no-repeat 0 1px;
 }
 
 .content .line .point {

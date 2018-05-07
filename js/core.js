@@ -18,6 +18,9 @@ $(document).ready(function () {
         endPointHidden.val(sessionStorage.endPointHidden);
 
         // departureDate.datepicker("setDate", sessionStorage.departureDate);
+        $('.back-to-home').show();
+    } else {
+        $('.back-to-home').hide();
     }
 
     /*Get all point*/
@@ -165,6 +168,7 @@ $(document).ready(function () {
             sessionStorage.departureBackDate = departureBackDate.val();
             sessionStorage.seats = $('#seats').val();
             sessionStorage.isRound = isRound;
+            sessionStorage.step = 1;
 
             window.location.replace("booking.html");
         } else {
@@ -176,8 +180,13 @@ $(document).ready(function () {
 
     /*Event back button*/
     $('.back-to-home').click(function () {
-        sessionStorage.clear();
-        window.location.replace("index.html");
+        if(sessionStorage.step == 1) {
+            sessionStorage.clear();
+            window.location.replace("index.html");
+        } else {
+            alert('AAA');
+        }
+
         return false;
     });
 
