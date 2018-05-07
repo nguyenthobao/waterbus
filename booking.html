@@ -145,46 +145,7 @@
             </span>
         </div>
     </div>
-    <style>
-        .tab-route {
-            margin-top: -15px;
-            margin-bottom: 15px;
-        }
-
-        .hasReturn {
-            background-color: #84abec;
-        }
-
-        .nav-tabs .nav-link {
-            color: #8f9196;
-            padding: 18px 0;
-            text-align: center;
-            width: calc(50% - 4px);
-            border: 0;
-            background-color: #FFFFFF;
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-        }
-
-        .nav-tabs .nav-link.active {
-            color: #ffffff;
-            background-color: #84abec
-        }
-
-        .customer-info {
-            margin: 20px 10px 20px 10px;
-        }
-
-        .required {
-            color: #F44336;
-        }
-
-        .note-form {
-            font-size: 14px;
-            font-style: italic;
-        }
-    </style>
-    <div class="container" id="choose-trip" style="display: none;">
+    <div class="container" id="choose-trip" style="display: block;">
         <div class="row">
             <div class="panel panel-default races-table hasReturn">
                 <nav class="tab-route">
@@ -209,7 +170,7 @@
                             <tr>
                                 <td class="time">18:00
                                     <span class="date">04/05/2018
-                                         </span>
+                                    </span>
                                 </td>
                                 <td class="route">
                                     <div class="place-from trip">
@@ -408,7 +369,7 @@
             </div>
         </div>
     </div>
-    <div class="container" id="payment" style="display: block">
+    <div class="container" id="payment" style="display: none">
         <div class="card row" style="flex-direction: row;">
             <div class="col-12 col-xl-6">
                 <div class="card customer-info" id="card-oneway">
@@ -468,13 +429,110 @@
                     </div>
                 </div>
             </div>
+            <style>
+
+
+            </style>
             <div class="col-12 col-xl-6">
                 <div class="card customer-info">
                     <div class="card-header">Thông tin chuyến đi</div>
-                    <div class="card-body">
-                        <table class="table-responsive">
+                    <div class="card-body row" id="infoOneWay">
+                        <div class="col-12">
+                            <h5 class="trip-name">
+                                <a href="#" class="route-detail" title="Chi tiết chuyến">Ga Tàu Thủy Bạch Đằng - Ga Tàu Thủy Bình An</a>
+                            </h5>
+                            <span class="ticket-info">
+                                Số người:
+                                <span class="number-ticket">2</span> Người
+                            </span>
+                            <span class="ticket-info">
+                                Điểm đi: <br>
+                                <span class="startForm">Ga Tàu Thủy Bạch Đằng</span>
+                            </span>
+                            <span class="ticket-info">
+                                Điểm đến: <br>
+                                <span class="endTo">Ga Tàu Thủy Bình An</span>
+                            </span>
+                            <span class="ticket-info">
+                                Khởi hành: <br>
+                                <span class="departureTime">18:00 04/05/2018</span>
+                            </span>
+                            <span class="ticket-info">
+                                Kết thúc: <br>
+                                <span class="arrivalTime">22:15 04/05/2018</span>
+                            </span>
+                            <span class="trip-money">
+                                Giá:
+                                <span class="moneyFormat">300.000 VNĐ</span>
+                            </span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="card-body row" id="infoReturn">
+                        <div class="col-12">
+                            <h5 class="trip-name">
+                                <a href="#" class="route-detail" title="Chi tiết chuyến">Ga Tàu Thủy Bình An - Ga Tàu Thủy Bạch Đằng</a>
+                            </h5>
+                            <span class="ticket-info">
+                                Số người:
+                                <span class="number-ticket">2</span> Người
+                            </span>
+                            <span class="ticket-info">
+                                Điểm đi: <br>
+                                <span class="startForm">Ga Tàu Thủy Bình An</span>
+                            </span>
+                            <span class="ticket-info">
+                                Điểm đến: <br>
+                                <span class="endTo">Ga Tàu Thủy Bạch Đằng</span>
+                            </span>
+                            <span class="ticket-info">
+                                Khởi hành: <br>
+                                <span class="departureTime">18:00 04/05/2018</span>
+                            </span>
+                            <span class="ticket-info">
+                                Kết thúc: <br>
+                                <span class="arrivalTime">22:15 04/05/2018</span>
+                            </span>
+                            <span class="trip-money">
+                                Giá:
+                                <span class="moneyFormat">300.000 VNĐ</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="transaction-fee">Phí giao dịch:
+                        <span class="fee-sum">
+                            0 VNĐ
+                        </span>
+                    </div>
+                    <div class="total-payment">Tổng tiền:
+                        <span class="summation">
+                            600.000 VNĐ
+                        </span>
+                    </div>
+                </div>
 
-                        </table>
+                <div class="card">
+                    <div class="banks-wrap">
+                        <div class="title">
+                            Chọn phương thức thanh toán
+                        </div>
+                        <div class="row payment-list">
+                            <div class="col-12 pretty p-icon p-round">
+                                <input type="radio" name="icon_solid" />
+                                <div class="state p-primary">
+                                    <i class="icon mdi mdi-check"></i>
+                                    <label>Thanh toán OnePay</label>
+                                </div>
+                            </div>
+                            <div class="col-12 pretty p-icon p-round">
+                                <input type="radio" name="icon_solid" />
+                                <div class="state p-primary">
+                                    <i class="icon mdi mdi-check"></i>
+                                    <label>Thanh toán Visa</label>
+                                </div>
+                            </div>
+                            <button type="button" class="btn btn-payment">Thanh toán</button>
+                        </div>
                     </div>
                 </div>
             </div>

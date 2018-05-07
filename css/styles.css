@@ -641,6 +641,105 @@ footer .footer-content {
     }
 }
 
+.tab-route {
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
+.hasReturn {
+    background-color: #84abec;
+}
+
+.nav-tabs .nav-link {
+    color: #8f9196;
+    padding: 18px 0;
+    text-align: center;
+    width: calc(50% - 4px);
+    border: 0;
+    background-color: #FFFFFF;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #84abec
+}
+
+.customer-info {
+    margin: 20px 10px 20px 10px;
+}
+
+.required {
+    color: #F44336;
+}
+
+.note-form {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.trip-name a {
+    color: #1854bb;
+}
+
+.ticket-info {
+    margin: 13px 0;
+    display: flow-root;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.customer-info hr {
+    width: 100%;
+    max-width: unset;
+    margin: 0;
+    border-width: 1px;
+    border-color: #cfcfcf;
+}
+
+.trip-money {
+    width: 100%;
+    color: #1854bb;
+}
+
+.moneyFormat {
+    float: right;
+    font-size: 24px;
+}
+.transaction-fee {
+    background: #fff;
+    border: #d4d4d4 solid 1px;
+    color: #2d2d2d;
+    font-weight: normal;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.fee-sum {
+    float: right;
+}
+
+.total-payment {
+    background: #fbfbfb;
+    border: #d4d4d4 solid 1px;
+    color: #000;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.summation {
+    color: #87b739;
+    float: right;
+    font-size: 24px;
+}
+
 /*Modal route detail*/
 .modal-header {
     background: #0052c3;
@@ -738,5 +837,35 @@ footer .footer-content {
 }
 
 .back-to-home:hover {
+    text-decoration: none;
+}
+
+/*Payment*/
+.banks-wrap {
+    padding: 25px 50px;
+    border: #eaeef4 solid 3px;
+}
+
+.banks-wrap .title {
+    color: #000;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+.payment-list .pretty {
+    margin-bottom: 15px;
+}
+
+.btn-payment {
+    background: #82c401;
+    border: none;
+    color: #fff;
+    text-align: center;
+    display: block;
+    padding: 8px 15px;
+    font-size: 17px;
+    font-weight: normal;
+    border-radius: 4px;
+    float: right;
     text-decoration: none;
 }
