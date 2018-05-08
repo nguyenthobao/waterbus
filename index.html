@@ -68,78 +68,154 @@
         </div>
     </div>
 </nav>
+<style>
+    .icon-bus img {
+        width: 60%;
+    }
 
+    .icon-bus p {
+        padding-top: 15px;
+    }
+
+    .icon-bus a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .icon-bus img:hover {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        -webkit-animation: flash 1.5s;
+        animation: flash 1.5s;
+    }
+
+    @-webkit-keyframes flash {
+        0% {
+            opacity: .4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    @keyframes flash {
+        0% {
+            opacity: .4;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+</style>
 <header class="masthead text-center text-white d-flex">
-    <div class="container my-auto">
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <h3 class="text-uppercase">
-                    <strong>Tìm chuyến đi của bạn</strong>
-                </h3>
-                <hr>
+    <div class="container my-auto" >
+        <div class="container" id="waterbus" style="display: none">
+            <div class="row">
+                <div class="col-lg-10 mx-auto">
+                    <h3 class="text-uppercase">
+                        <strong>Tìm chuyến đi của bạn</strong>
+                    </h3>
+                    <hr>
+                </div>
             </div>
-        </div>
-        <!--SEARCH ROUTE-->
-        <div class="row">
-            <div class="search-form-wrapper">
-                <form action="#">
-                    <input type="hidden" name="startPoint" id="startPointHidden">
-                    <input type="hidden" name="endPoint" id="endPointHidden">
-                    <div class="row finder">
-                        <div id="finder-from" class="col-12 col-md-12 col-lg-3">
-                            <input type="text" class="form-control form-input" id="startPoint" placeholder="Điểm đi">
-                        </div>
+            <!--SEARCH ROUTE-->
+            <div class="row">
+                <div class="search-form-wrapper">
+                    <form action="#">
+                        <input type="hidden" name="startPoint" id="startPointHidden">
+                        <input type="hidden" name="endPoint" id="endPointHidden">
+                        <div class="row finder">
+                            <div id="finder-from" class="col-12 col-md-12 col-lg-3">
+                                <input type="text" class="form-control form-input" id="startPoint" placeholder="Điểm đi">
+                            </div>
 
-                        <div class="arrows-block">
-                            <a id="switchPoint" href="#">
-                                <label style="cursor:pointer !important">
-                                    <span class="arrows"></span>
-                                </label>
-                            </a>
-                        </div>
+                            <div class="arrows-block">
+                                <a id="switchPoint" href="#">
+                                    <label style="cursor:pointer !important">
+                                        <span class="arrows"></span>
+                                    </label>
+                                </a>
+                            </div>
 
-                        <div id="finder-to" class="col-12 col-md-12 col-lg-3">
-                            <input type="text" class="form-control form-input" id="endPoint" placeholder="Điểm đến">
-                        </div>
+                            <div id="finder-to" class="col-12 col-md-12 col-lg-3">
+                                <input type="text" class="form-control form-input" id="endPoint" placeholder="Điểm đến">
+                            </div>
 
-                        <div class="finder no-padding padding-responsive col-6 col-md-6 col-lg-2">
-                            <input type="text" readonly class="form-control form-input" id="departureDate">
-                        </div>
+                            <div class="finder no-padding padding-responsive col-6 col-md-6 col-lg-2">
+                                <input type="text" readonly class="form-control form-input" id="departureDate">
+                            </div>
 
-                        <div class="finder no-padding col-6 col-md-6 col-lg-2">
-                            <input type="text" readonly disabled class="form-control form-input" id="departureBackDate">
-                        </div>
-                        <div class="finder no-padding select-seat col-12 col-md-12 col-lg-1">
-                            <select class="form-control form-select" id="seats">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                                <option>7</option>
-                                <option>8</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div class="row check-list">
-                        <div class="pretty p-default p-thick p-pulse">
-                            <input type="checkbox" id="isRound"/>
-                            <div class="state p-warning-o">
-                                <label>Khứ hồi</label>
+                            <div class="finder no-padding col-6 col-md-6 col-lg-2">
+                                <input type="text" readonly disabled class="form-control form-input" id="departureBackDate">
+                            </div>
+                            <div class="finder no-padding select-seat col-12 col-md-12 col-lg-1">
+                                <select class="form-control form-select" id="seats">
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                </select>
                             </div>
                         </div>
-                    </div>
 
-                    <button class="search_btn">
-                        <span class="search_btn-text">Search</span>
-                    </button>
-                </form>
+                        <div class="row check-list">
+                            <div class="pretty p-default p-thick p-pulse">
+                                <input type="checkbox" id="isRound"/>
+                                <div class="state p-warning-o">
+                                    <label>Khứ hồi</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="search_btn">
+                            <span class="search_btn-text">Search</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <!--END SEARCH ROUTE-->
+        </div>
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-12 col-1"></div>
+                <div class="col-4 col-xl-2 icon-bus">
+                    <a href="#" id="active-waterbus">
+                        <img src="img/waterbus/waterbus.png" class="img-thumbnail rounded-circle" alt="">
+                        <p>Water bus</p>
+                    </a>
+                </div>
+                <div class="col-4 col-xl-2 icon-bus">
+                    <a href="#" id="active-watertaxi">
+                        <img src="img/waterbus/watertaxi.png" class="img-thumbnail rounded-circle" alt="">
+                        <p>Water taxi</p>
+                    </a>
+                </div>
+                <div class="col-4 col-xl-2 icon-bus">
+                    <a href="#" id="active-rivertaxi">
+                        <img src="img/waterbus/rivertaxi.png" class="img-thumbnail rounded-circle" alt="">
+                        <p>River taxi</p>
+                    </a>
+                </div>
+                <div class="col-4 col-xl-2 icon-bus">
+                    <a href="#" id="active-citybus">
+                        <img src="img/waterbus/waterbus.png" class="img-thumbnail rounded-circle" alt="">
+                        <p>City bus</p>
+                    </a>
+                </div>
+                <div class="col-4 col-xl-2 icon-bus">
+                    <a href="#" id="active-other">
+                        <img src="img/waterbus/waterbus.png" class="img-thumbnail rounded-circle" alt="">
+                        <p>Water bus</p>
+                    </a>
+                </div>
+                <div class="col-12 col-1"></div>
             </div>
         </div>
-        <!--END SEARCH ROUTE-->
     </div>
 </header>
+
 
 <section id="services">
     <div class="container">

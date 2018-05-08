@@ -23,6 +23,41 @@ $(document).ready(function () {
         $('.back-to-home').hide();
     }
 
+    $('#active-waterbus').click(function () {
+        hideSeachbox();
+        $('#waterbus').show(1500);
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false;
+    });
+
+    $('#active-watertaxi').click(function () {
+        hideSeachbox();
+        alert('Chức năng water taxi đang phát triển');
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false;
+    });
+
+    $('#active-rivertaxi').click(function () {
+        hideSeachbox();
+        alert('Chức năng river taxi đang phát triển');
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false;
+    });
+
+    $('#active-citybus').click(function () {
+        hideSeachbox();
+        alert('Chức năng city bus đang phát triển');
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false;
+    });
+
+    $('#active-other').click(function () {
+        hideSeachbox();
+        alert('Chức năng đang phát triển');
+        $('html,body').animate({ scrollTop: 0 }, 'slow');
+        return false;
+    });
+
     /*Get all point*/
     $.ajax({
         type: 'POST',
@@ -218,6 +253,8 @@ $('body').on('click', '.selectRoute', function () {
         scrollTop: $(".masthead").offset().top
     }, 2000);
 
+    $('#waterbus').show(2000);
+
     return false;
 });
 
@@ -242,6 +279,11 @@ function changeDate(dateStr) {
         });
         departureBackDate.val(dateStr);
     }
+}
+
+/*Hide all search box*/
+function hideSeachbox() {
+    $('#waterbus').hide(1500);
 }
 
 /*Make quick route select*/
