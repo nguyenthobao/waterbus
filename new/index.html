@@ -28,6 +28,8 @@
     <link href="css/creative.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/pretty-checkbox.min.css">
     <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
         header.masthead {
@@ -52,7 +54,7 @@
 
 </div>
 <div class="container-fluid mt-5 option">
-    <div class="row justify-content-center" style="margin-top: 20px">
+    <!--<div class="row justify-content-center" style="margin-top: 20px">
         <div class="col-12 col-1"></div>
         <div class="col-4 col-xl-2 icon-bus">
             <a href="#" id="active-waterbus">
@@ -85,7 +87,46 @@
             </a>
         </div>
         <div class="col-12 col-1"></div>
+    </div>-->
+    <div class="owl-carousel container">
+        <div class="icon-bus">
+            <a href="#" id="active-waterbus">
+                <img src="img/waterbus/waterbus.png" class="img-thumbnail rounded-circle" alt="">
+                <p>Water bus</p>
+            </a>
+        </div>
+        <div class="icon-bus">
+            <a href="#" id="active-watertaxi">
+                <img src="img/waterbus/watertaxi.png" class="img-thumbnail rounded-circle" alt="">
+                <p>Water taxi</p>
+            </a>
+        </div>
+        <div class="icon-bus">
+            <a href="#" id="active-rivertaxi">
+                <img src="img/waterbus/rivertaxi.png" class="img-thumbnail rounded-circle" alt="">
+                <p>River taxi</p>
+            </a>
+        </div>
+        <div class="icon-bus">
+            <a href="#" id="active-citybus">
+                <img src="img/waterbus/waterbus.png" class="img-thumbnail rounded-circle" alt="">
+                <p>City bus</p>
+            </a>
+        </div>
+        <div class="icon-bus">
+            <a href="#" id="active-other">
+                <img src="img/waterbus/waterbus.png" class="img-thumbnail rounded-circle" alt="">
+                <p>Water bus</p>
+            </a>
+        </div>
+        <div class="icon-bus">
+            <a href="#" id="">
+                <img src="img/waterbus/waterbus.png" class="img-thumbnail rounded-circle" alt="">
+                <p>Water bus</p>
+            </a>
+        </div>
     </div>
+
 </div>
 
 <!-- Bootstrap core JavaScript -->
@@ -97,11 +138,35 @@
 <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
 
+<script src="owlcarousel/dist/owl.carousel.min.js"></script>
+
 <!-- Custom scripts for this template -->
 <script src="js/creative.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/jquery.ui.datepicker-vi.js"></script>
 <script src="js/map.module.js"></script>
+<script>
+    $(".owl-carousel").owlCarousel({
+        loop: false,
+        responsiveClass:true,
+        nav: false,
+        dots: false,
+        responsive:{
+            0:{
+                items:2
+            },
+            400:{
+                items: 3,
+            },
+            600:{
+                items: 4,
+            },
+            1000:{
+                items: 6,
+            }
+        }
+    });
+</script>
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZKcLL5G9t6MGhYHwl7JN50LEhvDysIZ8&callback=initMap">
 </script>

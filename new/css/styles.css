@@ -28,9 +28,12 @@ body {
     width: 100%;
     height: 630px;
 }
+
+.icon-bus {
+    width: 100px;
+}
+
 .icon-bus img {
-    width: 60%;
-    margin-left: 35px;
 }
 
 .icon-bus p {
@@ -67,10 +70,12 @@ body {
     }
 }
 
-
-
 .option {
     position: absolute;
-    bottom: 0;
+    bottom: -80px;
     background-color: #ffff;
+}
+
+.owl-item {
+    padding: 15px;
 }

@@ -2,144 +2,200 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d613a7ee-4ff7-4bd6-a533-bfc4da5e7629" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/creative.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/creative.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/images/ui-icons_444444_256x240.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/images/ui-icons_555555_256x240.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/images/ui-icons_777620_256x240.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/images/ui-icons_777777_256x240.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/images/ui-icons_cc0000_256x240.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/images/ui-icons_ffffff_256x240.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/jquery-ui.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/jquery-ui.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/jquery-ui.structure.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/jquery-ui.structure.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/jquery-ui.theme.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/jquery-ui.theme.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/pretty-checkbox.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/css/styles.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/img-sg/BACHDANG-STATION.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/img-sg/BINHAN.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/img-sg/BusSong.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/img-sg/DSC_7554.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/img-sg/IMG_6201.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/img-sg/IMG_6731.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/img-sg/SWB-HPNY.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/portfolio/fullsize/1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/portfolio/fullsize/2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/portfolio/fullsize/3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/portfolio/fullsize/4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/portfolio/fullsize/5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/portfolio/fullsize/6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/portfolio/thumbnails/1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/portfolio/thumbnails/2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/portfolio/thumbnails/3.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/portfolio/thumbnails/4.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/portfolio/thumbnails/5.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/portfolio/thumbnails/6.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/1521110812_logowater.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/SWB-HP2018.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/calendar_icon_from.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/calendar_icon_to.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/destination_arrow_icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/footer_bank_logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/icon_A_destination.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/icon_A_destination_blue.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/icon_B_destination.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/icon_B_destination_blue.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/loader.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/passagers_icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/puttygen.exe" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/reverse_icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/rivertaxi.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/search_icon.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/waterbus.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/img/waterbus/watertaxi.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/js/core.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/js/creative.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/js/creative.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/js/jquery-ui.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/js/jquery-ui.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/js/jquery.ui.datepicker-vi.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/js/map.module.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/scss/_bootstrap-overrides.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/scss/_global.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/scss/_masthead.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/scss/_mixins.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/scss/_navbar.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/scss/_portfolio.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/scss/_services.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/scss/_variables.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/scss/creative.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/css/bootstrap-grid.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/css/bootstrap-grid.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/css/bootstrap-reboot.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/css/bootstrap-reboot.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/css/bootstrap.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/css/bootstrap.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/css/bootstrap.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/css/bootstrap.min.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/js/bootstrap.bundle.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/js/bootstrap.bundle.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/js/bootstrap.bundle.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/js/bootstrap.bundle.min.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/js/bootstrap.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/js/bootstrap.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/js/bootstrap.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/bootstrap/js/bootstrap.min.js.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/css/font-awesome.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/css/font-awesome.css.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/css/font-awesome.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/fonts/FontAwesome.otf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/animated.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/bordered-pulled.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/core.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/fixed-width.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/font-awesome.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/icons.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/larger.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/list.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/mixins.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/path.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/rotated-flipped.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/screen-reader.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/stacked.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/less/variables.less" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_animated.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_bordered-pulled.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_core.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_fixed-width.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_icons.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_larger.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_list.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_mixins.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_path.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_rotated-flipped.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_screen-reader.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_stacked.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/_variables.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/font-awesome/scss/font-awesome.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/jquery-easing/jquery.easing.compatibility.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/jquery-easing/jquery.easing.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/jquery-easing/jquery.easing.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/jquery/jquery.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/jquery/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/jquery/jquery.min.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/jquery/jquery.slim.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/jquery/jquery.slim.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/jquery/jquery.slim.min.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/magnific-popup/jquery.magnific-popup.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/magnific-popup/jquery.magnific-popup.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/magnific-popup/magnific-popup.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/scrollreveal/scrollreveal.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/vendor/scrollreveal/scrollreveal.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/.gitattributes" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/.gitignore" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/.travis.yml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/CONTRIBUTING.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/Gruntfile.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/ISSUE_TEMPLATE.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/ROADMAP.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/_config.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/bower.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/LICENSE" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/ajax-loader.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.carousel.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.carousel.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.theme.default.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.theme.default.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.theme.green.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.theme.green.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.video.play.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/owl.carousel.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/owl.carousel.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/css/animate.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/css/docs.theme.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/bird_blue_32.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/download.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/feature-drag.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/feature-modern.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/feature-module.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/feature-options.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/feature-responsive.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/feature-zombie.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/owl-logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/twitter_25.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/js/app.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/js/foundation.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/README.md" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/ajax-loader.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.carousel.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.carousel.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.default.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.default.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.green.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.green.min.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.video.play.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/owl.carousel.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/owl.carousel.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/vendors/foundation.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/vendors/highlight.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/vendors/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/vendors/jquery.min.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/vendors/jquery.mousewheel.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/animate.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/autoheight.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/autoplay.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/autowidth.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/basic.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/center.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/demos.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/events.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/lazyLoad.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/merge.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/mousewheel.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/responsive.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/rtl.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/stagepadding.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/test.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/urlhashnav.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/video.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/api-classes.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/api-events.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/api-options.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/dev-buildin-plugins.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/dev-external.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/dev-plugin-api.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/dev-styles.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/started-faq.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/started-installation.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/started-welcome.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/support-changelog.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/support-contact.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/support-contributing.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/css/animate.css" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/bird_blue_32.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/download.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/feature-drag.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/feature-modern.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/feature-module.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/feature-options.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/feature-responsive.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/feature-zombie.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/owl-logo.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/twitter_25.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/js/app.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/js/foundation.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/scss/_settings.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/scss/custom.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/scss/demos.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/scss/docs.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/scss/docs.theme.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/scss/highlight.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/vendors/foundation.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/vendors/highlight.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/vendors/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/vendors/jquery.min.map" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/vendors/jquery.mousewheel.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/data/classes.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/data/events.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/data/features.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/data/options.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/helpers/modulo.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/helpers/test.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/layouts/demos.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/layouts/docs.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/layouts/home.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/animate.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/autoheight.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/autoplay.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/autowidth.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/basic.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/center.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/demos.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/events.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/lazyLoad.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/merge.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/mousewheel.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/responsive.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/rtl.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/stagepadding.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/test.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/urlhashnav.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/video.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/api-classes.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/api-events.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/api-options.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/dev-buildin-plugins.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/dev-external.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/dev-plugin-api.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/dev-styles.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/started-faq.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/started-installation.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/started-welcome.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/support-changelog.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/support-contact.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/support-contributing.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/index.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/footer.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/head.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/header.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/home-carousel.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/home-features.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/home-hero.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/home-teaser-text.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/javascripts.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/releated-docs.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/sidenav-docs.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/title.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/vendors.hbs" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/package-lock.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/package.json" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/img/ajax-loader.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/img/owl.video.play.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/.jscsrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/.jshintrc" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.animate.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.autoheight.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.autoplay.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.autorefresh.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.carousel.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.hash.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.lazyload.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.navigation.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.support.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.support.modernizr.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.video.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_animate.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_autoheight.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_core.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_lazyload.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_theme.default.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_theme.green.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_theme.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_video.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/owl.carousel.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/owl.theme.default.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/owl.theme.green.scss" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/test/index.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/test/unit/autoplay.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/test/unit/core.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/new/css/styles.css" afterPath="$PROJECT_DIR$/new/css/styles.css" />
+      <change beforePath="$PROJECT_DIR$/new/index.html" afterPath="$PROJECT_DIR$/new/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -150,23 +206,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="122">
+              <caret line="155" column="23" lean-forward="true" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+            <state relative-caret-position="408">
+              <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -176,7 +230,7 @@
         <entry file="file://$PROJECT_DIR$/old/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="55">
-              <caret line="213" column="18" lean-forward="true" selection-start-line="180" selection-start-column="12" selection-end-line="213" selection-end-column="18" />
+              <caret line="213" column="18" lean-forward="false" selection-start-line="180" selection-start-column="12" selection-end-line="213" selection-end-column="18" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -271,8 +325,8 @@
         <option value="$PROJECT_DIR$/js/core.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/new/js/map.module.js" />
-        <option value="$PROJECT_DIR$/new/index.html" />
         <option value="$PROJECT_DIR$/new/css/styles.css" />
+        <option value="$PROJECT_DIR$/new/index.html" />
       </list>
     </option>
   </component>
@@ -382,7 +436,7 @@
       <workItem from="1525760511843" duration="2449000" />
       <workItem from="1525776469171" duration="1036000" />
       <workItem from="1525792484739" duration="205000" />
-      <workItem from="1527046703054" duration="4480000" />
+      <workItem from="1527046703054" duration="8040000" />
     </task>
     <task id="LOCAL-00001" summary="tam xong giao dien box dat ve, chua co chuc nang">
       <created>1525235725509</created>
@@ -629,11 +683,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527046979565</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="map waterbus new">
+      <created>1527051462359</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1527051462359</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="117766000" />
+    <option name="totallyTimeSpent" value="121326000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -677,8 +738,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="make core js" />
-    <MESSAGE value="xong section du lich" />
     <MESSAGE value="fix image width" />
     <MESSAGE value="tam xong css cac chuyen noi bat" />
     <MESSAGE value="chinh xong css" />
@@ -702,7 +761,9 @@
     <MESSAGE value="menu trong suot" />
     <MESSAGE value="button chuc nang khac" />
     <MESSAGE value="old - new" />
-    <option name="LAST_COMMIT_MESSAGE" value="old - new" />
+    <MESSAGE value="map waterbus new" />
+    <MESSAGE value="sua menu waterbus" />
+    <option name="LAST_COMMIT_MESSAGE" value="sua menu waterbus" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -765,7 +826,7 @@
     <entry file="file://$PROJECT_DIR$/old/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
-          <caret line="213" column="18" lean-forward="true" selection-start-line="180" selection-start-column="12" selection-end-line="213" selection-end-column="18" />
+          <caret line="213" column="18" lean-forward="false" selection-start-line="180" selection-start-column="12" selection-end-line="213" selection-end-column="18" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
@@ -782,20 +843,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new/index.html">
+    <entry file="file://$PROJECT_DIR$/new/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="53" column="27" lean-forward="false" selection-start-line="53" selection-start-column="27" selection-end-line="53" selection-end-column="27" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="408">
+          <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/new/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        <state relative-caret-position="122">
+          <caret line="155" column="23" lean-forward="true" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
           <folding />
         </state>
       </provider>
