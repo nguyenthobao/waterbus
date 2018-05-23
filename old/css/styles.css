@@ -73,8 +73,12 @@ body {
     background: #fff url(../img/waterbus/icon_B_destination.png) no-repeat 14px 14px;
 }
 
-#departureDate, #departureBackDate {
+#departureDate {
     background: #fff url(../img/waterbus/calendar_icon_to.png) no-repeat 14px 17px;
+}
+
+#departureBackDate {
+    background: #fff url(../img/waterbus/calendar_icon_from.png) no-repeat 14px 17px;
 }
 
 .search_btn {
