@@ -1,0 +1,76 @@
+body {
+    background: #f5f6f8;
+}
+/*Header*/
+.logo {
+    width: 90px;
+    height: auto;
+}
+
+.nav-tabs .nav-link {
+    color: #8f9196;
+    padding: 18px 0;
+    text-align: center;
+    width: calc(50% - 4px);
+    border: 0;
+    background-color: #FFFFFF;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #84abec
+}
+
+/*Map*/
+#map {
+    width: 100%;
+    height: 630px;
+}
+.icon-bus img {
+    width: 60%;
+    margin-left: 35px;
+}
+
+.icon-bus p {
+    padding-top: 15px;
+    text-align: center;
+}
+
+.icon-bus a {
+    color: #000;
+    text-decoration: none;
+}
+
+.icon-bus img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    -webkit-animation: flash 1.5s;
+    animation: flash 1.5s;
+}
+
+@-webkit-keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes flash {
+    0% {
+        opacity: .4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.option {
+    position: absolute;
+    bottom: 0;
+    background-color: #ffff;
+}
