@@ -47,8 +47,8 @@ body {
 }
 
 .icon-bus img:hover {
-    -webkit-transform: scale(1.3);
-    transform: scale(1.3);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
     -webkit-animation: flash 1.5s;
     animation: flash 1.5s;
 }
@@ -77,5 +77,68 @@ body {
 }
 
 .owl-item {
-    padding: 15px;
+    padding-top: 10px;
+}
+
+.menu-title {
+    background-color: #62a651;
+/*    width: 13%;*/
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+/*Box booking waterbus*/
+#bookingWaterBus {
+    padding: 30px;
+    width: 100%;
+    position: fixed;
+    top: 10%;
+}
+
+.water-bus-form {
+    padding: 30px 0 10px 0;
+    background-color: #5ba446;
+}
+
+.datepicker-form {
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.datepicker-form .form-control[readonly] {
+    background-color: #fff;
+    opacity: 1;
+}
+#startPoint, #endPoint, #startDate {
+    padding-left: 40px;
+}
+
+.datepicker-icon, .fa-icon, .fa-icon-rotate{
+    position: absolute;
+    top: 10px;
+    left: 26px;
+    color: #5ba446;
+    font-size: 22px;
+}
+
+.fa-icon {
+    font-size: 30px;
+    bottom: 0;
+    left: 28px;
+}
+
+.fa-icon-rotate {
+    font-size: 30px;
+    top: 0;
+    transform: rotate(180deg);
+}
+
+.roundForm {
+    margin-top: 10px;
+    color: #fff;
 }

@@ -2,200 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d613a7ee-4ff7-4bd6-a533-bfc4da5e7629" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/.gitattributes" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/.gitignore" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/.travis.yml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/CONTRIBUTING.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/Gruntfile.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/ISSUE_TEMPLATE.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/ROADMAP.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/_config.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/bower.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/LICENSE" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/ajax-loader.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.carousel.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.carousel.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.theme.default.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.theme.default.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.theme.green.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.theme.green.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/assets/owl.video.play.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/owl.carousel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/dist/owl.carousel.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/css/animate.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/css/docs.theme.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/bird_blue_32.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/download.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/feature-drag.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/feature-modern.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/feature-module.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/feature-options.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/feature-responsive.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/feature-zombie.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/owl-logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/img/twitter_25.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/js/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/js/foundation.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/README.md" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/ajax-loader.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.carousel.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.carousel.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.default.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.default.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.green.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.theme.green.min.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/assets/owl.video.play.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/owl.carousel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/owlcarousel/owl.carousel.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/vendors/foundation.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/vendors/highlight.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/vendors/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/vendors/jquery.min.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/assets/vendors/jquery.mousewheel.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/animate.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/autoheight.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/autoplay.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/autowidth.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/basic.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/center.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/demos.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/events.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/lazyLoad.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/merge.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/mousewheel.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/responsive.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/rtl.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/stagepadding.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/test.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/urlhashnav.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/demos/video.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/api-classes.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/api-events.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/api-options.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/dev-buildin-plugins.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/dev-external.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/dev-plugin-api.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/dev-styles.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/started-faq.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/started-installation.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/started-welcome.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/support-changelog.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/support-contact.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/docs/support-contributing.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/css/animate.css" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/bird_blue_32.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/download.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/feature-drag.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/feature-modern.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/feature-module.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/feature-options.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/feature-responsive.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/feature-zombie.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/owl-logo.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/img/twitter_25.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/js/app.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/js/foundation.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/scss/_settings.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/scss/custom.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/scss/demos.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/scss/docs.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/scss/docs.theme.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/scss/highlight.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/vendors/foundation.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/vendors/highlight.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/vendors/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/vendors/jquery.min.map" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/assets/vendors/jquery.mousewheel.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/data/classes.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/data/events.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/data/features.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/data/options.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/helpers/modulo.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/helpers/test.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/layouts/demos.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/layouts/docs.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/layouts/home.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/animate.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/autoheight.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/autoplay.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/autowidth.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/basic.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/center.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/demos.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/events.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/lazyLoad.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/merge.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/mousewheel.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/responsive.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/rtl.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/stagepadding.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/test.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/urlhashnav.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/demos/video.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/api-classes.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/api-events.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/api-options.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/dev-buildin-plugins.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/dev-external.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/dev-plugin-api.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/dev-styles.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/started-faq.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/started-installation.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/started-welcome.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/support-changelog.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/support-contact.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/docs/support-contributing.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/pages/index.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/footer.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/head.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/header.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/home-carousel.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/home-features.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/home-hero.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/home-teaser-text.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/javascripts.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/releated-docs.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/sidenav-docs.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/title.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/docs_src/templates/partials/vendors.hbs" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/package-lock.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/package.json" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/img/ajax-loader.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/img/owl.video.play.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/.jscsrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/.jshintrc" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.animate.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.autoheight.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.autoplay.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.autorefresh.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.carousel.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.hash.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.lazyload.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.navigation.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.support.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.support.modernizr.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/js/owl.video.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_animate.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_autoheight.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_core.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_lazyload.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_theme.default.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_theme.green.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_theme.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/_video.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/owl.carousel.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/owl.theme.default.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/src/scss/owl.theme.green.scss" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/test/index.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/test/unit/autoplay.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/owlcarousel/test/unit/core.js" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/new/css/styles.css" afterPath="$PROJECT_DIR$/new/css/styles.css" />
+      <change beforePath="$PROJECT_DIR$/new/img/waterbus/calendar_icon_from.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/new/img/waterbus/calendar_icon_to.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/new/img/waterbus/destination_arrow_icon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/new/img/waterbus/icon_A_destination.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/new/img/waterbus/icon_A_destination_blue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/new/img/waterbus/icon_B_destination.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/new/img/waterbus/icon_B_destination_blue.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/new/img/waterbus/puttygen.exe" afterPath="" />
       <change beforePath="$PROJECT_DIR$/new/index.html" afterPath="$PROJECT_DIR$/new/index.html" />
+      <change beforePath="$PROJECT_DIR$/new/js/core.js" afterPath="$PROJECT_DIR$/new/js/core.js" />
+      <change beforePath="$PROJECT_DIR$/new/js/map.module.js" afterPath="$PROJECT_DIR$/new/js/map.module.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -206,12 +25,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="155" column="23" lean-forward="true" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="307">
+              <caret line="137" column="48" lean-forward="false" selection-start-line="137" selection-start-column="39" selection-end-line="137" selection-end-column="48" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#2;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -219,8 +40,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+            <state relative-caret-position="493">
+              <caret line="142" column="16" lean-forward="false" selection-start-line="142" selection-start-column="16" selection-end-line="142" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -229,11 +50,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/old/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="55">
-              <caret line="213" column="18" lean-forward="false" selection-start-line="180" selection-start-column="12" selection-end-line="213" selection-end-column="18" />
-              <folding>
-                <element signature="n#div#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
+            <state relative-caret-position="2176">
+              <caret line="128" column="34" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="128" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -241,11 +60,19 @@
       <file leaf-file-name="map.module.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/js/map.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-              <folding>
-                <element signature="n#!!block;n#handleLocationError#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="323">
+              <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/new/js/core.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -263,9 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>header</find>
-      <find>no-padding-right</find>
-      <find>grid</find>
       <find>col-sm-6</find>
       <find>col-12</find>
       <find>col-6</find>
@@ -283,7 +107,6 @@
       <find>ania</find>
       <find>#search-trip</find>
       <find>icon_A_destination_blue.png</find>
-      <find>search-form-wrapper</find>
       <find>booking</find>
       <find>navbar-shrink</find>
       <find>.log</find>
@@ -293,6 +116,10 @@
       <find>to</find>
       <find>calen</find>
       <find>logo</find>
+      <find>finder</find>
+      <find>search-form-wrapper</find>
+      <find>col-offset</find>
+      <find>datepicker-form</find>
     </findStrings>
     <replaceStrings>
       <replace>no-padding</replace>
@@ -324,9 +151,10 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/js/core.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/new/js/core.js" />
         <option value="$PROJECT_DIR$/new/js/map.module.js" />
-        <option value="$PROJECT_DIR$/new/css/styles.css" />
         <option value="$PROJECT_DIR$/new/index.html" />
+        <option value="$PROJECT_DIR$/new/css/styles.css" />
       </list>
     </option>
   </component>
@@ -338,10 +166,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="168" />
-    <option name="y" value="315" />
+    <option name="x" value="-66" />
+    <option name="y" value="120" />
     <option name="width" value="1378" />
-    <option name="height" value="777" />
+    <option name="height" value="776" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -360,7 +188,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -382,12 +209,19 @@
             <path>
               <item name="waterbus" type="b2602c69:ProjectViewProjectNode" />
               <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="waterbus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="old" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -436,7 +270,12 @@
       <workItem from="1525760511843" duration="2449000" />
       <workItem from="1525776469171" duration="1036000" />
       <workItem from="1525792484739" duration="205000" />
-      <workItem from="1527046703054" duration="8040000" />
+      <workItem from="1527046703054" duration="18101000" />
+      <workItem from="1527217613940" duration="1644000" />
+      <workItem from="1527222189015" duration="2818000" />
+      <workItem from="1527231441960" duration="4468000" />
+      <workItem from="1527238346188" duration="2274000" />
+      <workItem from="1527241780184" duration="1219000" />
     </task>
     <task id="LOCAL-00001" summary="tam xong giao dien box dat ve, chua co chuc nang">
       <created>1525235725509</created>
@@ -690,11 +529,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527051462359</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="sua menu waterbus">
+      <created>1527057412724</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1527057412724</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121326000" />
+    <option name="totallyTimeSpent" value="143810000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -709,7 +555,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30711043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33055976" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -717,7 +563,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32715008" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -770,7 +616,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/booking.html" />
     <entry file="file://$PROJECT_DIR$/booking.html" />
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/js/core.js" />
@@ -825,36 +670,42 @@
     <entry file="file://$PROJECT_DIR$/css/styles.css" />
     <entry file="file://$PROJECT_DIR$/old/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="213" column="18" lean-forward="false" selection-start-line="180" selection-start-column="12" selection-end-line="213" selection-end-column="18" />
-          <folding>
-            <element signature="n#div#0;n#div#1;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new/js/map.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="15" lean-forward="false" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
-          <folding>
-            <element signature="n#!!block;n#handleLocationError#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="74" column="18" lean-forward="false" selection-start-line="74" selection-start-column="18" selection-end-line="74" selection-end-column="18" />
+        <state relative-caret-position="2176">
+          <caret line="128" column="34" lean-forward="false" selection-start-line="126" selection-start-column="28" selection-end-line="128" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="155" column="23" lean-forward="true" selection-start-line="155" selection-start-column="23" selection-end-line="155" selection-end-column="23" />
+        <state relative-caret-position="307">
+          <caret line="137" column="48" lean-forward="false" selection-start-line="137" selection-start-column="39" selection-end-line="137" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#2;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="142" column="16" lean-forward="false" selection-start-line="142" selection-start-column="16" selection-end-line="142" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/js/map.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/js/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding />
         </state>
       </provider>

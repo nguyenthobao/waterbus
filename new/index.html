@@ -54,40 +54,12 @@
 
 </div>
 <div class="container-fluid mt-5 option">
-    <!--<div class="row justify-content-center" style="margin-top: 20px">
-        <div class="col-12 col-1"></div>
-        <div class="col-4 col-xl-2 icon-bus">
-            <a href="#" id="active-waterbus">
-                <img src="img/waterbus/waterbus.png" class="img-thumbnail rounded-circle" alt="">
-                <p>Water bus</p>
-            </a>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-2 col-md-3 col-8">
+            <h5 class="text-center menu-title">Bạn đang cần</h5>
         </div>
-        <div class="col-4 col-xl-2 icon-bus">
-            <a href="#" id="active-watertaxi">
-                <img src="img/waterbus/watertaxi.png" class="img-thumbnail rounded-circle" alt="">
-                <p>Water taxi</p>
-            </a>
-        </div>
-        <div class="col-4 col-xl-2 icon-bus">
-            <a href="#" id="active-rivertaxi">
-                <img src="img/waterbus/rivertaxi.png" class="img-thumbnail rounded-circle" alt="">
-                <p>River taxi</p>
-            </a>
-        </div>
-        <div class="col-4 col-xl-2 icon-bus">
-            <a href="#" id="active-citybus">
-                <img src="img/waterbus/waterbus.png" class="img-thumbnail rounded-circle" alt="">
-                <p>City bus</p>
-            </a>
-        </div>
-        <div class="col-4 col-xl-2 icon-bus">
-            <a href="#" id="active-other">
-                <img src="img/waterbus/waterbus.png" class="img-thumbnail rounded-circle" alt="">
-                <p>Water bus</p>
-            </a>
-        </div>
-        <div class="col-12 col-1"></div>
-    </div>-->
+    </div>
     <div class="owl-carousel container">
         <div class="icon-bus">
             <a href="#" id="active-waterbus">
@@ -129,6 +101,55 @@
 
 </div>
 
+<!--Box dat ve-->
+    <div id="bookingWaterBus" style="display: none">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-6 col-12 water-bus-form">
+                <form action="#">
+                    <input type="hidden" name="startPoint" id="startPointHidden">
+                    <input type="hidden" name="endPoint" id="endPointHidden">
+                    <div class="col-12">
+                        <!--<input type="text" class="form-control form-input" id="startPoint" placeholder="Chọn điểm đi">-->
+                        <select class="form-control form-input" id="startPoint">
+                            <option value="" disabled selected hidden>Chọn bến đi</option>
+                            <option value="1">Giá trị 1</option>
+                            <option value="2">Giá trị 2</option>
+                        </select>
+                        <i class="fa fa-neuter fa-icon" aria-hidden="true"></i>
+                    </div>
+                    <div class="col-12">
+                        <select class="form-control form-input" id="endPoint">
+                            <option value="">Chọn điểm đến</option>
+                            <option value="1">Giá trị 1</option>
+                            <option value="2">Giá trị 2</option>
+                        </select>
+                        <i class="fa fa-neuter fa-icon-rotate" aria-hidden="true"></i>
+                    </div>
+                    <div class="row datepicker-form">
+                        <div class="col-12" id="divStartPoint">
+                            <input type="text" class="form-control form-input" readonly id="startDate">
+                            <i class="fa fa-calendar datepicker-icon" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-6" id="divEndPoint" style="display: none">
+                            <input type="text" class="form-control form-input" readonly id="endDate">
+                            <i class="fa fa-calendar datepicker-icon" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 roundForm">
+                        <div class="pretty p-icon p-smooth">
+                            <input type="checkbox" id="isRound"/>
+                            <div class="state p-danger">
+                                <i class="icon fa fa-check"></i>
+                                <label>Khứ hồi</label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+<!--End Box dat ve-->
+
 <!-- Bootstrap core JavaScript -->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -137,7 +158,6 @@
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
 <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
-
 <script src="owlcarousel/dist/owl.carousel.min.js"></script>
 
 <!-- Custom scripts for this template -->
@@ -145,7 +165,21 @@
 <script src="js/jquery-ui.min.js"></script>
 <script src="js/jquery.ui.datepicker-vi.js"></script>
 <script src="js/map.module.js"></script>
+<script src="js/core.js"></script>
 <script>
+    $(document).ready(function() {
+        $('#active-waterbus').click(function () {
+            $('#bookingWaterBus').show(500);
+            return false;
+        });
+
+        $('#startDate').datepicker({
+            dateFormat: 'dd/mm/yy',
+            defaultDate: "+0d",
+            minDate: 0,
+        });
+    });
+
     $(".owl-carousel").owlCarousel({
         loop: false,
         responsiveClass:true,
@@ -153,7 +187,7 @@
         dots: false,
         responsive:{
             0:{
-                items:2
+                items: 2
             },
             400:{
                 items: 3,
