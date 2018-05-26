@@ -1,7 +1,7 @@
-var isRoundWaterBus = false;
-var numberTicket = 1;
-
 $(document).ready(function() {
+    var isRoundWaterBus = false;
+    var numberTicket = 1;
+
     $('#bookingWaterBus #numberTicket').val(numberTicket + " vé");
     $('#bookingWaterBus #isRound').change(function () {
         if($(this).is(":checked")){
@@ -14,6 +14,26 @@ $(document).ready(function() {
             $('#bookingWaterBus #divEndPoint').hide();
             $('#bookingWaterBus #divStartPoint').removeClass('col-6');
             $('#bookingWaterBus #divStartPoint').addClass('col-12');
+        }
+    });
+
+    /*Lay du lieu diem*/
+    $.ajax({
+        type: 'POST',
+        url: 'https://dobody-anvui.appspot.com/point/get_province_and_point',
+        dataType: "json",
+        data: JSON.stringify({companyId: systemId}),
+        success: function (data) {
+            listDistrict = data.results.result[0].listDistrict;
+
+            /*Start point*/
+            $.each(listDistrict, function (k, v) {
+                $('#bookingWaterBus #startPoint').append("<option value='" + v.districtId + "'>" + v.districtName + "</option>");
+            });
+
+            $.each(listDistrict.reverse(), function (k, v) {
+                $('#bookingWaterBus #endPoint').append("<option value='" + v.districtId + "'>" + v.districtName + "</option>");
+            });
         }
     });
     
