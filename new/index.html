@@ -102,59 +102,60 @@
 </div>
 
 <!--Box dat ve-->
-    <div id="bookingWaterBus" style="display: none">
-        <div class="row justify-content-center">
-            <div class="col-lg-6 col-md-6 col-12 water-bus-form">
-                <form action="#">
-                    <input type="hidden" name="startPoint" id="startPointHidden">
-                    <input type="hidden" name="endPoint" id="endPointHidden">
-                    <div class="col-12">
-                        <!--<input type="text" class="form-control form-input" id="startPoint" placeholder="Chọn điểm đi">-->
-                        <select class="form-control form-input" id="startPoint">
-                            <option value="" disabled selected hidden>Chọn bến đi</option>
-                            <option value="1">Giá trị 1</option>
-                            <option value="2">Giá trị 2</option>
-                        </select>
-                        <i class="fa fa-neuter fa-icon" aria-hidden="true"></i>
+<div id="bookingWaterBus" style="display: none">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-6 col-12 water-bus-form">
+            <form action="#">
+                <input type="hidden" name="startPoint" id="startPointHidden">
+                <input type="hidden" name="endPoint" id="endPointHidden">
+                <div class="col-12">
+                    <!--<input type="text" class="form-control form-input" id="startPoint" placeholder="Chọn điểm đi">-->
+                    <select class="form-control form-input" id="startPoint">
+                        <option value="" disabled selected hidden>Chọn bến đi</option>
+                        <option value="1">Giá trị 1</option>
+                        <option value="2">Giá trị 2</option>
+                    </select>
+                    <i class="fa fa-neuter fa-icon" aria-hidden="true"></i>
+                </div>
+                <div class="col-12">
+                    <select class="form-control form-input" id="endPoint">
+                        <option value="">Chọn điểm đến</option>
+                        <option value="1">Giá trị 1</option>
+                        <option value="2">Giá trị 2</option>
+                    </select>
+                    <i class="fa fa-neuter fa-icon-rotate" aria-hidden="true"></i>
+                </div>
+                <div class="row datepicker-form">
+                    <div class="col-12" id="divStartPoint">
+                        <input type="text" class="form-control form-input datepicker" readonly id="startDate">
+                        <i class="fa fa-calendar datepicker-icon" aria-hidden="true"></i>
                     </div>
-                    <div class="col-12">
-                        <select class="form-control form-input" id="endPoint">
-                            <option value="">Chọn điểm đến</option>
-                            <option value="1">Giá trị 1</option>
-                            <option value="2">Giá trị 2</option>
-                        </select>
-                        <i class="fa fa-neuter fa-icon-rotate" aria-hidden="true"></i>
+                    <div class="col-6" id="divEndPoint" style="display: none">
+                        <input type="text" class="form-control form-input datepicker" readonly id="endDate">
+                        <i class="fa fa-calendar datepicker-icon" aria-hidden="true"></i>
                     </div>
-                    <div class="row datepicker-form">
-                        <div class="col-12" id="divStartPoint">
-                            <input type="text" class="form-control form-input" readonly id="startDate">
-                            <i class="fa fa-calendar datepicker-icon" aria-hidden="true"></i>
-                        </div>
-                        <div class="col-6" id="divEndPoint" style="display: none">
-                            <input type="text" class="form-control form-input" readonly id="endDate">
-                            <i class="fa fa-calendar datepicker-icon" aria-hidden="true"></i>
-                        </div>
-                    </div>
-                    <div class="roundForm row">
-                        <div class="col-6" style="margin-top: 5px;">
-                            <div class="pretty p-icon p-smooth">
-                                <input type="checkbox" id="isRound"/>
-                                <div class="state p-danger">
-                                    <i class="icon fa fa-check"></i>
-                                    <label>Khứ hồi</label>
-                                </div>
+                </div>
+                <div class="roundForm row">
+                    <div class="col-5" style="margin-top: 5px;">
+                        <div class="pretty p-icon p-smooth">
+                            <input type="checkbox" id="isRound"/>
+                            <div class="state p-danger">
+                                <i class="icon fa fa-check"></i>
+                                <label>Khứ hồi</label>
                             </div>
                         </div>
-                        <div class="col-6 row">
-                            <button type="button" class="btn btn-default col-2 col-sm-3 col-xs-4" id="downTicket">-</button>
-                            <input type="text" class="form-control form-input col-4 col-sm-6 col-xs-4" readonly id="numberTicket">
-                            <button type="button" class="btn col-2 col-sm-3 col-xs-4" id="upTicket">+</button>
-                        </div>
                     </div>
-                </form>
-            </div>
+                    <div class="col-7 row">
+                        <button type="button" class="btn btn-default col-lg-2 col-md-3 col-sm-3 col-xs-2" id="downTicket">-</button>
+                        <input type="text" class="form-control form-input col-lg-4 col-md-6 col-sm-6 col-xs-4" readonly id="numberTicket">
+                        <button type="button" class="btn col-lg-2 col-md-3 col-sm-3 col-xs-4" id="upTicket">+</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
+</div>
+
 <!--End Box dat ve-->
 
 <!-- Bootstrap core JavaScript -->

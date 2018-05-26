@@ -114,7 +114,7 @@ body {
     background-color: #fff;
     opacity: 1;
 }
-#startPoint, #endPoint, #startDate {
+#startPoint, #endPoint, #startDate, #endDate {
     padding-left: 40px;
 }
 
@@ -152,6 +152,7 @@ body {
     padding: 0;
     color: #fd5c00;
     font-size: 24px;
+    max-width: 20%;
 }
 
 .roundForm button:hover {
@@ -159,5 +160,6 @@ body {
 }
 
 #numberTicket {
+    max-width: 60%;
     text-align: center;
 }

@@ -4,14 +4,14 @@ var systemId = $("base").attr("id");
 $(document).ready(function() {
     $('#active-waterbus').click(function () {
         $('#bookingWaterBus').show(500);
+
         return false;
     });
 
-    $('#startDate').datepicker({
+    $('.datepicker').datepicker({
         dateFormat: 'dd/mm/yy',
-        defaultDate: "+0d",
         minDate: 0
-    });
+    }).datepicker("setDate", new Date());
 });
 
 $(".owl-carousel").owlCarousel({
