@@ -135,13 +135,20 @@
                             <i class="fa fa-calendar datepicker-icon" aria-hidden="true"></i>
                         </div>
                     </div>
-                    <div class="col-12 roundForm">
-                        <div class="pretty p-icon p-smooth">
-                            <input type="checkbox" id="isRound"/>
-                            <div class="state p-danger">
-                                <i class="icon fa fa-check"></i>
-                                <label>Khứ hồi</label>
+                    <div class="roundForm row">
+                        <div class="col-2" style="margin-top: 5px;">
+                            <div class="pretty p-icon p-smooth">
+                                <input type="checkbox" id="isRound"/>
+                                <div class="state p-danger">
+                                    <i class="icon fa fa-check"></i>
+                                    <label>Khứ hồi</label>
+                                </div>
                             </div>
+                        </div>
+                        <div class="col-6 row">
+                            <button type="button" class="btn btn-default col-2">-</button>
+                            <input type="text" class="form-control form-input col-4" value="2" readonly id="numberTicket">
+                            <button type="button" class="btn col-2">+</button>
                         </div>
                     </div>
                 </form>

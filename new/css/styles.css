@@ -139,6 +139,23 @@ body {
 }
 
 .roundForm {
+    margin-left: 0;
+    margin-right: 0;
     margin-top: 10px;
     color: #fff;
+}
+
+.roundForm button {
+    border-radius: 5px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+
+.roundForm button:hover {
+    background-color: #ccc;
+}
+
+#numberTicket {
+    text-align: center;
 }
