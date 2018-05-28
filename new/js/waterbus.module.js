@@ -48,4 +48,17 @@ $(document).ready(function() {
         }
         $('#bookingWaterBus #numberTicket').val(numberTicket + " vé");
     });
+
+    /*Ẩn các điểm đã chọn của điểm đầu điểm cuối để không tròng nhau*/
+    $('#bookingWaterBus #startPoint').change(function(){
+        var id = $(this).val();
+        $("#bookingWaterBus #endPoint option").show();
+        $("#bookingWaterBus #endPoint option[value="+id+"]").hide();
+    });
+
+    $('#bookingWaterBus #endPoint').change(function(){
+        var id = $(this).val();
+        $("#bookingWaterBus #startPoint option").show();
+        $("#bookingWaterBus #startPoint option[value="+id+"]").hide();
+    });
 });
