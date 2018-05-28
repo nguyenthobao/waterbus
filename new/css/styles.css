@@ -72,7 +72,7 @@ body {
 
 .option {
     position: absolute;
-    bottom: -80px;
+    bottom: 0px;
     background-color: #ffff;
 }
 
@@ -163,3 +163,5 @@ body {
     max-width: 60%;
     text-align: center;
 }
+
+/*button booking*/

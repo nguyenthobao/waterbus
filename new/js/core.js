@@ -4,8 +4,13 @@ var systemId = $("base").attr("id");
 $(document).ready(function() {
     $('#active-waterbus').click(function () {
         $('#bookingWaterBus').show(500);
-
+        $('#selectOption').hide();
         return false;
+    });
+    
+    $('.backOption').click(function () {
+        $('.booking').hide();
+        $('#selectOption').show();
     });
 
     $('.datepicker').datepicker({
