@@ -1,7 +1,45 @@
 var map, marker, infoWindow;
+var startMarker,endMarker;
+function initStartMarker(latitude, longtitude, title) {
+    var pos = {
+        lat: latitude,
+        lng: longtitude
+    };
+
+    if(startMarker !== undefined) {
+        startMarker.setMap(null);
+    }
+
+    startMarker = new google.maps.Marker({
+        position: pos,
+        map: map,
+        title: title
+    });
+    map.setCenter(pos);
+    map.setZoom(13);
+}
+function initEndMarker(latitude, longtitude, title) {
+    var pos = {
+        lat: latitude,
+        lng: longtitude
+    };
+
+    if(endMarker !== undefined) {
+        endMarker.setMap(null);
+    }
+
+    endMarker = new google.maps.Marker({
+        position: pos,
+        map: map,
+        title: title
+    });
+    map.setCenter(pos);
+    map.setZoom(13);
+}
+
 function initMap() {
     map = new google.maps.Map(document.getElementById('map'), {
-        center: {lat: -34.397, lng: 150.644},
+        center: {lat: 10.778861, lng: 106.693604},
         zoom: 13
     });
     infoWindow = new google.maps.InfoWindow;
@@ -20,8 +58,9 @@ function initMap() {
                 title: 'Bạn đang ở đây!'
             });
 
+
             map.setCenter(pos);
-            map.setZoom(20);
+            map.setZoom(15);
         }, function() {
             handleLocationError(true, infoWindow, map.getCenter());
         });

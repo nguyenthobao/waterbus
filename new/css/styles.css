@@ -114,7 +114,7 @@ body {
     background-color: #fff;
     opacity: 1;
 }
-#startPoint, #endPoint, #startDate, #endDate {
+#startPoint, #endPoint, #depatureDate, #returnDate {
     padding-left: 40px;
 }
 

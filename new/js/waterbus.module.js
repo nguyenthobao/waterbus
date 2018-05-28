@@ -1,6 +1,10 @@
 $(document).ready(function() {
     var isRoundWaterBus = false;
     var numberTicket = 1;
+    var startPoint = $('#bookingWaterBus #startPoint');
+    var endPoint = $('#bookingWaterBus #endPoint');
+    var depatureDate = $('#bookingWaterBus #depatureDate');
+    var returnDate = $('#bookingWaterBus #returnDate');
 
     $('#bookingWaterBus #numberTicket').val(numberTicket + " vé");
     $('#bookingWaterBus #isRound').change(function () {
@@ -28,11 +32,11 @@ $(document).ready(function() {
 
             /*Start point*/
             $.each(listDistrict, function (k, v) {
-                $('#bookingWaterBus #startPoint').append("<option value='" + v.districtId + "'>" + v.districtName + "</option>");
+                startPoint.append("<option data-lat='" + v.latitude + "' data-long='" + v.longitude + "' value='" + v.districtId + "'>" + v.districtName + "</option>");
             });
 
             $.each(listDistrict.reverse(), function (k, v) {
-                $('#bookingWaterBus #endPoint').append("<option value='" + v.districtId + "'>" + v.districtName + "</option>");
+                endPoint.append("<option data-lat='" + v.latitude + "' data-long='" + v.longitude + "' value='" + v.districtId + "'>" + v.districtName + "</option>");
             });
         }
     });
@@ -50,17 +54,92 @@ $(document).ready(function() {
     });
 
     /*Ẩn các điểm đã chọn của điểm đầu điểm cuối để không tròng nhau*/
-    $('#bookingWaterBus #startPoint').change(function(){
+    startPoint.change(function(){
         var id = $(this).val();
         $("#bookingWaterBus #endPoint option").show();
         $("#bookingWaterBus #endPoint option[value="+id+"]").hide();
+
+        lat = $(this).find(':selected').data('lat');
+        long = $(this).find(':selected').data('long');
+
+        pointName = $(this).find(':selected').text();
+
+        initStartMarker(lat, long, pointName)
+
     });
 
-    $('#bookingWaterBus #endPoint').change(function(){
+    endPoint.change(function(){
         var id = $(this).val();
         $("#bookingWaterBus #startPoint option").show();
         $("#bookingWaterBus #startPoint option[value="+id+"]").hide();
+
+        lat = $(this).find(':selected').data('lat');
+        long = $(this).find(':selected').data('long');
+
+        pointName = $(this).find(':selected').text();
+
+        initEndMarker(lat, long, pointName)
     });
 
     /*Tìm kiếm lịch chạy*/
+    $('#seachWaterbus').click(function () {
+        console.log(startPoint.val());
+        if (startPoint.val() === null) {
+            $.alert({
+                title: 'Cảnh báo!',
+                type: 'red',
+                typeAnimated: true,
+                content: 'Chưa chọn bến đi',
+            });
+            return false;
+        }
+
+        if (endPoint.val() === null) {
+            $.alert({
+                title: 'Cảnh báo!',
+                type: 'red',
+                typeAnimated: true,
+                content: 'Chưa chọn bến đến',
+            });
+            return false;
+        }
+
+        if(depatureDate.val() === "") {
+            $.alert({
+                title: 'Cảnh báo!',
+                type: 'red',
+                typeAnimated: true,
+                content: 'Chưa chọn ngày đi',
+            });
+            return false;
+        }
+
+        if(isRoundWaterBus) {
+            getSchedule(endPoint.val(), startPoint.val(), returnDate.val(), true);
+        }
+
+        getSchedule(startPoint.val(), endPoint.val(), depatureDate.val(), false);
+    });
+
+    /*Lấy danh sách các chuyến*/
+    function getSchedule(startPoint, endPoint, date, isBack) {
+        var dateAr = date.split('/');
+        var newDate = dateAr[0] + '-' + dateAr[1] + '-' + dateAr[2];
+
+        $.ajax({
+            type: "POST",
+            url: "https://anvui.vn/listSchedule2",
+            data: {
+                startPoint: startPoint,
+                endPoint: endPoint,
+                date: newDate,
+                companyId: systemId,
+                page: 0,
+                count: 1000
+            },
+            success: function (result) {
+                console.log(result);
+            }
+        });
+    }
 });
