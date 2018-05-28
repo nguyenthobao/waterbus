@@ -39,3 +39,7 @@ $(".owl-carousel").owlCarousel({
         }
     }
 });
+
+function buildSchedulListOneWay(routeName) {
+    $('.route-name').text(routeName);
+}

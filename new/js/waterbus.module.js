@@ -83,7 +83,6 @@ $(document).ready(function() {
 
     /*Tìm kiếm lịch chạy*/
     $('#seachWaterbus').click(function () {
-        console.log(startPoint.val());
         if (startPoint.val() === null) {
             $.alert({
                 title: 'Cảnh báo!',
@@ -139,6 +138,14 @@ $(document).ready(function() {
             },
             success: function (result) {
                 console.log(result);
+                $('.booing-form').hide();
+
+                if(isBack){
+
+                } else {
+                    $('.list-schedule').show();
+                    buildSchedulListOneWay('Bạch Đằng - Bình An');
+                }
             }
         });
     }

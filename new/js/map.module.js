@@ -73,7 +73,7 @@ function initMap() {
 function handleLocationError(browserHasGeolocation, infoWindow, pos) {
     infoWindow.setPosition(pos);
     infoWindow.setContent(browserHasGeolocation ?
-        'Error: The Geolocation service failed.' :
-        'Error: Your browser doesn\'t support geolocation.');
+        'Thông báo: Không thể xác định vị trí hiện tại.' :
+        'Thông báo: Trình duyệt bạn không hỗ trợ lấy vị trí.');
     infoWindow.open(map);
 }
