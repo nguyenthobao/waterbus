@@ -61,4 +61,6 @@ $(document).ready(function() {
         $("#bookingWaterBus #startPoint option").show();
         $("#bookingWaterBus #startPoint option[value="+id+"]").hide();
     });
+
+    /*Tìm kiếm lịch chạy*/
 });
