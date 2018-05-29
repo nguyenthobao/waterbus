@@ -184,3 +184,37 @@ body {
 .route-name {
     color: #fff;
 }
+
+.schedule-list {
+    padding: 0;
+    background-color: #ccc;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.margin-schedule {
+    margin: 3px 0 3px 0;
+}
+
+.schedule-item {
+    background-color: #fff;
+    padding: 5px;
+    margin: 0;
+}
+
+.schedule-date {
+    padding-bottom: 10px;
+}
+
+.schedule-status {
+    color: #E53935;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.schedule-time {
+    margin-top: 5px;
+    border: 1px solid #BDBDBD;
+    padding: 5px;
+    border-radius: 5px;
+}
