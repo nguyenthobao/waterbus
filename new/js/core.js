@@ -45,10 +45,15 @@ function buildSchedulListOneWay(routeName, scheduleData) {
     $('.route-name').text(routeName);
     $.each(scheduleData, function (k, v) {
         scheduleList += '<div class="col-12 margin-schedule">';
-            scheduleList += '<div class="row schedule-item">';
+            scheduleList += '<div class="row schedule-item" ' +
+                'data-price="' + v.ticketPrice + '" ' +
+                'data-getinpoint="' + v.getInPointId + '" ' +
+                'data-getoffpoint="' + v.getOffPointId + '" ' +
+                'data-tripstatus="' + v.tripStatus + '" ' +
+                'data-starttime="' + v.startTimeUnix + '">';
                 scheduleList += '<div class="col-6">';
                     scheduleList += '<div class="schedule-date">' + getFormattedDate(v.startDate, 'dM') + '</div>';
-                    if(v.startTimeUnix < Date.now()) {
+                    if(v.startTimeUnix < Date.now() || v.tripStatus === 2) {
                         scheduleList += '<div class="schedule-status">Đã khởi hành</div>';
                     } else {
                         scheduleList += '<div class="totalEmptySeat">Còn trống ' + v.totalEmptySeat + ' vé</div>';

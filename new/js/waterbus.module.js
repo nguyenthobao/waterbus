@@ -157,6 +157,7 @@ $(document).ready(function() {
         });
     }
 
+    /*Lấy tên bến tàu*/
     function splitPointName(pointName) {
         var res = pointName.split(" ");
         var newName = '';
@@ -165,4 +166,23 @@ $(document).ready(function() {
         }
         return newName;
     }
+
+    /*Chọn chuyến đi*/
+    $('body').on('click', '#bookingWaterBus .schedule-item', function () {
+        var getInPoint = $(this).data('getinpoint');
+        var startTime = $(this).data('starttime');
+        var tripStatus = $(this).data('tripstatus');
+        if(startTime < Date.now() || tripStatus === 2) {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Chuyến đã khởi hành',
+            });
+        } else {
+            $('#bookingWaterBus .schedule-item').removeClass('selected-schedule');
+            $(this).addClass('selected-schedule');
+        }
+
+    })
 });

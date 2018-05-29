@@ -219,3 +219,12 @@ body {
     padding: 5px;
     border-radius: 5px;
 }
+
+.selected-schedule {
+    border: 1px solid #E53935;
+    border-radius: 5px;
+}
+
+.totalEmptySeat {
+    color: #1A237E;
+}
