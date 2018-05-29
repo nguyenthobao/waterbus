@@ -114,23 +114,28 @@ $(document).ready(function() {
         }
 
         if(isRoundWaterBus) {
-            getSchedule(endPoint.val(), startPoint.val(), returnDate.val(), true);
+            getSchedule(endPoint, startPoint, returnDate, true);
         }
 
-        getSchedule(startPoint.val(), endPoint.val(), depatureDate.val(), false);
+        getSchedule(startPoint, endPoint, depatureDate, false);
     });
 
     /*Lấy danh sách các chuyến*/
     function getSchedule(startPoint, endPoint, date, isBack) {
-        var dateAr = date.split('/');
+        var dateAr = date.val().split('/');
         var newDate = dateAr[0] + '-' + dateAr[1] + '-' + dateAr[2];
+
+        startPointName = splitPointName(startPoint.find(':selected').text());
+        endPointName = splitPointName(endPoint.find(':selected').text());
+
+        routeName = startPointName + " - " + endPointName;
 
         $.ajax({
             type: "POST",
             url: "https://anvui.vn/listSchedule2",
             data: {
-                startPoint: startPoint,
-                endPoint: endPoint,
+                startPoint: startPoint.val(),
+                endPoint: endPoint.val(),
                 date: newDate,
                 companyId: systemId,
                 page: 0,
@@ -144,9 +149,18 @@ $(document).ready(function() {
 
                 } else {
                     $('.list-schedule').show();
-                    buildSchedulListOneWay('Bạch Đằng - Bình An');
+                    buildSchedulListOneWay(routeName);
                 }
             }
         });
+    }
+
+    function splitPointName(pointName) {
+        var res = pointName.split(" ");
+        var newName = '';
+        for (i = 3; i < res.length; i++) {
+            newName += res[i] + " ";
+        }
+        return newName;
     }
 });
