@@ -193,7 +193,7 @@ body {
     padding: 0;
     background-color: #ccc;
     overflow-y: auto;
-    max-height: 450px;
+    max-height: 400px;
 }
 
 .margin-schedule {
@@ -236,4 +236,12 @@ body {
 .no-margin-left-right {
     margin-right: 0;
     margin-left: 0;
+}
+
+.title-round {
+    color: #fff;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 10px;
+    border-top: 1px solid #fff;
 }

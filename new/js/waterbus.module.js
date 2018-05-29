@@ -119,11 +119,13 @@ $(document).ready(function() {
             $('#bookingWaterBus .schedule-list').removeClass('col-12');
             $('#bookingWaterBus .schedule-list').addClass('col-6');
             $('#bookingWaterBus .schedule-list-return').show();
+            $('.title-round').show();
             getSchedule(endPoint, startPoint, vehicleType, returnDate, true);
         } else {
             $('#bookingWaterBus .schedule-list-return').hide();
             $('#bookingWaterBus .schedule-list').removeClass('col-6');
             $('#bookingWaterBus .schedule-list').addClass('col-12');
+            $('.title-round').hide();
         }
     });
 
@@ -181,7 +183,7 @@ $(document).ready(function() {
                 title: 'Thông báo!',
                 type: 'orange',
                 typeAnimated: true,
-                content: 'Chuyến đã khởi hành',
+                content: 'Vé đã bán hết, vui lòng chọn chuyến khác hoặc chọn một ngày khởi hành khác',
             });
         } else {
             $('#bookingWaterBus .schedule-item').removeClass('selected-schedule');
