@@ -182,10 +182,14 @@ body {
 
 /*List schedule*/
 .route-name {
+    margin-left: auto;
     color: #fff;
+    margin-right: auto;
+    padding: 5px;
+    margin-top: -20px;
 }
 
-.schedule-list {
+.schedule-list, .schedule-list-return {
     padding: 0;
     background-color: #ccc;
     overflow-y: auto;
@@ -196,7 +200,7 @@ body {
     margin: 3px 0 3px 0;
 }
 
-.schedule-item {
+.schedule-item, .schedule-item-return {
     background-color: #fff;
     padding: 5px;
     margin: 0;
@@ -227,4 +231,9 @@ body {
 
 .totalEmptySeat {
     color: #1A237E;
+}
+
+.no-margin-left-right {
+    margin-right: 0;
+    margin-left: 0;
 }

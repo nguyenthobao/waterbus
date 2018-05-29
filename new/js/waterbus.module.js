@@ -113,12 +113,18 @@ $(document).ready(function() {
             });
             return false;
         }
+        getSchedule(startPoint, endPoint, vehicleType, depatureDate, false);
 
         if(isRoundWaterBus) {
-            getSchedule(endPoint, startPoint, returnDate, true);
+            $('#bookingWaterBus .schedule-list').removeClass('col-12');
+            $('#bookingWaterBus .schedule-list').addClass('col-6');
+            $('#bookingWaterBus .schedule-list-return').show();
+            getSchedule(endPoint, startPoint, vehicleType, returnDate, true);
+        } else {
+            $('#bookingWaterBus .schedule-list-return').hide();
+            $('#bookingWaterBus .schedule-list').removeClass('col-6');
+            $('#bookingWaterBus .schedule-list').addClass('col-12');
         }
-
-        getSchedule(startPoint, endPoint, vehicleType, depatureDate, false);
     });
 
     /*Lấy danh sách các chuyến*/
@@ -145,13 +151,11 @@ $(document).ready(function() {
             },
             success: function (result) {
                 console.log(result);
-                $('.booing-form').hide();
-
+                $('#bookingWaterBus .booing-form').hide();
+                $('#bookingWaterBus .list-schedule').show();
+                buildSchedulListOneWay(routeName, result);
                 if(isBack){
-
-                } else {
-                    $('.list-schedule').show();
-                    buildSchedulListOneWay(routeName, result);
+                    buildSchedulListReturn(result);
                 }
             }
         });
