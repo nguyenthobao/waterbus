@@ -195,11 +195,11 @@ body {
 }
 
 .schedule-list, .schedule-list-return {
-    min-height: 400px;
+    min-height: 350px;
     padding: 0;
     background-color: #ccc;
     overflow-y: auto;
-    max-height: 400px;
+    max-height: 350px;
 }
 
 .margin-schedule {
@@ -275,4 +275,20 @@ body {
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+.positon-btn-next {
+    bottom: -45px;
+    position: absolute;
+    width: -webkit-fill-available;
+    background-color: #fff;
+    padding: 5px;
+}
+
+.btnNext {
+    font-weight: 500;
+    color: #fff;
+    background-color: #5ba446;
+    border-radius: 5px;
+    margin: 10px 5px 0 5px;
 }
