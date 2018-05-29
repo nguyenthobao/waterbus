@@ -139,6 +139,11 @@ $(document).ready(function() {
 
         var routeName = startPointName + " - " + endPointName;
 
+        $('.route-name').text(routeName);
+
+        $('#bookingWaterBus .booing-form').hide(300);
+        $('#bookingWaterBus .list-schedule').show(300);
+
         $.ajax({
             type: "POST",
             url: "https://anvui.vn/listSchedule2",
@@ -153,9 +158,8 @@ $(document).ready(function() {
             },
             success: function (result) {
                 console.log(result);
-                $('#bookingWaterBus .booing-form').hide();
-                $('#bookingWaterBus .list-schedule').show();
-                buildSchedulListOneWay(routeName, result);
+
+                buildSchedulListOneWay(result);
                 if(isBack){
                     buildSchedulListReturn(result);
                 }
@@ -190,5 +194,18 @@ $(document).ready(function() {
             $(this).addClass('selected-schedule');
         }
 
-    })
+    });
+
+    /*Back trở lại chọn option*/
+    $('.booing-form .backScreen').click(function () {
+        $('.booking').hide();
+        $('#selectOption').show();
+        return false;
+    });
+
+    $('.list-schedule .backScreen').click(function () {
+        $('#bookingWaterBus .list-schedule').hide(300);
+        $('#bookingWaterBus .booing-form').show(300);
+        return false;
+    });
 });

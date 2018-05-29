@@ -9,8 +9,7 @@ $(document).ready(function() {
     });
     
     $('.backOption').click(function () {
-        $('.booking').hide();
-        $('#selectOption').show();
+
     });
 
     $('.datepicker').datepicker({
@@ -40,9 +39,9 @@ $(".owl-carousel").owlCarousel({
     }
 });
 
-function buildSchedulListOneWay(routeName, scheduleData) {
+function buildSchedulListOneWay(scheduleData) {
     var scheduleList = '';
-    $('.route-name').text(routeName);
+
     $.each(scheduleData, function (k, v) {
         scheduleList += '<div class="col-12 margin-schedule">';
             scheduleList += '<div class="row schedule-item" ' +
