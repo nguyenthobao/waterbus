@@ -159,7 +159,7 @@ $(document).ready(function() {
             success: function (result) {
                 console.log(result);
 
-                buildSchedulListOneWay(result);
+                // buildSchedulListOneWay(result);
                 if(isBack){
                     buildSchedulListReturn(result);
                 }
