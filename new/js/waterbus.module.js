@@ -5,6 +5,7 @@ $(document).ready(function() {
     var endPoint = $('#bookingWaterBus #endPoint');
     var depatureDate = $('#bookingWaterBus #depatureDate');
     var returnDate = $('#bookingWaterBus #returnDate');
+    var vehicleType = $('#bookingWaterBus #vehicleType');
 
     $('#bookingWaterBus #numberTicket').val(numberTicket + " vé");
     $('#bookingWaterBus #isRound').change(function () {
@@ -117,18 +118,18 @@ $(document).ready(function() {
             getSchedule(endPoint, startPoint, returnDate, true);
         }
 
-        getSchedule(startPoint, endPoint, depatureDate, false);
+        getSchedule(startPoint, endPoint, vehicleType, depatureDate, false);
     });
 
     /*Lấy danh sách các chuyến*/
-    function getSchedule(startPoint, endPoint, date, isBack) {
+    function getSchedule(startPoint, endPoint, vehicleType, date, isBack) {
         var dateAr = date.val().split('/');
         var newDate = dateAr[0] + '-' + dateAr[1] + '-' + dateAr[2];
 
-        startPointName = splitPointName(startPoint.find(':selected').text());
-        endPointName = splitPointName(endPoint.find(':selected').text());
+        var startPointName = splitPointName(startPoint.find(':selected').text());
+        var endPointName = splitPointName(endPoint.find(':selected').text());
 
-        routeName = startPointName + " - " + endPointName;
+        var routeName = startPointName + " - " + endPointName;
 
         $.ajax({
             type: "POST",
@@ -138,6 +139,7 @@ $(document).ready(function() {
                 endPoint: endPoint.val(),
                 date: newDate,
                 companyId: systemId,
+                vehicleTypeId: vehicleType.val(),
                 page: 0,
                 count: 1000
             },
@@ -149,7 +151,7 @@ $(document).ready(function() {
 
                 } else {
                     $('.list-schedule').show();
-                    buildSchedulListOneWay(routeName);
+                    buildSchedulListOneWay(routeName, result);
                 }
             }
         });

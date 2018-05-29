@@ -189,7 +189,7 @@ body {
     padding: 0;
     background-color: #ccc;
     overflow-y: auto;
-    max-height: 500px;
+    max-height: 450px;
 }
 
 .margin-schedule {
@@ -200,6 +200,7 @@ body {
     background-color: #fff;
     padding: 5px;
     margin: 0;
+    cursor: pointer;
 }
 
 .schedule-date {

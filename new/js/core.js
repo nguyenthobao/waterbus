@@ -40,6 +40,41 @@ $(".owl-carousel").owlCarousel({
     }
 });
 
-function buildSchedulListOneWay(routeName) {
+function buildSchedulListOneWay(routeName, scheduleData) {
+    var scheduleList = '';
     $('.route-name').text(routeName);
+    $.each(scheduleData, function (k, v) {
+        scheduleList += '<div class="col-12 margin-schedule">';
+            scheduleList += '<div class="row schedule-item">';
+                scheduleList += '<div class="col-6">';
+                    scheduleList += '<div class="schedule-date">' + getFormattedDate(v.startDate, 'dM') + '</div>';
+                    if(v.startTimeUnix < Date.now()) {
+                        scheduleList += '<div class="schedule-status">Đã khởi hành</div>';
+                    } else {
+                        scheduleList += '<div class="totalEmptySeat">Còn trống ' + v.totalEmptySeat + ' vé</div>';
+                    }
+                scheduleList += '</div>';
+                scheduleList += '<div class="col-6">';
+                scheduleList += '<div class="schedule-time pull-right">' + getFormattedDate(v.startTimeUnix, 'time') + '</div>';
+                scheduleList += '</div>';
+            scheduleList += '</div>';
+        scheduleList += '</div>';
+    });
+    $('.schedule-list').html(scheduleList);
+}
+
+function getFormattedDate(unix_timestamp, methor) {
+    var date = new Date(unix_timestamp);
+    str = '';
+    if (methor === 'time') {
+        str = $.format.date(date.getTime(), 'HH:mm')
+    } else if(methor === 'dM') {
+        str = $.format.date(date.getTime(), 'dd/MM')
+    } else if(methor === 'date') {
+        str = $.format.date(date.getTime(), 'dd/MM/yyyy')
+    } else {
+        str = $.format.date(date.getTime(), 'HH:mm, dd/MM/yyyy')
+    }
+
+    return str;
 }
