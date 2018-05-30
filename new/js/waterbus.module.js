@@ -236,9 +236,23 @@ $(document).ready(function() {
         return false;
     });
 
+    /*Back trở lại chọn điểm đi điểm đến*/
     $('.list-schedule .backScreen').click(function () {
         $('#bookingWaterBus .list-schedule').hide(300);
         $('#bookingWaterBus .booing-form').show(300);
         return false;
+    });
+
+    /*Back lại chọn chuyến*/
+    $('.ticket-info .backScreen').click(function () {
+        $('#bookingWaterBus .ticket-info').hide(300);
+        $('#bookingWaterBus .list-schedule').show(300);
+        return false;
+    });
+
+    /*Tiếp tục thanh toán*/
+    $('#bookingWaterBus .btnNext').click(function () {
+        $('#bookingWaterBus .list-schedule').hide(300);
+        $('#bookingWaterBus .ticket-info').show(300);
     });
 });

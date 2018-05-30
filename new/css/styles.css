@@ -181,17 +181,17 @@ body {
 }
 
 /*List schedule*/
-.booing-form, .list-schedule {
+.booing-form, .list-schedule, .ticket-info {
     margin-left: -30px;
     margin-right: -30px;
 }
 
-.route-name {
+.route-name, .ticket-info-title {
     margin-left: auto;
     color: #fff;
     margin-right: auto;
     padding: 5px;
-    margin-top: -20px;
+    margin-top: -40px;
 }
 
 .schedule-list, .schedule-list-return {
@@ -291,3 +291,5 @@ body {
     border-radius: 5px;
     margin: 10px 5px 10px 5px;
 }
+
+/*Ticket info form*/
