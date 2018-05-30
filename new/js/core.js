@@ -7,10 +7,6 @@ $(document).ready(function() {
         $('#selectOption').hide();
         return false;
     });
-    
-    $('.backOption').click(function () {
-
-    });
 
     $('.datepicker').datepicker({
         dateFormat: 'dd/mm/yy',

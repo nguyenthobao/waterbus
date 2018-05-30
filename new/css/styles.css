@@ -329,3 +329,7 @@ body {
 .ticket-info-item {
     background-color: #fff;
 }
+
+.margin-ticket {
+    margin: 5px 0 5px 0;
+}

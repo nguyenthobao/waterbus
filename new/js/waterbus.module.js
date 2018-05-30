@@ -255,4 +255,17 @@ $(document).ready(function() {
         $('#bookingWaterBus .list-schedule').hide(300);
         $('#bookingWaterBus .ticket-info').show(300);
     });
+
+    /*Show alert khi chọn miễn phí*/
+    $('#bookingWaterBus .ticket-free').click(function () {
+        $.alert({
+            title: 'Thông báo',
+            content: 'Dành cho người già từ 70 tuổi và trẻ em dưới 1m. Vé miễn phí chỉ áp dụng khi giao dịch tại các ga tàu thủy',
+            buttons: {
+                ok: {
+                    text: 'Đồng ý',
+                }
+            }
+        });
+    })
 });
