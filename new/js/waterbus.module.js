@@ -130,7 +130,7 @@ $(document).ready(function() {
     });
 
     /*Lấy danh sách các chuyến*/
-    function getSchedule(startPoint, endPoint, vehicleType, date, isBack) {
+    function getSchedule(startPoint, endPoint, vehicleType, date, isBack, startTime) {
         var dateAr = date.val().split('/');
         var newDate = dateAr[0] + '-' + dateAr[1] + '-' + dateAr[2];
 
@@ -139,12 +139,20 @@ $(document).ready(function() {
 
         var routeName = startPointName + " - " + endPointName;
 
-        $('.route-name').text(routeName);
+        if(!isBack){
+            $('.route-name').text(routeName);
+        }
 
         $('#bookingWaterBus .booing-form').hide(300);
         $('#bookingWaterBus .list-schedule').show(300);
-        $('.schedule-list').html('<div class="loading"></div>');
-        $('.schedule-list-return').html('<div class="loading"></div>');
+
+        /*$('.schedule-list').html('<div class="loading"></div>');
+        $('.schedule-list-return').html('<div class="loading"></div>');*/
+        if(isBack){
+            $('.schedule-list-return').html('<div class="loading"></div>');
+        } else {
+            $('.schedule-list').html('<div class="loading"></div>');
+        }
         $.ajax({
             type: "POST",
             url: "https://anvui.vn/listSchedule2",
@@ -159,9 +167,11 @@ $(document).ready(function() {
             },
             success: function (result) {
                 console.log(result);
-                buildSchedulListOneWay(result);
+                // buildSchedulListOneWay(result);
                 if(isBack){
-                    buildSchedulListReturn(result);
+                    buildSchedulListReturn(result, startTime);
+                } else {
+                    buildSchedulListOneWay(result);
                 }
             }
         });
@@ -191,6 +201,29 @@ $(document).ready(function() {
             });
         } else {
             $('#bookingWaterBus .schedule-item').removeClass('selected-schedule');
+            $(this).addClass('selected-schedule');
+
+            if(isRoundWaterBus) {
+                getSchedule(endPoint, startPoint, vehicleType, returnDate, true, startTime);
+            }
+        }
+
+    });
+
+    /*Chọn chuyến về*/
+    $('body').on('click', '#bookingWaterBus .schedule-item-return', function () {
+        var getInPoint = $(this).data('getinpoint');
+        var startTime = $(this).data('starttime');
+        var tripStatus = $(this).data('tripstatus');
+        if(startTime < Date.now() || tripStatus === 2) {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Vé đã bán hết, vui lòng chọn chuyến khác hoặc chọn một ngày khởi hành khác',
+            });
+        } else {
+            $('#bookingWaterBus .schedule-item-return').removeClass('selected-schedule');
             $(this).addClass('selected-schedule');
         }
 

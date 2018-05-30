@@ -67,29 +67,52 @@ function buildSchedulListOneWay(scheduleData) {
     $('.schedule-list').html(scheduleList);
 }
 
-function buildSchedulListReturn(scheduleData) {
-    var scheduleList = '';
+function buildSchedulListReturn(scheduleData, startTime) {
+    var scheduleList = '';console.log(startTime);
     $.each(scheduleData, function (k, v) {
-        scheduleList += '<div class="col-12 margin-schedule">';
-        scheduleList += '<div class="row schedule-item-return" ' +
-            'data-price="' + v.ticketPrice + '" ' +
-            'data-getinpoint="' + v.getInPointId + '" ' +
-            'data-getoffpoint="' + v.getOffPointId + '" ' +
-            'data-tripstatus="' + v.tripStatus + '" ' +
-            'data-starttime="' + v.startTimeUnix + '">';
-        scheduleList += '<div class="col-8">';
-        scheduleList += '<div class="schedule-date">' + getFormattedDate(v.startDate, 'dM') + '</div>';
-        if(v.startTimeUnix < Date.now() || v.tripStatus === 2) {
-            scheduleList += '<div class="schedule-status">Đã khởi hành</div>';
-        } else {
-            scheduleList += '<div class="totalEmptySeat">Còn trống ' + v.totalEmptySeat + ' vé</div>';
+        if(startTime === undefined) {
+            scheduleList += '<div class="col-12 margin-schedule">';
+            scheduleList += '<div class="row schedule-item-return" ' +
+                'data-price="' + v.ticketPrice + '" ' +
+                'data-getinpoint="' + v.getInPointId + '" ' +
+                'data-getoffpoint="' + v.getOffPointId + '" ' +
+                'data-tripstatus="' + v.tripStatus + '" ' +
+                'data-starttime="' + v.startTimeUnix + '">';
+            scheduleList += '<div class="col-8">';
+            scheduleList += '<div class="schedule-date">' + getFormattedDate(v.startDate, 'dM') + '</div>';
+            if (v.startTimeUnix < Date.now() || v.tripStatus === 2) {
+                scheduleList += '<div class="schedule-status">Đã khởi hành</div>';
+            } else {
+                scheduleList += '<div class="totalEmptySeat">Còn trống ' + v.totalEmptySeat + ' vé</div>';
+            }
+            scheduleList += '</div>';
+            scheduleList += '<div class="col-4">';
+            scheduleList += '<div class="schedule-time pull-right">' + getFormattedDate(v.startTimeUnix, 'time') + '</div>';
+            scheduleList += '</div>';
+            scheduleList += '</div>';
+            scheduleList += '</div>';
+        } else if(v.startTimeUnix > startTime) {
+            scheduleList += '<div class="col-12 margin-schedule">';
+            scheduleList += '<div class="row schedule-item-return" ' +
+                'data-price="' + v.ticketPrice + '" ' +
+                'data-getinpoint="' + v.getInPointId + '" ' +
+                'data-getoffpoint="' + v.getOffPointId + '" ' +
+                'data-tripstatus="' + v.tripStatus + '" ' +
+                'data-starttime="' + v.startTimeUnix + '">';
+            scheduleList += '<div class="col-8">';
+            scheduleList += '<div class="schedule-date">' + getFormattedDate(v.startDate, 'dM') + '</div>';
+            if (v.startTimeUnix < Date.now() || v.tripStatus === 2) {
+                scheduleList += '<div class="schedule-status">Đã khởi hành</div>';
+            } else {
+                scheduleList += '<div class="totalEmptySeat">Còn trống ' + v.totalEmptySeat + ' vé</div>';
+            }
+            scheduleList += '</div>';
+            scheduleList += '<div class="col-4">';
+            scheduleList += '<div class="schedule-time pull-right">' + getFormattedDate(v.startTimeUnix, 'time') + '</div>';
+            scheduleList += '</div>';
+            scheduleList += '</div>';
+            scheduleList += '</div>';
         }
-        scheduleList += '</div>';
-        scheduleList += '<div class="col-4">';
-        scheduleList += '<div class="schedule-time pull-right">' + getFormattedDate(v.startTimeUnix, 'time') + '</div>';
-        scheduleList += '</div>';
-        scheduleList += '</div>';
-        scheduleList += '</div>';
     });
     $('.schedule-list-return').html(scheduleList);
 }
