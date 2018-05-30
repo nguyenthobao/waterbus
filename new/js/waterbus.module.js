@@ -7,6 +7,8 @@ $(document).ready(function() {
     var returnDate = $('#bookingWaterBus #returnDate');
     var vehicleType = $('#bookingWaterBus #vehicleType');
 
+    var ticketHtml = '';
+
     $('#bookingWaterBus #numberTicket').val(numberTicket + " vé");
     $('#bookingWaterBus #isRound').change(function () {
         if($(this).is(":checked")){
@@ -146,8 +148,6 @@ $(document).ready(function() {
         $('#bookingWaterBus .booing-form').hide(300);
         $('#bookingWaterBus .list-schedule').show(300);
 
-        /*$('.schedule-list').html('<div class="loading"></div>');
-        $('.schedule-list-return').html('<div class="loading"></div>');*/
         if(isBack){
             $('.schedule-list-return').html('<div class="loading"></div>');
         } else {
@@ -192,6 +192,8 @@ $(document).ready(function() {
         var getInPoint = $(this).data('getinpoint');
         var startTime = $(this).data('starttime');
         var tripStatus = $(this).data('tripstatus');
+        var ticketPrice = $(this).data('ticketprice');
+        var totalEmptyTicket = $(this).data('numberticket');
         if(startTime < Date.now() || tripStatus === 2) {
             $.alert({
                 title: 'Thông báo!',
@@ -199,9 +201,23 @@ $(document).ready(function() {
                 typeAnimated: true,
                 content: 'Vé đã bán hết, vui lòng chọn chuyến khác hoặc chọn một ngày khởi hành khác',
             });
-        } else {
+        }
+        else if(numberTicket > totalEmptyTicket) {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Số vé bán đặt nhiều hơn số vé hiện có',
+            });
+        }
+        else {
             $('#bookingWaterBus .schedule-item').removeClass('selected-schedule');
             $(this).addClass('selected-schedule');
+
+            ticketHtml = '';
+            ticketHtml = buildTicket(numberTicket, ticketPrice, false);
+
+            $('#bookingWaterBus .ticket-info-list').html(ticketHtml);
 
             if(isRoundWaterBus) {
                 getSchedule(endPoint, startPoint, vehicleType, returnDate, true, startTime);
@@ -215,6 +231,9 @@ $(document).ready(function() {
         var getInPoint = $(this).data('getinpoint');
         var startTime = $(this).data('starttime');
         var tripStatus = $(this).data('tripstatus');
+        var ticketPrice = $(this).data('ticketprice');
+        var totalEmptyTicket = $(this).data('numberticket');
+
         if(startTime < Date.now() || tripStatus === 2) {
             $.alert({
                 title: 'Thông báo!',
@@ -222,9 +241,25 @@ $(document).ready(function() {
                 typeAnimated: true,
                 content: 'Vé đã bán hết, vui lòng chọn chuyến khác hoặc chọn một ngày khởi hành khác',
             });
-        } else {
+        }
+        else if(numberTicket > totalEmptyTicket) {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Số vé bán đặt nhiều hơn số vé hiện có',
+            });
+        }
+        else {
             $('#bookingWaterBus .schedule-item-return').removeClass('selected-schedule');
             $(this).addClass('selected-schedule');
+
+            var ticketHtmlReturn = '';
+
+            ticketHtmlReturn = buildTicket(numberTicket, ticketPrice, true);
+            ticketHtml += ticketHtmlReturn;
+
+            $('#bookingWaterBus .ticket-info-list').html(ticketHtml);
         }
 
     });
@@ -252,20 +287,46 @@ $(document).ready(function() {
 
     /*Tiếp tục thanh toán*/
     $('#bookingWaterBus .btnNext').click(function () {
+        var selectedOneway = $('.schedule-list .selected-schedule').length;
+        var selectedReturn = $('.schedule-list-return .selected-schedule').length;
+
+        if(!selectedOneway) {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Chưa chọn chuyến đi',
+            });
+
+            return false;
+        }
+
+        if(isRoundWaterBus && !selectedReturn) {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Chưa chọn chuyến về',
+            });
+
+            return false;
+        }
+
         $('#bookingWaterBus .list-schedule').hide(300);
         $('#bookingWaterBus .ticket-info').show(300);
     });
 
-    /*Show alert khi chọn miễn phí*/
-    $('#bookingWaterBus .ticket-free').click(function () {
-        $.alert({
-            title: 'Thông báo',
-            content: 'Dành cho người già từ 70 tuổi và trẻ em dưới 1m. Vé miễn phí chỉ áp dụng khi giao dịch tại các ga tàu thủy',
-            buttons: {
-                ok: {
-                    text: 'Đồng ý'
-                }
+});
+
+/*Show alert khi chọn miễn phí*/
+$('body').on('click', '#bookingWaterBus .ticket-free', function () {
+    $.alert({
+        title: 'Thông báo',
+        content: 'Dành cho người già từ 70 tuổi và trẻ em dưới 1m. Vé miễn phí chỉ áp dụng khi giao dịch tại các ga tàu thủy',
+        buttons: {
+            ok: {
+                text: 'Đồng ý'
             }
-        });
+        }
     });
 });

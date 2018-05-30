@@ -41,10 +41,11 @@ function buildSchedulListOneWay(scheduleData) {
     $.each(scheduleData, function (k, v) {
         scheduleList += '<div class="col-12 margin-schedule">';
             scheduleList += '<div class="row schedule-item" ' +
-                'data-price="' + v.ticketPrice + '" ' +
+                'data-ticketprice="' + v.ticketPrice + '" ' +
                 'data-getinpoint="' + v.getInPointId + '" ' +
                 'data-getoffpoint="' + v.getOffPointId + '" ' +
                 'data-tripstatus="' + v.tripStatus + '" ' +
+                'data-numberticket="' + v.totalEmptySeat + '" ' +
                 'data-starttime="' + v.startTimeUnix + '">';
                 scheduleList += '<div class="col-8">';
                     scheduleList += '<div class="schedule-date">' + getFormattedDate(v.startDate, 'dM') + '</div>';
@@ -69,10 +70,11 @@ function buildSchedulListReturn(scheduleData, startTime) {
         if(startTime === undefined) {
             scheduleList += '<div class="col-12 margin-schedule">';
             scheduleList += '<div class="row schedule-item-return" ' +
-                'data-price="' + v.ticketPrice + '" ' +
+                'data-ticketprice="' + v.ticketPrice + '" ' +
                 'data-getinpoint="' + v.getInPointId + '" ' +
                 'data-getoffpoint="' + v.getOffPointId + '" ' +
                 'data-tripstatus="' + v.tripStatus + '" ' +
+                'data-numberticket="' + v.totalEmptySeat + '" ' +
                 'data-starttime="' + v.startTimeUnix + '">';
             scheduleList += '<div class="col-8">';
             scheduleList += '<div class="schedule-date">' + getFormattedDate(v.startDate, 'dM') + '</div>';
@@ -90,10 +92,11 @@ function buildSchedulListReturn(scheduleData, startTime) {
         } else if(v.startTimeUnix > startTime) {
             scheduleList += '<div class="col-12 margin-schedule">';
             scheduleList += '<div class="row schedule-item-return" ' +
-                'data-price="' + v.ticketPrice + '" ' +
+                'data-ticketprice="' + v.ticketPrice + '" ' +
                 'data-getinpoint="' + v.getInPointId + '" ' +
                 'data-getoffpoint="' + v.getOffPointId + '" ' +
                 'data-tripstatus="' + v.tripStatus + '" ' +
+                'data-numberticket="' + v.totalEmptySeat + '" ' +
                 'data-starttime="' + v.startTimeUnix + '">';
             scheduleList += '<div class="col-8">';
             scheduleList += '<div class="schedule-date">' + getFormattedDate(v.startDate, 'dM') + '</div>';
@@ -129,14 +132,17 @@ function getFormattedDate(unix_timestamp, methor) {
     return str;
 }
 
-/*Định dạng tiền*/
-Number.prototype.format = function (e, t) {
-    var n = "\\d(?=(\\d{" + (t || 3) + "})+" + (e > 0 ? "\\." : "$") + ")";
-    return this.toFixed(Math.max(0, ~~e)).replace(new RegExp(n, "g"), "$&,")
-};
-
 function buildTicket(numberTicket, price, isRound) {
-    var ticketHtml = '<h6 class="ticket-type">Lượt đi</h6>';
+    var ticketHtml = '';
+    if(!isRound) {
+        ticketHtml = '<h6 class="ticket-type">Lượt đi</h6>';
+    }
+    else {
+        ticketHtml = '<h6 class="ticket-type">Lượt về</h6>';
+    }
+
+    console.log(price.format());
+
     for (var i = 0; i < numberTicket; i++) {
         ticketHtml += '<div class="col-12 margin-ticket">';
             ticketHtml += '<div class="row ticket-info-item">';
@@ -163,8 +169,23 @@ function buildTicket(numberTicket, price, isRound) {
                         ticketHtml += '<input type="text" class="form-control fullname">';
                     ticketHtml += '</div>';
                 ticketHtml += '</div>';
+                ticketHtml += '<div class="col-12 row no-padding-left no-margin-left-right margin-top10 margin-bottom10">';
+                    ticketHtml += '<label class="col-4">Số điện thoại:</label>';
+                    ticketHtml += '<div class="col-8 no-padding-right">';
+                        ticketHtml += '<input type="text" class="form-control phoneNumber">';
+                    ticketHtml += '</div>';
+                ticketHtml += '</div>';
+                ticketHtml += '<div class="col-12 col-centered margin-top10 margin-bottom10">';
+                    ticketHtml += '<input type="text" value="' + price.format() + ' VNĐ" readonly class="form-control text-center ticketPrice">';
+                ticketHtml += '</div>';
             ticketHtml += '</div>';
         ticketHtml += '</div>';
     }
     return ticketHtml;
 }
+
+/*Định dạng tiền*/
+Number.prototype.format = function (e, t) {
+    var n = "\\d(?=(\\d{" + (t || 3) + "})+" + (e > 0 ? "\\." : "$") + ")";
+    return this.toFixed(Math.max(0, ~~e)).replace(new RegExp(n, "g"), "$&,")
+};
