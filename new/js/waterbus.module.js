@@ -263,9 +263,9 @@ $(document).ready(function() {
             content: 'Dành cho người già từ 70 tuổi và trẻ em dưới 1m. Vé miễn phí chỉ áp dụng khi giao dịch tại các ga tàu thủy',
             buttons: {
                 ok: {
-                    text: 'Đồng ý',
+                    text: 'Đồng ý'
                 }
             }
         });
-    })
+    });
 });

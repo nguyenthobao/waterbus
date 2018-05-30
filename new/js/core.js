@@ -128,3 +128,43 @@ function getFormattedDate(unix_timestamp, methor) {
 
     return str;
 }
+
+/*Định dạng tiền*/
+Number.prototype.format = function (e, t) {
+    var n = "\\d(?=(\\d{" + (t || 3) + "})+" + (e > 0 ? "\\." : "$") + ")";
+    return this.toFixed(Math.max(0, ~~e)).replace(new RegExp(n, "g"), "$&,")
+};
+
+function buildTicket(numberTicket, price, isRound) {
+    var ticketHtml = '<h6 class="ticket-type">Lượt đi</h6>';
+    for (var i = 0; i < numberTicket; i++) {
+        ticketHtml += '<div class="col-12 margin-ticket">';
+            ticketHtml += '<div class="row ticket-info-item">';
+                ticketHtml += '<div class="col-6 margin-top10">';
+                    ticketHtml += '<div class="pretty p-icon p-smooth p-locked">';
+                        ticketHtml += '<input type="checkbox" checked/>';
+                        ticketHtml += '<div class="state p-danger">';
+                            ticketHtml += '<i class="icon fa fa-check"></i><label>' + price.format() + ' VNĐ</label>';
+                        ticketHtml += '</div>';
+                    ticketHtml += '</div>';
+                ticketHtml += '</div>';
+                ticketHtml += '<div class="col-6 margin-top10 ticket-free">';
+                    ticketHtml += '<div class="pretty p-icon p-smooth p-locked">';
+                        ticketHtml += '<input type="checkbox"/>';
+                        ticketHtml += '<div class="state p-danger">';
+                            ticketHtml += '<i class="icon fa fa-check"></i>';
+                            ticketHtml += '<label>Miễn phí</label>';
+                        ticketHtml += '</div>';
+                    ticketHtml += '</div>';
+                ticketHtml += '</div>';
+                ticketHtml += '<div class="col-12 row no-padding-left no-margin-left-right margin-top10 margin-bottom10">';
+                    ticketHtml += '<label class="col-4">Họ tên:</label>';
+                    ticketHtml += '<div class="col-8 no-padding-right">';
+                        ticketHtml += '<input type="text" class="form-control fullname">';
+                    ticketHtml += '</div>';
+                ticketHtml += '</div>';
+            ticketHtml += '</div>';
+        ticketHtml += '</div>';
+    }
+    return ticketHtml;
+}
