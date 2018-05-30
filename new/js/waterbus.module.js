@@ -24,6 +24,19 @@ $(document).ready(function() {
         }
     });
 
+    $('#bookingWaterBus #depatureDate').datepicker({
+        dateFormat: 'dd/mm/yy',
+        minDate: 0,
+        onSelect: function (dateStr) {
+            changeDate(dateStr, '#bookingWaterBus #returnDate');
+        }
+    }).datepicker("setDate", new Date());
+
+    $('#bookingWaterBus #returnDate').datepicker({
+        dateFormat: 'dd/mm/yy',
+        minDate: 0
+    }).datepicker("setDate", new Date());
+
     /*Lay du lieu diem*/
     $.ajax({
         type: 'POST',
@@ -166,7 +179,6 @@ $(document).ready(function() {
                 count: 1000
             },
             success: function (result) {
-                console.log(result);
                 // buildSchedulListOneWay(result);
                 if(isBack){
                     buildSchedulListReturn(result, startTime);

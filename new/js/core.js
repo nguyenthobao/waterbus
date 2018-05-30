@@ -8,10 +8,11 @@ $(document).ready(function() {
         return false;
     });
 
-    $('.datepicker').datepicker({
+    /*$('.datepicker').datepicker({
         dateFormat: 'dd/mm/yy',
         minDate: 0
-    }).datepicker("setDate", new Date());
+    }).datepicker("setDate", new Date());*/
+
 });
 
 $(".owl-carousel").owlCarousel({
@@ -65,7 +66,7 @@ function buildSchedulListOneWay(scheduleData) {
 }
 
 function buildSchedulListReturn(scheduleData, startTime) {
-    var scheduleList = '';console.log(startTime);
+    var scheduleList = '';
     $.each(scheduleData, function (k, v) {
         if(startTime === undefined) {
             scheduleList += '<div class="col-12 margin-schedule">';
@@ -141,8 +142,6 @@ function buildTicket(numberTicket, price, isRound) {
         ticketHtml = '<h6 class="ticket-type">Lượt về</h6>';
     }
 
-    console.log(price.format());
-
     for (var i = 0; i < numberTicket; i++) {
         ticketHtml += '<div class="col-12 margin-ticket">';
             ticketHtml += '<div class="row ticket-info-item">';
@@ -182,6 +181,27 @@ function buildTicket(numberTicket, price, isRound) {
         ticketHtml += '</div>';
     }
     return ticketHtml;
+}
+
+function changeDate(dateStr, dateSelector) {
+    if(dateStr === '') {
+        return;
+    }
+    var date_Str = '';
+    for (var i = 0; i < 10; i++) {
+
+        if (i == 1 || i == 0) {
+            date_Str += dateStr.charAt(i + 3);
+        } else if (i == 3 || i == 4) {
+            date_Str += dateStr.charAt(i - 3);
+        }
+        else date_Str += dateStr.charAt(i);
+    }
+
+    $(dateSelector).datepicker("option", {
+        minDate: new Date(date_Str)
+    });
+    $(dateSelector).val(dateStr);
 }
 
 /*Định dạng tiền*/

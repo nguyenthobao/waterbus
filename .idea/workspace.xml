@@ -18,8 +18,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="177" column="107" lean-forward="false" selection-start-line="177" selection-start-column="107" selection-end-line="177" selection-end-column="107" />
+            <state relative-caret-position="285">
+              <caret line="128" column="109" lean-forward="false" selection-start-line="128" selection-start-column="99" selection-end-line="128" selection-end-column="109" />
               <folding>
                 <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -32,18 +32,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="core.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new/js/core.js">
+      <file leaf-file-name="waterbus.module.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/new/js/waterbus.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="98" column="34" lean-forward="false" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="34" />
+            <state relative-caret-position="221">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="waterbus.module.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/new/js/waterbus.module.js">
+      <file leaf-file-name="core.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new/js/core.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
               <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
@@ -75,7 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>js-scroll</find>
       <find>arrows-block</find>
       <find>heade</find>
       <find>form-select</find>
@@ -105,6 +104,7 @@
       <find>load</find>
       <find>schedule-li</find>
       <find>no-padd</find>
+      <find>consol</find>
     </findStrings>
     <replaceStrings>
       <replace>no-padding</replace>
@@ -141,8 +141,8 @@
         <option value="$PROJECT_DIR$/new/waterbus.html" />
         <option value="$PROJECT_DIR$/new/js/map.module.js" />
         <option value="$PROJECT_DIR$/new/css/styles.css" />
-        <option value="$PROJECT_DIR$/new/js/core.js" />
         <option value="$PROJECT_DIR$/new/index.html" />
+        <option value="$PROJECT_DIR$/new/js/core.js" />
         <option value="$PROJECT_DIR$/new/js/waterbus.module.js" />
       </list>
     </option>
@@ -271,14 +271,7 @@
       <workItem from="1527480813898" duration="14736000" />
       <workItem from="1527562215866" duration="27465000" />
       <workItem from="1527647470227" duration="15084000" />
-      <workItem from="1527670324542" duration="5301000" />
-    </task>
-    <task id="LOCAL-00018" summary="tao file">
-      <created>1525346136168</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1525346136168</updated>
+      <workItem from="1527670324542" duration="7067000" />
     </task>
     <task id="LOCAL-00019" summary="dang lam booking">
       <created>1525347010374</created>
@@ -616,11 +609,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527669785611</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="giao dien danh sach chuyen">
+      <created>1527676000382</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1527676000382</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="226972000" />
+    <option name="totallyTimeSpent" value="228738000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -790,18 +790,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new/js/core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="98" column="34" lean-forward="false" selection-start-line="98" selection-start-column="22" selection-end-line="98" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/new/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="177" column="107" lean-forward="false" selection-start-line="177" selection-start-column="107" selection-end-line="177" selection-end-column="107" />
+        <state relative-caret-position="285">
+          <caret line="128" column="109" lean-forward="false" selection-start-line="128" selection-start-column="99" selection-end-line="128" selection-end-column="109" />
           <folding>
             <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -813,10 +805,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new/js/waterbus.module.js">
+    <entry file="file://$PROJECT_DIR$/new/js/core.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
           <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/js/waterbus.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding />
         </state>
       </provider>
