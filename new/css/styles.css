@@ -1,6 +1,32 @@
 body {
     background: #f5f6f8;
 }
+
+.margin-top10 {
+    margin-top: 10px !important;
+}
+
+.margin-bottom10 {
+    margin-bottom: 10px !important;
+}
+
+.no-padding-left {
+    padding-left: 0 !important;
+}
+
+.no-padding-right {
+    padding-left: 0 !important;
+}
+
+.no-margin-left-right {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
 /*Header*/
 .logo {
     width: 90px;
@@ -239,11 +265,6 @@ body {
     color: #1A237E;
 }
 
-.no-margin-left-right {
-    margin-right: 0;
-    margin-left: 0;
-}
-
 .title-round {
     color: #fff;
     margin-left: 0;
@@ -293,3 +314,18 @@ body {
 }
 
 /*Ticket info form*/
+.ticket-info-list {
+    min-height: 350px;
+    background-color: #ccc;
+    overflow-y: auto;
+    max-height: 350px;
+}
+
+.ticket-type {
+    padding: 5px 0;
+    font-weight: 600;
+}
+
+.ticket-info-item {
+    background-color: #fff;
+}
