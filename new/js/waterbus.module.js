@@ -266,9 +266,7 @@ $(document).ready(function() {
             $('#bookingWaterBus .schedule-item-return').removeClass('selected-schedule');
             $(this).addClass('selected-schedule');
 
-            var ticketHtmlReturn = '';
-
-            ticketHtmlReturn = buildTicket(numberTicket, ticketPrice, true);
+            var ticketHtmlReturn = buildTicket(numberTicket, ticketPrice, true);
             ticketHtml += ticketHtmlReturn;
 
             $('#bookingWaterBus .ticket-info-list').html(ticketHtml);

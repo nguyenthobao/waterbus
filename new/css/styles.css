@@ -338,3 +338,26 @@ body {
     color: #fff;
     background-color: #5ba446;
 }
+
+.total-ticket-info {
+    position: absolute;
+    background: #fff;
+    bottom: -75px;
+}
+
+.total-ticket-info label{
+    font-size: 14px;
+}
+
+.total-money{
+    padding: 0.25em;
+    background-color: #CFD8DC !important;
+}
+
+.payment {
+    font-weight: 500;
+    margin-top: 7px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #5ba446;
+}
