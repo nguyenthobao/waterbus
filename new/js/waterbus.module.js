@@ -380,25 +380,53 @@ $(document).ready(function() {
             return $(this).val();
         }).get();
 
-        var listOption = [];
-        for ( var i = 0 ; i < numberTicket ; i++ ){
-            listOption[i]['paymentTicketPrice'] = pricesOneway[i];
-            listOption[i]['phoneNumber'] = listPhoneOneway[i];
-            listOption[i]['originalPrice'] = pricesOneway[i];
-            listOption[i]['seatId'] = '';
-            listOption[i]['priceInsurance'] = 0;
-            listOption[i]['extraPrice'] = 0;
-            listOption[i]['ticketPrice'] = pricesOneway[i];
-            listOption[i]['isAdult'] = true;
-            listOption[i]['fullName'] = listFullNameOneWay[i];
-            listOption[i]['surcharge'] = 0;
-            listOption[i]['priceMeal'] = -1;
-            listOption[i]['agencyPrice'] = pricesOneway[i];
-            listOption[i]['totalPrice'] = pricesOneway[i];
+        if(listFullNameOneWay[0] === '') {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Chưa nhập họ tên',
+            });
         }
 
-        console.log(listOption);
-    })
+        if(listPhoneOneway[0] === '') {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Chưa nhập số điện thoại',
+            });
+        }
+
+        var listOptionData = '[';
+        var listOption = {};
+        for ( var i = 0 ; i < numberTicket ; i++ ){
+
+            listOption['paymentTicketPrice'] = pricesOneway[i];
+            listOption['phoneNumber'] = listPhoneOneway[i];
+            listOption['originalPrice'] = pricesOneway[i];
+            listOption['seatId'] = '';
+            listOption['priceInsurance'] = 0;
+            listOption['extraPrice'] = 0;
+            listOption['ticketPrice'] = pricesOneway[i];
+            listOption['isAdult'] = true;
+            listOption['fullName'] = listFullNameOneWay[i];
+            listOption['surcharge'] = 0;
+            listOption['priceMeal'] = -1;
+            listOption['agencyPrice'] = pricesOneway[i];
+            listOption['totalPrice'] = pricesOneway[i];
+            if(i === (numberTicket -1)){
+                listOptionData += JSON.stringify(listOption);
+            } else {
+                listOptionData += JSON.stringify(listOption) + ',';
+            }
+        }
+        listOptionData += ']';
+
+        console.log('listOptionData' ,listOptionData);
+
+
+    });
 });
 
 /*Show alert khi chọn miễn phí*/
