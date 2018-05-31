@@ -333,3 +333,8 @@ body {
 .margin-ticket {
     margin: 5px 0 5px 0;
 }
+
+.customer-info {
+    color: #fff;
+    background-color: #5ba446;
+}

@@ -136,12 +136,15 @@ function getFormattedDate(unix_timestamp, methor) {
 function buildTicket(numberTicket, price, isRound) {
     var ticketHtml = '';
     if(!isRound) {
-        ticketHtml = '<h6 class="ticket-type">Lượt đi</h6>';
+        ticketHtml = '<div id="ticketOnewayInfo">';
+        ticketHtml += '<h6 class="ticket-type">Lượt đi</h6>';
     }
     else {
-        ticketHtml = '<h6 class="ticket-type">Lượt về</h6>';
+        ticketHtml = '<div id="ticketReturnInfo">';
+        ticketHtml += '<h6 class="ticket-type">Lượt về</h6>';
     }
 
+    /*Thong tin khach tren tung ve*/
     for (var i = 0; i < numberTicket; i++) {
         ticketHtml += '<div class="col-12 margin-ticket">';
             ticketHtml += '<div class="row ticket-info-item">';
@@ -180,6 +183,31 @@ function buildTicket(numberTicket, price, isRound) {
             ticketHtml += '</div>';
         ticketHtml += '</div>';
     }
+
+    /*Thong tin chung*/
+    ticketHtml += '<div class="col-12 margin-ticket">';
+        ticketHtml += '<div class="row customer-info">';
+            ticketHtml += '<div class="col-12 row no-margin-left-right margin-top10 margin-bottom10">';
+                ticketHtml += '<label>Số lượng vé</label>';
+                ticketHtml += '<input type="text" value="' + numberTicket + '" class="col-12 form-control text-center" readonly>';
+            ticketHtml += '</div>';
+            ticketHtml += '<div class="col-12 row no-margin-left-right margin-top10 margin-bottom10">';
+                ticketHtml += '<label>Ghi chú</label>';
+                ticketHtml += '<input type="text" class="col-12 form-control" placeholder="Ghi chú" id="note">';
+            ticketHtml += '</div>';
+            ticketHtml += '<div class="col-12 row no-margin-left-right margin-top10 margin-bottom10">';
+                ticketHtml += '<label>Email nhận thông tin vé</label>';
+                ticketHtml += '<input type="email" placeholder="Email nhận thông tin vé" class="col-12 form-control" id="email">';
+            ticketHtml += '</div>';
+            ticketHtml += '<div class="col-12 row no-margin-left-right margin-top10 margin-bottom10">';
+                ticketHtml += '<label>Mã khuyến mại</label>';
+                ticketHtml += '<input type="text" placeholder="Mã khuyến mại" class="col-12 form-control" id="promotion">';
+            ticketHtml += '</div>';
+        ticketHtml += '</div>';
+    ticketHtml += '</div>';
+
+    ticketHtml += '</div>';
+
     return ticketHtml;
 }
 
