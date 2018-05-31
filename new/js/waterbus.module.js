@@ -7,6 +7,10 @@ $(document).ready(function() {
     var returnDate = $('#bookingWaterBus #returnDate');
     var vehicleType = $('#bookingWaterBus #vehicleType');
 
+    var pricesOneway;
+
+    var pricesReturn;
+
     var ticketHtml = '';
     var totalMoney = 0;
     var totalMoneyOneway = 0;
@@ -342,11 +346,11 @@ $(document).ready(function() {
 
     /*Tính tổng tiền*/
     function getTotalMoney() {
-        var pricesOneway = $("#bookingWaterBus #ticketOnewayInfo .price").map(function() {
+        pricesOneway = $("#bookingWaterBus #ticketOnewayInfo .price").map(function() {
             return $(this).val();
         }).get();
 
-        var pricesReturn = $("#bookingWaterBus #ticketReturnInfo .price").map(function() {
+        pricesReturn = $("#bookingWaterBus #ticketReturnInfo .price").map(function() {
             return $(this).val();
         }).get();
 
@@ -367,11 +371,35 @@ $(document).ready(function() {
 
     /*Thanh toán*/
     $('#bookingWaterBus .payment').click(function () {
-        alert(totalMoney);
+
+        var listFullNameOneWay = $("#bookingWaterBus #ticketOnewayInfo .fullname").map(function() {
+            return $(this).val();
+        }).get();
+
+        var listPhoneOneway = $("#bookingWaterBus #ticketOnewayInfo .phone").map(function() {
+            return $(this).val();
+        }).get();
+
+        var listOption = [];
+        for ( var i = 0 ; i < numberTicket ; i++ ){
+            listOption[i]['paymentTicketPrice'] = pricesOneway[i];
+            listOption[i]['phoneNumber'] = listPhoneOneway[i];
+            listOption[i]['originalPrice'] = pricesOneway[i];
+            listOption[i]['seatId'] = '';
+            listOption[i]['priceInsurance'] = 0;
+            listOption[i]['extraPrice'] = 0;
+            listOption[i]['ticketPrice'] = pricesOneway[i];
+            listOption[i]['isAdult'] = true;
+            listOption[i]['fullName'] = listFullNameOneWay[i];
+            listOption[i]['surcharge'] = 0;
+            listOption[i]['priceMeal'] = -1;
+            listOption[i]['agencyPrice'] = pricesOneway[i];
+            listOption[i]['totalPrice'] = pricesOneway[i];
+        }
+
+        console.log(listOption);
     })
 });
-
-
 
 /*Show alert khi chọn miễn phí*/
 $('body').on('click', '#bookingWaterBus .ticket-free', function () {
