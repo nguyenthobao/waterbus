@@ -401,7 +401,6 @@ $(document).ready(function() {
         var listOptionData = '[';
         var listOption = {};
         for ( var i = 0 ; i < numberTicket ; i++ ){
-
             listOption['paymentTicketPrice'] = pricesOneway[i];
             listOption['phoneNumber'] = listPhoneOneway[i];
             listOption['originalPrice'] = pricesOneway[i];
@@ -424,9 +423,11 @@ $(document).ready(function() {
         listOptionData += ']';
 
         console.log('listOptionData' ,listOptionData);
-
-
     });
+    
+    function payment() {
+        
+    }
 });
 
 /*Show alert khi chọn miễn phí*/

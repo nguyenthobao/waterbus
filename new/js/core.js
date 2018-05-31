@@ -45,6 +45,9 @@ function buildSchedulListOneWay(scheduleData) {
                 'data-ticketprice="' + v.ticketPrice + '" ' +
                 'data-getinpoint="' + v.getInPointId + '" ' +
                 'data-getoffpoint="' + v.getOffPointId + '" ' +
+                'data-startdate="' + v.startDate + '" ' +
+                'data-scheduleid="' + v.scheduleId + '" ' +
+                'data-tripid="' + v.tripId + '" ' +
                 'data-tripstatus="' + v.tripStatus + '" ' +
                 'data-numberticket="' + v.totalEmptySeat + '" ' +
                 'data-starttime="' + v.startTimeUnix + '">';
@@ -74,6 +77,9 @@ function buildSchedulListReturn(scheduleData, startTime) {
                 'data-ticketprice="' + v.ticketPrice + '" ' +
                 'data-getinpoint="' + v.getInPointId + '" ' +
                 'data-getoffpoint="' + v.getOffPointId + '" ' +
+                'data-startdate="' + v.startDate + '" ' +
+                'data-scheduleid="' + v.scheduleId + '" ' +
+                'data-tripid="' + v.tripId + '" ' +
                 'data-tripstatus="' + v.tripStatus + '" ' +
                 'data-numberticket="' + v.totalEmptySeat + '" ' +
                 'data-starttime="' + v.startTimeUnix + '">';
@@ -96,6 +102,9 @@ function buildSchedulListReturn(scheduleData, startTime) {
                 'data-ticketprice="' + v.ticketPrice + '" ' +
                 'data-getinpoint="' + v.getInPointId + '" ' +
                 'data-getoffpoint="' + v.getOffPointId + '" ' +
+                'data-startdate="' + v.startDate + '" ' +
+                'data-scheduleid="' + v.scheduleId + '" ' +
+                'data-tripid="' + v.tripId + '" ' +
                 'data-tripstatus="' + v.tripStatus + '" ' +
                 'data-numberticket="' + v.totalEmptySeat + '" ' +
                 'data-starttime="' + v.startTimeUnix + '">';
