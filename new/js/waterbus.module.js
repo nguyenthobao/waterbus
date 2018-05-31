@@ -398,6 +398,13 @@ $(document).ready(function() {
             return $(this).val();
         }).get();
 
+        var scheduleId = $("#bookingWaterBus #ticketOnewayInfo #scheduleId").val();
+        var tripId = $("#bookingWaterBus #ticketOnewayInfo #tripId").val();
+        var getInPointId = $("#bookingWaterBus #ticketOnewayInfo #getInPointId").val();
+        var getOffPointId = $("#bookingWaterBus #ticketOnewayInfo #getOffPointId").val();
+        var getInTimePlan = $("#bookingWaterBus #ticketOnewayInfo #getInTimePlan").val();
+        var getOffTimePlan = $("#bookingWaterBus #ticketOnewayInfo #getOffTimePlan").val();
+
         if(listFullNameOneWay[0] === '') {
             $.alert({
                 title: 'Thông báo!',
@@ -405,6 +412,7 @@ $(document).ready(function() {
                 typeAnimated: true,
                 content: 'Chưa nhập họ tên',
             });
+            return false;
         }
 
         if(listPhoneOneway[0] === '') {
@@ -414,6 +422,7 @@ $(document).ready(function() {
                 typeAnimated: true,
                 content: 'Chưa nhập số điện thoại',
             });
+            return false;
         }
 
         var listOptionData = '[';
@@ -440,7 +449,13 @@ $(document).ready(function() {
         }
         listOptionData += ']';
 
-        console.log('listOptionData' ,listOptionData);
+        data = JSON.stringify({
+            "startDate": "1527552000000",
+            "scheduleId": scheduleId,
+            "tripId": tripId,
+            "listOption": JSON.parse(listOptionData)
+        });
+
     });
     
     function payment() {
