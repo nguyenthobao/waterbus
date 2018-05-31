@@ -45,6 +45,8 @@ function buildSchedulListOneWay(scheduleData) {
                 'data-ticketprice="' + v.ticketPrice + '" ' +
                 'data-getinpoint="' + v.getInPointId + '" ' +
                 'data-getoffpoint="' + v.getOffPointId + '" ' +
+                'data-getintime="' + v.getInTime + '" ' +
+                'data-getofftime="' + v.getOffTime + '" ' +
                 'data-startdate="' + v.startDate + '" ' +
                 'data-scheduleid="' + v.scheduleId + '" ' +
                 'data-tripid="' + v.tripId + '" ' +
@@ -77,6 +79,8 @@ function buildSchedulListReturn(scheduleData, startTime) {
                 'data-ticketprice="' + v.ticketPrice + '" ' +
                 'data-getinpoint="' + v.getInPointId + '" ' +
                 'data-getoffpoint="' + v.getOffPointId + '" ' +
+                'data-getintime="' + v.getInTime + '" ' +
+                'data-getofftime="' + v.getOffTime + '" ' +
                 'data-startdate="' + v.startDate + '" ' +
                 'data-scheduleid="' + v.scheduleId + '" ' +
                 'data-tripid="' + v.tripId + '" ' +
@@ -102,6 +106,8 @@ function buildSchedulListReturn(scheduleData, startTime) {
                 'data-ticketprice="' + v.ticketPrice + '" ' +
                 'data-getinpoint="' + v.getInPointId + '" ' +
                 'data-getoffpoint="' + v.getOffPointId + '" ' +
+                'data-getintime="' + v.getInTime + '" ' +
+                'data-getofftime="' + v.getOffTime + '" ' +
                 'data-startdate="' + v.startDate + '" ' +
                 'data-scheduleid="' + v.scheduleId + '" ' +
                 'data-tripid="' + v.tripId + '" ' +
@@ -142,7 +148,7 @@ function getFormattedDate(unix_timestamp, methor) {
     return str;
 }
 
-function buildTicket(numberTicket, price, isRound) {
+function buildTicket(numberTicket, price, tripId, scheduleId, getInPointId, getOffPointId, getInTimePlan, getOffTimePlan, isRound) {
     var ticketHtml = '';
     if(!isRound) {
         ticketHtml = '<div id="ticketOnewayInfo">';
@@ -213,6 +219,12 @@ function buildTicket(numberTicket, price, isRound) {
                 ticketHtml += '<label>Mã khuyến mại</label>';
                 ticketHtml += '<input type="text" placeholder="Mã khuyến mại" class="col-12 form-control" id="promotion">';
             ticketHtml += '</div>';
+            ticketHtml += '<input type="hidden" value="' + tripId + '" id="tripId">';
+            ticketHtml += '<input type="hidden" value="' + scheduleId + '" id="scheduleId">';
+            ticketHtml += '<input type="hidden" value="' + getInPointId + '" id="getInPointId">';
+            ticketHtml += '<input type="hidden" value="' + getOffPointId + '" id="getOffPointId">';
+            ticketHtml += '<input type="hidden" value="' + getInTimePlan + '" id="getInTimePlan">';
+            ticketHtml += '<input type="hidden" value="' + getOffTimePlan + '" id="getOffTimePlan">';
         ticketHtml += '</div>';
     ticketHtml += '</div>';
 

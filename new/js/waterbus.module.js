@@ -211,10 +211,16 @@ $(document).ready(function() {
     /*Chọn chuyến đi*/
     $('body').on('click', '#bookingWaterBus .schedule-item', function () {
         var getInPoint = $(this).data('getinpoint');
+        var getOffPoint = $(this).data('getoffpoint');
+        var getInTime = $(this).data('getintime');
+        var getOffTime = $(this).data('getofftime');
         var startTime = $(this).data('starttime');
         var tripStatus = $(this).data('tripstatus');
+        var scheduleId = $(this).data('scheduleid');
         var ticketPrice = $(this).data('ticketprice');
+        var tripId = $(this).data('tripid');
         var totalEmptyTicket = $(this).data('numberticket');
+
         if(startTime < Date.now() || tripStatus === 2) {
             $.alert({
                 title: 'Thông báo!',
@@ -236,7 +242,7 @@ $(document).ready(function() {
             $(this).addClass('selected-schedule');
 
             ticketHtml = '';
-            ticketHtml = buildTicket(numberTicket, ticketPrice, false);
+            ticketHtml = buildTicket(numberTicket, ticketPrice, tripId, scheduleId, getInPoint, getOffPoint, getInTime, getOffTime, false);
 
             $('#bookingWaterBus .ticket-info-list').html(ticketHtml);
 
@@ -257,9 +263,14 @@ $(document).ready(function() {
     /*Chọn chuyến về*/
     $('body').on('click', '#bookingWaterBus .schedule-item-return', function () {
         var getInPoint = $(this).data('getinpoint');
+        var getOffPoint = $(this).data('getoffpoint');
+        var getInTime = $(this).data('getintime');
+        var getOffTime = $(this).data('getofftime');
         var startTime = $(this).data('starttime');
         var tripStatus = $(this).data('tripstatus');
+        var scheduleId = $(this).data('scheduleid');
         var ticketPrice = $(this).data('ticketprice');
+        var tripId = $(this).data('tripid');
         var totalEmptyTicket = $(this).data('numberticket');
 
         if(startTime < Date.now() || tripStatus === 2) {
@@ -282,7 +293,7 @@ $(document).ready(function() {
             $('#bookingWaterBus .schedule-item-return').removeClass('selected-schedule');
             $(this).addClass('selected-schedule');
 
-            var ticketHtmlReturn = buildTicket(numberTicket, ticketPrice, true);
+            var ticketHtmlReturn = buildTicket(numberTicket, ticketPrice, tripId, scheduleId, getInPoint, getOffPoint, getInTime, getOffTime, true);
             ticketHtml += ticketHtmlReturn;
 
             $('#bookingWaterBus .ticket-info-list').html(ticketHtml);
