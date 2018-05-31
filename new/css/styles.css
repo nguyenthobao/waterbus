@@ -315,10 +315,10 @@ body {
 
 /*Ticket info form*/
 .ticket-info-list {
-    min-height: 350px;
+    min-height: 370px;
     background-color: #ccc;
     overflow-y: auto;
-    max-height: 350px;
+    max-height: 370px;
 }
 
 .ticket-type {

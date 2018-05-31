@@ -187,15 +187,15 @@ function buildTicket(numberTicket, price, isRound) {
     /*Thong tin chung*/
     ticketHtml += '<div class="col-12 margin-ticket">';
         ticketHtml += '<div class="row customer-info">';
-            ticketHtml += '<div class="col-12 row no-margin-left-right margin-top10 margin-bottom10">';
+            ticketHtml += '<div class="col-12 row no-margin-left-right margin-top10">';
                 ticketHtml += '<label>Số lượng vé</label>';
                 ticketHtml += '<input type="text" value="' + numberTicket + '" class="col-12 form-control text-center" readonly>';
             ticketHtml += '</div>';
-            ticketHtml += '<div class="col-12 row no-margin-left-right margin-top10 margin-bottom10">';
+            ticketHtml += '<div class="col-12 row no-margin-left-right margin-top10">';
                 ticketHtml += '<label>Ghi chú</label>';
                 ticketHtml += '<input type="text" class="col-12 form-control" placeholder="Ghi chú" id="note">';
             ticketHtml += '</div>';
-            ticketHtml += '<div class="col-12 row no-margin-left-right margin-top10 margin-bottom10">';
+            ticketHtml += '<div class="col-12 row no-margin-left-right margin-top10">';
                 ticketHtml += '<label>Email nhận thông tin vé</label>';
                 ticketHtml += '<input type="email" placeholder="Email nhận thông tin vé" class="col-12 form-control" id="email">';
             ticketHtml += '</div>';
