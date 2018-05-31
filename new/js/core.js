@@ -180,6 +180,7 @@ function buildTicket(numberTicket, price, isRound) {
                 ticketHtml += '<div class="col-12 col-centered margin-top10 margin-bottom10">';
                     ticketHtml += '<input type="text" value="' + price.format() + ' VNĐ" readonly class="form-control text-center ticketPrice">';
                 ticketHtml += '</div>';
+                ticketHtml += '<input type="hidden" class="price" value="' + price + '">';
             ticketHtml += '</div>';
         ticketHtml += '</div>';
     }

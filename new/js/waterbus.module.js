@@ -8,6 +8,11 @@ $(document).ready(function() {
     var vehicleType = $('#bookingWaterBus #vehicleType');
 
     var ticketHtml = '';
+    var totalMoney = 0;
+    var totalMoneyOneway = 0;
+    var totalMoneyReturn = 0;
+    var promotionPriceOneway = 0;
+    var promotionPriceReturn = 0;
 
     $('#bookingWaterBus #numberTicket').val(numberTicket + " vé");
     $('#bookingWaterBus #isRound').change(function () {
@@ -236,6 +241,13 @@ $(document).ready(function() {
             }
         }
 
+        $('.phoneNumber').on('keypress keyup blur', function () {
+            $(this).val($(this).val().replace(/[^\d].+/, ""));
+            if ((event.which < 48 || event.which > 57)) {
+                event.preventDefault();
+            }
+        });
+
     });
 
     /*Chọn chuyến về*/
@@ -322,11 +334,44 @@ $(document).ready(function() {
             return false;
         }
 
+        getTotalMoney();
+
         $('#bookingWaterBus .list-schedule').hide(300);
         $('#bookingWaterBus .ticket-info').show(300);
     });
 
+    /*Tính tổng tiền*/
+    function getTotalMoney() {
+        var pricesOneway = $("#bookingWaterBus #ticketOnewayInfo .price").map(function() {
+            return $(this).val();
+        }).get();
+
+        var pricesReturn = $("#bookingWaterBus #ticketReturnInfo .price").map(function() {
+            return $(this).val();
+        }).get();
+
+        totalMoneyOneway = 0;
+        $.each(pricesOneway, function (k, v) {
+            totalMoneyOneway += parseInt(v);
+        });
+
+        totalMoneyReturn = 0;
+        $.each(pricesReturn, function (k, v) {
+            totalMoneyReturn += parseInt(v);
+        });
+
+        totalMoney = (totalMoneyOneway - promotionPriceOneway) + (totalMoneyReturn - promotionPriceReturn);
+
+        $('#bookingWaterBus .total-money').val(totalMoney.format() + ' VNĐ');
+    }
+
+    /*Thanh toán*/
+    $('#bookingWaterBus .payment').click(function () {
+        alert(totalMoney);
+    })
 });
+
+
 
 /*Show alert khi chọn miễn phí*/
 $('body').on('click', '#bookingWaterBus .ticket-free', function () {
