@@ -400,6 +400,15 @@ $(document).ready(function() {
             return $(this).val();
         }).get();
 
+        var listFullNameReturn = $("#bookingWaterBus #ticketReturnInfo .fullname").map(function() {
+            return $(this).val();
+        }).get();
+
+        var listPhoneReturn = $("#bookingWaterBus #ticketReturnInfo .phoneNumber").map(function() {
+            return $(this).val();
+        }).get();
+
+        /*Thong tin khach chuyen di*/
         var scheduleOnewayId = $("#bookingWaterBus #ticketOnewayInfo #scheduleId").val();
         var tripOnewayId = $("#bookingWaterBus #ticketOnewayInfo #tripId").val();
         var getInPointOnewayId = $("#bookingWaterBus #ticketOnewayInfo #getInPointId").val();
@@ -409,12 +418,22 @@ $(document).ready(function() {
         var noteOneway = $("#bookingWaterBus #ticketOnewayInfo #note").val();
         var startDateOneway = $("#bookingWaterBus #ticketOnewayInfo #startDate").val();
 
+        /*Thong tin khach chuyen ve*/
+        var scheduleReturnId = $("#bookingWaterBus #ticketReturnInfo #scheduleId").val();
+        var tripReturnId = $("#bookingWaterBus #ticketReturnInfo #tripId").val();
+        var getInPointReturnId = $("#bookingWaterBus #ticketReturnInfo #getInPointId").val();
+        var getOffPointReturnId = $("#bookingWaterBus #ticketReturnInfo #getOffPointId").val();
+        var getInTimePlanReturn = $("#bookingWaterBus #ticketReturnInfo #getInTimePlan").val();
+        var getOffTimePlanReturn = $("#bookingWaterBus #ticketReturnInfo #getOffTimePlan").val();
+        var noteReturn = $("#bookingWaterBus #ticketReturnInfo #note").val();
+        var startDateReturn = $("#bookingWaterBus #ticketReturnInfo #startDate").val();
+
         if(listFullNameOneWay[0] === '') {
             $.alert({
                 title: 'Thông báo!',
                 type: 'orange',
                 typeAnimated: true,
-                content: 'Chưa nhập họ tên',
+                content: 'Chưa nhập họ tên chuyến đi',
             });
             return false;
         }
@@ -424,13 +443,10 @@ $(document).ready(function() {
                 title: 'Thông báo!',
                 type: 'orange',
                 typeAnimated: true,
-                content: 'Chưa nhập số điện thoại',
+                content: 'Chưa nhập số điện thoại chuyến đi',
             });
             return false;
         }
-
-        console.log(listFullNameOneWay);
-        console.log(listPhoneOneway);
 
         var listOptionData = '[';
         var listOption = {};
@@ -479,13 +495,111 @@ $(document).ready(function() {
             "agencyPrice": totalMoneyOneway
         };
 
-        payment(dataOneway);
+
+        if(!isRoundWaterBus) {
+            payment(dataOneway);
+        } else {
+            var paymentCode = generatePaymentCode();
+
+            dataOneway = {
+                "startDate": startDateOneway,
+                "scheduleId": scheduleOnewayId,
+                "paymentTicketPrice": totalMoneyOneway,
+                "packageName": "web",
+                "tripId": tripOnewayId,
+                "timeZone": "7",
+                "originalTicketPrice": totalMoneyOneway,
+                "numberOfAdults": numberTicket,
+                "getOffPointId": getOffPointOnewayId,
+                "phoneNumber": listPhoneOneway[0],
+                "numberOfChildren": "0",
+                "description": noteOneway,
+                "getOffTimePlan": getOffTimePlanOneway,
+                "listOption": JSON.parse(listOptionData),
+                "getInTimePlan": getInTimePlanOneway,
+                "fullName": listFullNameOneWay[0],
+                "paidMoney":"0",
+                "companyId": systemId,
+                "getInPointId": getInPointOnewayId,
+                "agencyPrice": totalMoneyOneway,
+                "paymentCode": paymentCode
+            };
+
+            if(listFullNameReturn[0] === '') {
+                $.alert({
+                    title: 'Thông báo!',
+                    type: 'orange',
+                    typeAnimated: true,
+                    content: 'Chưa nhập họ tên chuyến về',
+                });
+                return false;
+            }
+
+            if(listPhoneReturn[0] === '') {
+                $.alert({
+                    title: 'Thông báo!',
+                    type: 'orange',
+                    typeAnimated: true,
+                    content: 'Chưa nhập số điện thoại chuyến về',
+                });
+                return false;
+            }
+
+            /*Tại list option chuyến về*/
+            listOptionData = '[';
+            listOption = {};
+            for ( var i = 0 ; i < numberTicket ; i++ ){
+                listOption['paymentTicketPrice'] = pricesReturn[i];
+                listOption['phoneNumber'] = listPhoneReturn[i];
+                listOption['originalPrice'] = pricesReturn[i];
+                listOption['seatId'] = '';
+                listOption['priceInsurance'] = 0;
+                listOption['extraPrice'] = 0;
+                listOption['ticketPrice'] = pricesReturn[i];
+                listOption['isAdult'] = true;
+                listOption['fullName'] = listFullNameReturn[i];
+                listOption['surcharge'] = 0;
+                listOption['priceMeal'] = -1;
+                listOption['agencyPrice'] = pricesReturn[i];
+                listOption['totalPrice'] = pricesReturn[i];
+                if(i === (numberTicket -1)){
+                    listOptionData += JSON.stringify(listOption);
+                } else {
+                    listOptionData += JSON.stringify(listOption) + ',';
+                }
+            }
+            listOptionData += ']';
+
+            dataReturn = {
+                "startDate": startDateReturn,
+                "scheduleId": scheduleReturnId,
+                "paymentTicketPrice": totalMoneyReturn,
+                "packageName": "web",
+                "tripId": tripReturnId,
+                "timeZone": "7",
+                "originalTicketPrice": totalMoneyReturn,
+                "numberOfAdults": numberTicket,
+                "getOffPointId": getOffPointReturnId,
+                "phoneNumber": listPhoneReturn[0],
+                "numberOfChildren": "0",
+                "description": noteReturn,
+                "getOffTimePlan": getOffTimePlanReturn,
+                "listOption": JSON.parse(listOptionData),
+                "getInTimePlan": getInTimePlanReturn,
+                "fullName": listFullNameReturn[0],
+                "paidMoney":"0",
+                "companyId": systemId,
+                "getInPointId": getInPointReturnId,
+                "agencyPrice": totalMoneyReturn,
+                "paymentCode": paymentCode
+            };
+
+            payment(dataOneway, dataReturn);
+        }
 
     });
     
-    function payment(dataPayment, dataPaymentReturn) {
-        console.log('dataPayment', dataPayment);
-        console.log('dataPaymentReturn', dataPaymentReturn);
+    function payment(dataPayment, dataPaymentReturn, ticketId) {
         $.ajax({
             type: "POST",
             url: "https://anvui.vn/createnoseatid",
@@ -494,13 +608,25 @@ $(document).ready(function() {
                 console.log('ajax result', result);
 
                 if(result.code === 200) {
-                    epayPayment(result.results.ticketId, dataPayment.phoneNumber);
+                    if(dataPaymentReturn !== undefined || dataPaymentReturn !== '') {
+                        var oneWayTicketId = result.results.ticketId;
+                        payment(dataPaymentReturn, '', oneWayTicketId)
+                    } else {
+                        var makeTicketId = result.results.ticketId;
+
+                        if(ticketId !== undefined || ticketId !== ''){
+                            makeTicketId = ticketId + '-' + result.results.ticketId;
+                        }
+
+                        epayPayment(makeTicketId, dataPayment.phoneNumber);
+                    }
+
                 } else {
                     $.alert({
                         title: 'Thông báo!',
                         type: 'red',
                         typeAnimated: true,
-                        content: 'Đã có lỗỗi xảy ra, vui lòng thử lại',
+                        content: 'Đã có lỗi xảy ra, vui lòng thử lại',
                     });
                 }
             }
@@ -520,7 +646,7 @@ $(document).ready(function() {
             }),
             success: function (data) {
                 url = data.results.redirect;
-                window.location.href = url;
+                // window.location.href = url;
             }
         });
     }

@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d613a7ee-4ff7-4bd6-a533-bfc4da5e7629" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/new/js/core.js" afterPath="$PROJECT_DIR$/new/js/core.js" />
       <change beforePath="$PROJECT_DIR$/new/js/waterbus.module.js" afterPath="$PROJECT_DIR$/new/js/waterbus.module.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,7 +18,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="0">
               <caret line="197" column="73" lean-forward="false" selection-start-line="197" selection-start-column="66" selection-end-line="197" selection-end-column="73" />
               <folding />
             </state>
@@ -27,11 +28,9 @@
       <file leaf-file-name="waterbus.module.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new/js/waterbus.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="498" column="29" lean-forward="true" selection-start-line="498" selection-start-column="29" selection-end-line="498" selection-end-column="29" />
-              <folding>
-                <element signature="e#15389#16271#0" expanded="false" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="599" column="7" lean-forward="true" selection-start-line="599" selection-start-column="7" selection-end-line="599" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -39,8 +38,8 @@
       <file leaf-file-name="core.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/js/core.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="227" column="87" lean-forward="false" selection-start-line="227" selection-start-column="87" selection-end-line="227" selection-end-column="87" />
+            <state relative-caret-position="799">
+              <caret line="264" column="1" lean-forward="false" selection-start-line="264" selection-start-column="1" selection-end-line="264" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -49,7 +48,7 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
+            <state relative-caret-position="6001">
               <caret line="353" column="41" lean-forward="false" selection-start-line="353" selection-start-column="41" selection-end-line="353" selection-end-column="41" />
               <folding />
             </state>
@@ -148,7 +147,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="168" />
     <option name="y" value="315" />
     <option name="width" value="1564" />
@@ -239,14 +238,9 @@
       <workItem from="1527732652540" duration="10310000" />
       <workItem from="1527751675138" duration="12627000" />
       <workItem from="1527783455885" duration="593000" />
-      <workItem from="1527816055414" duration="9222000" />
-    </task>
-    <task id="LOCAL-00031" summary="xong giao dien booking">
-      <created>1525689348799</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1525689348799</updated>
+      <workItem from="1527816055414" duration="9756000" />
+      <workItem from="1527841476189" duration="598000" />
+      <workItem from="1527844850812" duration="5465000" />
     </task>
     <task id="LOCAL-00032" summary="Sua logo css va menu waterbus">
       <created>1525761591539</created>
@@ -584,11 +578,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527828846465</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="giao dien thanh toan">
+      <created>1527829968227</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1527829968279</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261927000" />
+    <option name="totallyTimeSpent" value="268524000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -600,7 +601,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29954615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -632,7 +633,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="xong index" />
     <MESSAGE value="dang lam booking" />
     <MESSAGE value="xong table ban ve one way" />
     <MESSAGE value="dang lam modal" />
@@ -657,7 +657,8 @@
     <MESSAGE value="lam xong list schedule oneway" />
     <MESSAGE value="giao dien danh sach chuyen" />
     <MESSAGE value="giao dien thanh toan" />
-    <option name="LAST_COMMIT_MESSAGE" value="giao dien thanh toan" />
+    <MESSAGE value="thanh toan epay" />
+    <option name="LAST_COMMIT_MESSAGE" value="thanh toan epay" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -740,44 +741,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/old/booking.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10556">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/new/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
+        <state relative-caret-position="6001">
           <caret line="353" column="41" lean-forward="false" selection-start-line="353" selection-start-column="41" selection-end-line="353" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new/js/core.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="227" column="87" lean-forward="false" selection-start-line="227" selection-start-column="87" selection-end-line="227" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="0">
           <caret line="197" column="73" lean-forward="false" selection-start-line="197" selection-start-column="66" selection-end-line="197" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/old/booking.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="641" column="8" lean-forward="false" selection-start-line="641" selection-start-column="8" selection-end-line="641" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/js/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="264" column="1" lean-forward="false" selection-start-line="264" selection-start-column="1" selection-end-line="264" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new/js/waterbus.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="498" column="29" lean-forward="true" selection-start-line="498" selection-start-column="29" selection-end-line="498" selection-end-column="29" />
-          <folding>
-            <element signature="e#15389#16271#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="599" column="7" lean-forward="true" selection-start-line="599" selection-start-column="7" selection-end-line="599" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>

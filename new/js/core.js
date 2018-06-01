@@ -1,4 +1,3 @@
-var isRound = 0;
 var systemId = $("base").attr("id");
 
 $(document).ready(function() {
@@ -260,3 +259,7 @@ Number.prototype.format = function (e, t) {
     var n = "\\d(?=(\\d{" + (t || 3) + "})+" + (e > 0 ? "\\." : "$") + ")";
     return this.toFixed(Math.max(0, ~~e)).replace(new RegExp(n, "g"), "$&,")
 };
+
+function generatePaymentCode() {
+    return Math.random().toString(36).substring(2, 15) + Math.random().toString(36).substring(2, 15) + Date.now();
+}
