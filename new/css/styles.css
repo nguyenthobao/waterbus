@@ -427,3 +427,11 @@ body {
     font-weight: 500;
     background-color: #035684;
 }
+
+#booingSaigonRiver .btnNext {
+    background-color: #035684;
+}
+
+#booingSaigonRiver .customer-info, #booingSaigonRiver .payment {
+    background-color: #035684;
+}

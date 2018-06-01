@@ -153,7 +153,7 @@ function getFormattedDate(unix_timestamp, methor) {
     return str;
 }
 
-function buildTicket(numberTicket, price, tripId, scheduleId, getInPointId, getOffPointId, getInTimePlan, getOffTimePlan, startDate, isRound) {
+function buildTicket(numberTicket, price, tripId, scheduleId, getInPointId, getOffPointId, getInTimePlan, getOffTimePlan, startDate, isRound, showPrice) {
     var ticketHtml = '';
     if(!isRound) {
         ticketHtml = '<div id="ticketOnewayInfo">';
@@ -168,6 +168,7 @@ function buildTicket(numberTicket, price, tripId, scheduleId, getInPointId, getO
     for (var i = 0; i < numberTicket; i++) {
         ticketHtml += '<div class="col-12 margin-ticket">';
             ticketHtml += '<div class="row ticket-info-item">';
+            if(showPrice) {
                 ticketHtml += '<div class="col-6 margin-top10">';
                     ticketHtml += '<div class="pretty p-icon p-smooth p-locked">';
                         ticketHtml += '<input type="checkbox" checked/>';
@@ -185,6 +186,8 @@ function buildTicket(numberTicket, price, tripId, scheduleId, getInPointId, getO
                         ticketHtml += '</div>';
                     ticketHtml += '</div>';
                 ticketHtml += '</div>';
+            }
+
                 ticketHtml += '<div class="col-12 row no-padding-left no-margin-left-right margin-top10 margin-bottom10">';
                     ticketHtml += '<label class="col-4">Họ tên:</label>';
                     ticketHtml += '<div class="col-8 no-padding-right">';

@@ -243,7 +243,7 @@ $(document).ready(function() {
             $(this).addClass('selected-schedule');
 
             ticketHtml = '';
-            ticketHtml = buildTicket(numberTicket, ticketPrice, tripId, scheduleId, getInPoint, getOffPoint, getInTime, getOffTime, startDate, false);
+            ticketHtml = buildTicket(numberTicket, ticketPrice, tripId, scheduleId, getInPoint, getOffPoint, getInTime, getOffTime, startDate, false, true);
 
             $('#bookingWaterBus .ticket-info-list').html(ticketHtml);
 
@@ -295,7 +295,7 @@ $(document).ready(function() {
             $('#bookingWaterBus .schedule-item-return').removeClass('selected-schedule');
             $(this).addClass('selected-schedule');
 
-            var ticketHtmlReturn = buildTicket(numberTicket, ticketPrice, tripId, scheduleId, getInPoint, getOffPoint, getInTime, getOffTime, startDate, true);
+            var ticketHtmlReturn = buildTicket(numberTicket, ticketPrice, tripId, scheduleId, getInPoint, getOffPoint, getInTime, getOffTime, startDate, true, true);
             ticketHtml += ticketHtmlReturn;
 
             $('#bookingWaterBus .ticket-info-list').html(ticketHtml);
