@@ -393,6 +393,10 @@ body {
     color: #fd5c00;
 }
 
+#depatureDateRiver {
+    padding-left: 40px;
+}
+
 .saigon-river-form {
     padding: 50px 0 10px 0;
     border-radius: 10px;

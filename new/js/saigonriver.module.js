@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var numberTicket = 1;
-    var depatureDate = $('#booingSaigonRiver #depatureDate');
+    var depatureDate = $('#booingSaigonRiver #depatureDateRiver');
 
     depatureDate.datepicker({
         dateFormat: 'dd/mm/yy',
