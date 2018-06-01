@@ -363,4 +363,142 @@ $(document).ready(function() {
         return false;
     });
 
+    /*Thanh toán*/
+    $('#bookingWaterTaxi .payment').click(function () {
+        var listFullName = $("#bookingWaterTaxi #ticketOnewayInfo .fullname").map(function() {
+            return $(this).val();
+        }).get();
+
+        var listPhone = $("#bookingWaterTaxi #ticketOnewayInfo .phoneNumber").map(function() {
+            return $(this).val();
+        }).get();
+
+        /*Thong tin khach chuyen di*/
+        var scheduleId = $("#bookingWaterTaxi #ticketOnewayInfo #scheduleId").val();
+        var tripId = $("#bookingWaterTaxi #ticketOnewayInfo #tripId").val();
+        var getInPointId = $("#bookingWaterTaxi #ticketOnewayInfo #getInPointId").val();
+        var getOffPointId = $("#bookingWaterTaxi #ticketOnewayInfo #getOffPointId").val();
+        var getInTimePlan = $("#bookingWaterTaxi #ticketOnewayInfo #getInTimePlan").val();
+        var getOffTimePlan = $("#bookingWaterTaxi #ticketOnewayInfo #getOffTimePlan").val();
+        var note = $("#bookingWaterTaxi #ticketOnewayInfo #note").val();
+        var startDate = $("#bookingWaterTaxi #ticketOnewayInfo #startDate").val();
+
+        if(listFullName[0] === '') {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Chưa nhập họ tên chuyến đi',
+            });
+            return false;
+        }
+
+        if(listPhone[0] === '') {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Chưa nhập số điện thoại chuyến đi',
+            });
+            return false;
+        }
+
+        var listOptionData = '[';
+        var listOption = {};
+        for ( var i = 0 ; i < numberTicket ; i++ ){
+            listOption['paymentTicketPrice'] = prices[i];
+            listOption['phoneNumber'] = listPhone[i];
+            listOption['originalPrice'] = prices[i];
+            listOption['seatId'] = '';
+            listOption['priceInsurance'] = 0;
+            listOption['extraPrice'] = 0;
+            listOption['ticketPrice'] = prices[i];
+            listOption['isAdult'] = true;
+            listOption['fullName'] = listFullName[i];
+            listOption['surcharge'] = 0;
+            listOption['priceMeal'] = -1;
+            listOption['agencyPrice'] = prices[i];
+            listOption['totalPrice'] = prices[i];
+            if(i === (numberTicket -1)){
+                listOptionData += JSON.stringify(listOption);
+            } else {
+                listOptionData += JSON.stringify(listOption) + ',';
+            }
+        }
+        listOptionData += ']';
+
+        dataListOption = {
+            "startDate": startDate,
+            "scheduleId": scheduleId,
+            "paymentTicketPrice": totalMoney,
+            "packageName": "web",
+            "tripId": tripId,
+            "timeZone": "7",
+            "originalTicketPrice": totalMoney,
+            "numberOfAdults": numberTicket,
+            "getOffPointId": getOffPointId,
+            "phoneNumber": listPhone[0],
+            "numberOfChildren": "0",
+            "description": note,
+            "getOffTimePlan": getOffTimePlan,
+            "listOption": JSON.parse(listOptionData),
+            "getInTimePlan": getInTimePlan,
+            "fullName": listFullName[0],
+            "paidMoney":"0",
+            "companyId": systemId,
+            "getInPointId": getInPointId,
+            "agencyPrice": totalMoney
+        };
+        payment(dataListOption);
+    });
+
+    function payment(dataPayment) {
+        $.ajax({
+            type: "POST",
+            url: "https://anvui.vn/createnoseatid",
+            data: dataPayment,
+            success: function (result) {
+
+                if(result.code === 200) {
+                    $.dialog({
+                        title: 'Thông báo!',
+                        content: 'Hệ thống đang chuyển sang cổng thanh toán, vui lòng đợi trong giây lát...',
+                        onClose: function (e) {
+                            e.preventDefault();
+                        }
+                    });
+                    epayPayment(result.results.ticketId, dataPayment.phoneNumber);
+
+                } else {
+                    $.alert({
+                        title: 'Thông báo!',
+                        type: 'red',
+                        typeAnimated: true,
+                        content: 'Đã có lỗi xảy ra, vui lòng thử lại',
+                    });
+                }
+            }
+        });
+    }
+
+    function epayPayment(ticketId, phoneNumber) {
+        $.ajax({
+            type: 'POST',
+            url: 'https://dobody-anvui.appspot.com/ePay/',
+            dataType: 'json',
+            data: JSON.stringify({
+                ticketId: ticketId,
+                paymentType: 1,
+                packageName: 'web',
+                phoneNumber: phoneNumber,
+            }),
+            success: function (data) {
+                url = data.results.redirect;
+                setTimeout(function () {
+                    window.location.href = url;
+                }, 4000);
+            }
+        });
+    }
+
 });
