@@ -106,9 +106,45 @@ $(document).ready(function() {
                 count: 1000
             },
             success: function (result) {
-                buildSchedulListOneWay(result);
+                buildSchedulList(result);
             }
         });
+    }
+
+    function buildSchedulList(scheduleData) {
+        var scheduleList = '';
+
+        $.each(scheduleData, function (k, v) {
+            scheduleList += '<div class="col-12 margin-schedule">';
+            scheduleList += '<div class="row schedule-item" ' +
+                'data-ticketprice="' + v.ticketPrice + '" ' +
+                'data-openprice="' + v.openPrice + '" ' +
+                'data-getinpoint="' + v.getInPointId + '" ' +
+                'data-getoffpoint="' + v.getOffPointId + '" ' +
+                'data-getintime="' + v.getInTime + '" ' +
+                'data-getofftime="' + v.getOffTime + '" ' +
+                'data-startdate="' + v.startDate + '" ' +
+                'data-scheduleid="' + v.scheduleId + '" ' +
+                'data-tripid="' + v.tripId + '" ' +
+                'data-tripstatus="' + v.tripStatus + '" ' +
+                'data-numberticket="' + v.totalEmptySeat + '" ' +
+                'data-totalseat="' + v.totalSeat + '" ' +
+                'data-starttime="' + v.startTimeUnix + '">';
+            scheduleList += '<div class="col-8">';
+            scheduleList += '<div class="schedule-date">' + getFormattedDate(v.startDate, 'dM') + '</div>';
+            if(v.startTimeUnix < Date.now() || v.tripStatus === 2) {
+                scheduleList += '<div class="schedule-status">Đã khởi hành</div>';
+            } else {
+                scheduleList += '<div class="totalEmptySeat">Còn trống ' + v.totalEmptySeat + ' vé</div>';
+            }
+            scheduleList += '</div>';
+            scheduleList += '<div class="col-4">';
+            scheduleList += '<div class="schedule-time pull-right">' + getFormattedDate(v.startTimeUnix, 'time') + '</div>';
+            scheduleList += '</div>';
+            scheduleList += '</div>';
+            scheduleList += '</div>';
+        });
+        $('.schedule-list').html(scheduleList);
     }
 
     /*Lấy tên bến tàu*/
@@ -120,5 +156,51 @@ $(document).ready(function() {
         }
         return newName;
     }
+
+    /*Chọn chuyến đi*/
+    $('body').on('click', '#bookingWaterTaxi .schedule-item', function () {
+        var getInPoint = $(this).data('getinpoint');
+        var getOffPoint = $(this).data('getoffpoint');
+        var getInTime = $(this).data('getintime');
+        var getOffTime = $(this).data('getofftime');
+        var startTime = $(this).data('starttime');
+        var tripStatus = $(this).data('tripstatus');
+        var scheduleId = $(this).data('scheduleid');
+        var ticketPrice = $(this).data('ticketprice');
+        var openPrice = $(this).data('openprice');
+        var tripId = $(this).data('tripid');
+        var totalEmptyTicket = $(this).data('numberticket');
+        var totalSeat = $(this).data('totalseat');
+        var startDate = $(this).data('startdate');
+
+        if(startTime < Date.now() || tripStatus === 2) {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Vé đã bán hết, vui lòng chọn chuyến khác hoặc chọn một ngày khởi hành khác',
+            });
+        }
+        else if(numberTicket > totalEmptyTicket) {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Số vé bán đặt nhiều hơn số vé hiện có',
+            });
+        } else {
+            $('#bookingWaterTaxi .schedule-item').removeClass('selected-schedule');
+            $(this).addClass('selected-schedule');
+
+        }
+
+        $('.phoneNumber').on('keypress keyup blur', function () {
+            $(this).val($(this).val().replace(/[^\d].+/, ""));
+            if ((event.which < 48 || event.which > 57)) {
+                event.preventDefault();
+            }
+        });
+
+    });
 
 });
