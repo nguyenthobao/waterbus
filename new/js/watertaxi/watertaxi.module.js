@@ -76,6 +76,13 @@ $(document).ready(function() {
         return false;
     });
 
+    /*Back trở lại chọn điểm đi điểm đến*/
+    $('.list-schedule .backScreen').click(function () {
+        $('#bookingWaterTaxi .list-schedule').hide(300);
+        $('#bookingWaterTaxi .booing-form').show(300);
+        return false;
+    });
+
     /*Lấy danh sách các chuyến*/
     function getSchedule(startPoint, endPoint, vehicleType, date) {
         var dateAr = date.val().split('/');
@@ -192,6 +199,9 @@ $(document).ready(function() {
             $('#bookingWaterTaxi .schedule-item').removeClass('selected-schedule');
             $(this).addClass('selected-schedule');
 
+            ticketHtml = '';
+
+            $('#bookingWaterTaxi .ticket-info-list').html(ticketHtml);
         }
 
         $('.phoneNumber').on('keypress keyup blur', function () {
@@ -201,6 +211,32 @@ $(document).ready(function() {
             }
         });
 
+    });
+
+    /*Tiếp tục thanh toán*/
+    $('#bookingWaterTaxi .btnNext').click(function () {
+        var selected = $('.schedule-list .selected-schedule').length;
+
+        if(!selected) {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Chưa chọn chuyến đi',
+            });
+
+            return false;
+        }
+
+        $('#bookingWaterTaxi .list-schedule').hide(300);
+        $('#bookingWaterTaxi .ticket-info').show(300);
+    });
+
+    /*Back lại chọn chuyến*/
+    $('.ticket-info .backScreen').click(function () {
+        $('#bookingWaterTaxi .ticket-info').hide(300);
+        $('#bookingWaterTaxi .list-schedule').show(300);
+        return false;
     });
 
 });
