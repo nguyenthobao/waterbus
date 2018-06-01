@@ -259,7 +259,6 @@ $(document).ready(function() {
             url: "https://anvui.vn/createnoseatid",
             data: dataPayment,
             success: function (result) {
-                console.log('ajax result', result);
 
                 if(result.code === 200) {
                     $.dialog({

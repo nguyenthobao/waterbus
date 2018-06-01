@@ -190,14 +190,19 @@ function getFormattedDate(unix_timestamp, methor) {
 
 function buildTicket(numberTicket, price, tripId, scheduleId, getInPointId, getOffPointId, getInTimePlan, getOffTimePlan, startDate, isRound, showPrice) {
     var ticketHtml = '';
-    if(!isRound) {
-        ticketHtml = '<div id="ticketOnewayInfo">';
-        ticketHtml += '<h6 class="ticket-type">Lượt đi</h6>';
-    }
-    else {
-        ticketHtml = '<div id="ticketReturnInfo">';
-        ticketHtml += '<h6 class="ticket-type">Lượt về</h6>';
-    }
+        if(!isRound) {
+            ticketHtml = '<div id="ticketOnewayInfo">';
+            if(showPrice) {
+                ticketHtml += '<h6 class="ticket-type">Lượt đi</h6>';
+            }
+        }
+        else {
+            ticketHtml = '<div id="ticketReturnInfo">';
+            if(showPrice) {
+                ticketHtml += '<h6 class="ticket-type">Lượt về</h6>';
+            }
+        }
+
 
     /*Thong tin khach tren tung ve*/
     for (var i = 0; i < numberTicket; i++) {
