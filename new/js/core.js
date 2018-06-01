@@ -148,7 +148,7 @@ function getFormattedDate(unix_timestamp, methor) {
     return str;
 }
 
-function buildTicket(numberTicket, price, tripId, scheduleId, getInPointId, getOffPointId, getInTimePlan, getOffTimePlan, isRound) {
+function buildTicket(numberTicket, price, tripId, scheduleId, getInPointId, getOffPointId, getInTimePlan, getOffTimePlan, startDate, isRound) {
     var ticketHtml = '';
     if(!isRound) {
         ticketHtml = '<div id="ticketOnewayInfo">';
@@ -225,6 +225,7 @@ function buildTicket(numberTicket, price, tripId, scheduleId, getInPointId, getO
             ticketHtml += '<input type="hidden" value="' + getOffPointId + '" id="getOffPointId">';
             ticketHtml += '<input type="hidden" value="' + getInTimePlan + '" id="getInTimePlan">';
             ticketHtml += '<input type="hidden" value="' + getOffTimePlan + '" id="getOffTimePlan">';
+            ticketHtml += '<input type="hidden" value="' + startDate + '" id="startDate">';
         ticketHtml += '</div>';
     ticketHtml += '</div>';
 

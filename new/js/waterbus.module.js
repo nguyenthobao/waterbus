@@ -220,6 +220,7 @@ $(document).ready(function() {
         var ticketPrice = $(this).data('ticketprice');
         var tripId = $(this).data('tripid');
         var totalEmptyTicket = $(this).data('numberticket');
+        var startDate = $(this).data('startdate');
 
         if(startTime < Date.now() || tripStatus === 2) {
             $.alert({
@@ -242,7 +243,7 @@ $(document).ready(function() {
             $(this).addClass('selected-schedule');
 
             ticketHtml = '';
-            ticketHtml = buildTicket(numberTicket, ticketPrice, tripId, scheduleId, getInPoint, getOffPoint, getInTime, getOffTime, false);
+            ticketHtml = buildTicket(numberTicket, ticketPrice, tripId, scheduleId, getInPoint, getOffPoint, getInTime, getOffTime, startDate, false);
 
             $('#bookingWaterBus .ticket-info-list').html(ticketHtml);
 
@@ -272,6 +273,7 @@ $(document).ready(function() {
         var ticketPrice = $(this).data('ticketprice');
         var tripId = $(this).data('tripid');
         var totalEmptyTicket = $(this).data('numberticket');
+        var startDate = $(this).data('startdate');
 
         if(startTime < Date.now() || tripStatus === 2) {
             $.alert({
@@ -293,7 +295,7 @@ $(document).ready(function() {
             $('#bookingWaterBus .schedule-item-return').removeClass('selected-schedule');
             $(this).addClass('selected-schedule');
 
-            var ticketHtmlReturn = buildTicket(numberTicket, ticketPrice, tripId, scheduleId, getInPoint, getOffPoint, getInTime, getOffTime, true);
+            var ticketHtmlReturn = buildTicket(numberTicket, ticketPrice, tripId, scheduleId, getInPoint, getOffPoint, getInTime, getOffTime, startDate, true);
             ticketHtml += ticketHtmlReturn;
 
             $('#bookingWaterBus .ticket-info-list').html(ticketHtml);
@@ -394,16 +396,18 @@ $(document).ready(function() {
             return $(this).val();
         }).get();
 
-        var listPhoneOneway = $("#bookingWaterBus #ticketOnewayInfo .phone").map(function() {
+        var listPhoneOneway = $("#bookingWaterBus #ticketOnewayInfo .phoneNumber").map(function() {
             return $(this).val();
         }).get();
 
-        var scheduleId = $("#bookingWaterBus #ticketOnewayInfo #scheduleId").val();
-        var tripId = $("#bookingWaterBus #ticketOnewayInfo #tripId").val();
-        var getInPointId = $("#bookingWaterBus #ticketOnewayInfo #getInPointId").val();
-        var getOffPointId = $("#bookingWaterBus #ticketOnewayInfo #getOffPointId").val();
-        var getInTimePlan = $("#bookingWaterBus #ticketOnewayInfo #getInTimePlan").val();
-        var getOffTimePlan = $("#bookingWaterBus #ticketOnewayInfo #getOffTimePlan").val();
+        var scheduleOnewayId = $("#bookingWaterBus #ticketOnewayInfo #scheduleId").val();
+        var tripOnewayId = $("#bookingWaterBus #ticketOnewayInfo #tripId").val();
+        var getInPointOnewayId = $("#bookingWaterBus #ticketOnewayInfo #getInPointId").val();
+        var getOffPointOnewayId = $("#bookingWaterBus #ticketOnewayInfo #getOffPointId").val();
+        var getInTimePlanOneway = $("#bookingWaterBus #ticketOnewayInfo #getInTimePlan").val();
+        var getOffTimePlanOneway = $("#bookingWaterBus #ticketOnewayInfo #getOffTimePlan").val();
+        var noteOneway = $("#bookingWaterBus #ticketOnewayInfo #note").val();
+        var startDateOneway = $("#bookingWaterBus #ticketOnewayInfo #startDate").val();
 
         if(listFullNameOneWay[0] === '') {
             $.alert({
@@ -424,6 +428,9 @@ $(document).ready(function() {
             });
             return false;
         }
+
+        console.log(listFullNameOneWay);
+        console.log(listPhoneOneway);
 
         var listOptionData = '[';
         var listOption = {};
@@ -449,17 +456,66 @@ $(document).ready(function() {
         }
         listOptionData += ']';
 
-        data = JSON.stringify({
-            "startDate": "1527552000000",
-            "scheduleId": scheduleId,
-            "tripId": tripId,
-            "listOption": JSON.parse(listOptionData)
-        });
+        dataOneway = {
+            "startDate": startDateOneway,
+            "scheduleId": scheduleOnewayId,
+            "paymentTicketPrice": totalMoneyOneway,
+            "packageName": "web",
+            "tripId": tripOnewayId,
+            "timeZone": "7",
+            "originalTicketPrice": totalMoneyOneway,
+            "numberOfAdults": numberTicket,
+            "getOffPointId": getOffPointOnewayId,
+            "phoneNumber": listPhoneOneway[0],
+            "numberOfChildren": "0",
+            "description": noteOneway,
+            "getOffTimePlan": getOffTimePlanOneway,
+            "listOption": JSON.parse(listOptionData),
+            "getInTimePlan": getInTimePlanOneway,
+            "fullName": listFullNameOneWay[0],
+            "paidMoney":"0",
+            "companyId": systemId,
+            "getInPointId": getInPointOnewayId,
+            "agencyPrice": totalMoneyOneway
+        };
+
+        payment(dataOneway);
 
     });
     
-    function payment() {
-        
+    function payment(dataPayment, dataPaymentReturn) {
+        console.log('dataPayment', dataPayment);
+        console.log('dataPaymentReturn', dataPaymentReturn);
+        $.ajax({
+            type: "POST",
+            url: "https://anvui.vn/createnoseatid",
+            data: dataPayment,
+            success: function (result) {
+                console.log('ajax result', result);
+
+                if(result.code === 200) {
+                    epayPayment(result.results.ticketId, dataPayment.phoneNumber);
+                }
+            }
+        });
+    }
+    
+    function epayPayment(ticketId, phoneNumber) {
+        $.ajax({
+            type: 'POST',
+            url: 'https://dobody-anvui.appspot.com/ePay/',
+            dataType: 'json',
+            data: JSON.stringify({
+                ticketId: ticketId,
+                paymentType: 1,
+                packageName: 'web',
+                phoneNumber: phoneNumber,
+            }),
+            success: function (data) {
+                url = data.results.redirect;
+                window.location.href = url;
+            }
+        });
     }
 });
 
