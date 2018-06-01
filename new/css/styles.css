@@ -403,6 +403,15 @@ body {
     background-color: #fff;
 }
 
+.saigon-river-list {
+    padding: 50px 0 10px 0;
+    background-color: #035684;
+}
+
+.saigon-river-list .backScreen {
+    color: #fff !important;;
+}
+
 .saigon-river-form #downTicket, .saigon-river-form #upTicket{
     border-radius: 5px;
     background-color: #fff;
@@ -413,6 +422,8 @@ body {
     max-width: 20%;
 }
 
-.saigon-river-form .btnNext {
+#seachSaigonRiver {
+    color: #fff;
+    font-weight: 500;
     background-color: #035684;
 }
