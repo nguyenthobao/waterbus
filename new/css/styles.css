@@ -60,11 +60,14 @@ body {
 }
 
 .icon-bus img {
+    margin-left: 25px;
 }
 
 .icon-bus p {
+    font-size: 14px;
     padding-top: 15px;
     text-align: center;
+    width: 150px;
 }
 
 .icon-bus a {
