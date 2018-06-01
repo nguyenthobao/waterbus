@@ -31,8 +31,7 @@ $(document).ready(function() {
         $('#bookingWaterTaxi #numberTicket').val(numberTicket + " vé");
     });
 
-    /*Ẩn các điểm đã chọn của điểm đầu điểm cuối để không tròng nhau*/
-    $("#bookingWaterTaxi #endPoint option[value=P03k1Iq7vRvdDS]").hide();
+    /*Ẩn các điểm đã chọn của điểm đầu điểm cuối để không trùng nhau*/
     startPoint.change(function(){
         var id = $(this).val();
         $("#bookingWaterTaxi #endPoint option").show();
@@ -49,19 +48,13 @@ $(document).ready(function() {
 
         initStartMarker(lat, long, pointName);
 
-    });
+        var endPointSelected = $("#bookingWaterTaxi #endPoint").find(":selected");
 
-    endPoint.change(function(){
-        var id = $(this).val();
-        $("#bookingWaterTaxi #startPoint option").show();
-        $("#bookingWaterTaxi #startPoint option[value="+id+"]").hide();
+        pointNameEnd = endPointSelected.text();
+        latEnd = endPointSelected.data('lat');
+        longEnd = endPointSelected.data('long');
 
-        lat = $(this).find(':selected').data('lat');
-        long = $(this).find(':selected').data('long');
-
-        pointName = $(this).find(':selected').text();
-
-        initEndMarker(lat, long, pointName);
+        initEndMarker(latEnd, longEnd, pointNameEnd);
     });
 
 });

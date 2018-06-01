@@ -16,6 +16,25 @@ $(document).ready(function() {
     $('#active-watertaxi').click(function () {
         $('#bookingWaterTaxi').show(500);
         $('#selectOption').hide();
+
+        /*Mặc định chọn điểm đâu điểm cuối, định vị map*/
+        initStartEndPoint();
+
+        function initStartEndPoint() {
+            $("#bookingWaterTaxi #endPoint option").eq(1).hide();
+            var startLat = $("#bookingWaterTaxi #startPoint option").eq(0).data('lat');
+            var startLong = $("#bookingWaterTaxi #startPoint option").eq(0).data('long');
+            var startPointName = $("#bookingWaterTaxi #startPoint option").eq(0).text();
+
+            var endLat = $("#bookingWaterTaxi #endPoint option").eq(0).data('lat');
+            var endLong = $("#bookingWaterTaxi #endPoint option").eq(0).data('long');
+            var endPointName = $("#bookingWaterTaxi #endPoint option").eq(0).text();
+
+            initStartMarker(startLat, startLong, startPointName);
+
+            initEndMarker(endLat, endLong, endPointName);
+        }
+
         return false;
     });
 
