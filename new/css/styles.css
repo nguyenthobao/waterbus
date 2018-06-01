@@ -162,8 +162,8 @@ body {
 .datepicker-icon, .fa-icon, .fa-icon-rotate{
     position: absolute;
     top: 10px;
-    left: 26px;
-    color: #5ba446;
+    left: 25px;
+    color: #fd5c00;
     font-size: 22px;
 }
 
@@ -377,7 +377,7 @@ body {
     background-color: #5ba446;
 }
 
-/*Saigon waterbus*/
+/*Saigon river*/
 #booingSaigonRiver {
     padding: 30px;
     width: 100%;
@@ -434,4 +434,31 @@ body {
 
 #booingSaigonRiver .customer-info, #booingSaigonRiver .payment {
     background-color: #035684;
+}
+
+/*Saigon waterbus*/
+#bookingWaterTaxi {
+    padding: 30px;
+    width: 100%;
+    position: fixed;
+    top: 10%;
+}
+
+.water-taxi-form {
+    padding: 50px 0 10px 0;
+    background-color: #8a9ea7;
+}
+
+.water-taxi-form #downTicket, .water-taxi-form #upTicket{
+    border-radius: 5px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 0;
+    color: #fd5c00;
+    font-size: 24px;
+    max-width: 20%;
+}
+
+#depatureDateTaxi {
+    padding-left: 40px;
 }

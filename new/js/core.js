@@ -14,12 +14,8 @@ $(document).ready(function() {
     });
 
     $('#active-watertaxi').click(function () {
-        $.alert({
-            title: 'Thông báo!',
-            type: 'orange',
-            typeAnimated: true,
-            content: 'Chức năng đang được phát triển',
-        });
+        $('#bookingWaterTaxi').show(500);
+        $('#selectOption').hide();
         return false;
     });
 
