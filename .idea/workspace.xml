@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d613a7ee-4ff7-4bd6-a533-bfc4da5e7629" name="Default" comment="xong watertaxi">
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.min.js" />
+    <list default="true" id="d613a7ee-4ff7-4bd6-a533-bfc4da5e7629" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/new/css/styles.css" afterPath="$PROJECT_DIR$/new/css/styles.css" />
       <change beforePath="$PROJECT_DIR$/new/index.html" afterPath="$PROJECT_DIR$/new/index.html" />
-      <change beforePath="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.min.js" afterPath="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.min.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="378" column="0" lean-forward="true" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="325" column="60" lean-forward="false" selection-start-line="325" selection-start-column="60" selection-end-line="325" selection-end-column="60" />
               <folding>
                 <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -41,11 +40,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="468" column="21" lean-forward="false" selection-start-line="468" selection-start-column="21" selection-end-line="468" selection-end-column="21" />
+            <state relative-caret-position="243">
+              <caret line="464" column="0" lean-forward="true" selection-start-line="464" selection-start-column="0" selection-end-line="464" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -64,7 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>finder</find>
       <find>search-form-wrapper</find>
       <find>col-offset</find>
       <find>datepicker-form</find>
@@ -94,6 +92,7 @@
       <find>btnNext</find>
       <find>backScreen</find>
       <find>.payment</find>
+      <find>.customer-info</find>
     </findStrings>
     <replaceStrings>
       <replace>no-padding</replace>
@@ -135,7 +134,6 @@
         <option value="$PROJECT_DIR$/new/js/saigonriver.module.js" />
         <option value="$PROJECT_DIR$/new/js/trolley.module.js" />
         <option value="$PROJECT_DIR$/new/js/waterbus/waterbus.module.js" />
-        <option value="$PROJECT_DIR$/new/css/styles.css" />
         <option value="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.js" />
         <option value="$PROJECT_DIR$/new/js/core.js" />
         <option value="$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.js" />
@@ -143,6 +141,7 @@
         <option value="$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js" />
         <option value="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.min.js" />
         <option value="$PROJECT_DIR$/new/index.html" />
+        <option value="$PROJECT_DIR$/new/css/styles.css" />
       </list>
     </option>
   </component>
@@ -317,14 +316,7 @@
       <workItem from="1527783455885" duration="593000" />
       <workItem from="1527816055414" duration="9756000" />
       <workItem from="1527841476189" duration="598000" />
-      <workItem from="1527844850812" duration="34302000" />
-    </task>
-    <task id="LOCAL-00057" summary="giao dien danh sach chuyen">
-      <created>1527588251109</created>
-      <option name="number" value="00057" />
-      <option name="presentableId" value="LOCAL-00057" />
-      <option name="project" value="LOCAL" />
-      <updated>1527588251109</updated>
+      <workItem from="1527844850812" duration="34616000" />
     </task>
     <task id="LOCAL-00058" summary="giao dien danh sach chuyen">
       <created>1527589440022</created>
@@ -662,11 +654,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527886957296</updated>
     </task>
-    <option name="localTasksCounter" value="106" />
+    <task id="LOCAL-00106" summary="xong watertaxi">
+      <created>1527887275249</created>
+      <option name="number" value="00106" />
+      <option name="presentableId" value="LOCAL-00106" />
+      <option name="project" value="LOCAL" />
+      <updated>1527887275249</updated>
+    </task>
+    <option name="localTasksCounter" value="107" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="297361000" />
+    <option name="totallyTimeSpent" value="297675000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -859,14 +858,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="468" column="21" lean-forward="false" selection-start-line="468" selection-start-column="21" selection-end-line="468" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/new/js/map.module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
@@ -937,12 +928,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="378" column="0" lean-forward="true" selection-start-line="378" selection-start-column="0" selection-end-line="378" selection-end-column="0" />
+        <state relative-caret-position="170">
+          <caret line="325" column="60" lean-forward="false" selection-start-line="325" selection-start-column="60" selection-end-line="325" selection-end-column="60" />
           <folding>
             <element signature="n#style#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="464" column="0" lean-forward="true" selection-start-line="464" selection-start-column="0" selection-end-line="464" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

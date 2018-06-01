@@ -468,3 +468,7 @@ body {
     color: #fff;
     font-weight: 500;
 }
+
+#bookingWaterTaxi .customer-info, .ticket-info .water-bus-form {
+    background-color: #8a9ea7;
+}
