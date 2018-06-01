@@ -495,6 +495,13 @@ $(document).ready(function() {
 
                 if(result.code === 200) {
                     epayPayment(result.results.ticketId, dataPayment.phoneNumber);
+                } else {
+                    $.alert({
+                        title: 'Thông báo!',
+                        type: 'red',
+                        typeAnimated: true,
+                        content: 'Đã có lỗỗi xảy ra, vui lòng thử lại',
+                    });
                 }
             }
         });

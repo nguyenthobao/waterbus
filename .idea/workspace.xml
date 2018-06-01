@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d613a7ee-4ff7-4bd6-a533-bfc4da5e7629" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/new/js/core.js" afterPath="$PROJECT_DIR$/new/js/core.js" />
       <change beforePath="$PROJECT_DIR$/new/js/waterbus.module.js" afterPath="$PROJECT_DIR$/new/js/waterbus.module.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +27,8 @@
       <file leaf-file-name="waterbus.module.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new/js/waterbus.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="502" column="49" lean-forward="true" selection-start-line="502" selection-start-column="49" selection-end-line="502" selection-end-column="49" />
+            <state relative-caret-position="306">
+              <caret line="498" column="29" lean-forward="true" selection-start-line="498" selection-start-column="29" selection-end-line="498" selection-end-column="29" />
               <folding>
                 <element signature="e#15389#16271#0" expanded="false" />
               </folding>
@@ -149,7 +148,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="168" />
     <option name="y" value="315" />
     <option name="width" value="1564" />
@@ -240,14 +239,7 @@
       <workItem from="1527732652540" duration="10310000" />
       <workItem from="1527751675138" duration="12627000" />
       <workItem from="1527783455885" duration="593000" />
-      <workItem from="1527816055414" duration="8194000" />
-    </task>
-    <task id="LOCAL-00030" summary="back btn">
-      <created>1525661633232</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1525661633232</updated>
+      <workItem from="1527816055414" duration="9222000" />
     </task>
     <task id="LOCAL-00031" summary="xong giao dien booking">
       <created>1525689348799</created>
@@ -585,11 +577,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527765077880</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="giao dien thanh toan">
+      <created>1527828846465</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1527828846465</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260899000" />
+    <option name="totallyTimeSpent" value="261927000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -601,7 +600,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29954615" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -774,8 +773,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new/js/waterbus.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="502" column="49" lean-forward="true" selection-start-line="502" selection-start-column="49" selection-end-line="502" selection-end-column="49" />
+        <state relative-caret-position="306">
+          <caret line="498" column="29" lean-forward="true" selection-start-line="498" selection-start-column="29" selection-end-line="498" selection-end-column="29" />
           <folding>
             <element signature="e#15389#16271#0" expanded="false" />
           </folding>
