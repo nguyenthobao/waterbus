@@ -7,6 +7,12 @@ $(document).ready(function() {
         return false;
     });
 
+    $('#active-rivertaxi').click(function () {
+        $('#booingSaigonRiver').show(500);
+        $('#selectOption').hide();
+        return false;
+    });
+
     /*$('.datepicker').datepicker({
         dateFormat: 'dd/mm/yy',
         minDate: 0

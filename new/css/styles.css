@@ -60,14 +60,14 @@ body {
 }
 
 .icon-bus img {
-    margin-left: 25px;
+    margin-left: 15px;
 }
 
 .icon-bus p {
     font-size: 14px;
     padding-top: 15px;
     text-align: center;
-    width: 150px;
+    width: 120px;
 }
 
 .icon-bus a {
@@ -363,4 +363,25 @@ body {
     border-radius: 5px;
     color: #fff;
     background-color: #5ba446;
+}
+
+/*Saigon waterbus*/
+#booingSaigonRiver {
+    padding: 30px;
+    width: 100%;
+    position: fixed;
+    top: 10%;
+}
+
+#booingSaigonRiver .backScreen {
+    color: #005483;
+}
+
+#booingSaigonRiver .datepicker-icon {
+    color: #fd5c00;
+}
+
+.saigon-river-form {
+    padding: 50px 0 10px 0;
+    background-color: #fff;
 }
