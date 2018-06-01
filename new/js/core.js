@@ -13,6 +13,26 @@ $(document).ready(function() {
         return false;
     });
 
+    $('#active-watertaxi').click(function () {
+        $.alert({
+            title: 'Thông báo!',
+            type: 'orange',
+            typeAnimated: true,
+            content: 'Chức năng đang được phát triển',
+        });
+        return false;
+    });
+
+    $('#active-trolley').click(function () {
+        $.alert({
+            title: 'Thông báo!',
+            type: 'orange',
+            typeAnimated: true,
+            content: 'Chức năng đang được phát triển',
+        });
+        return false;
+    });
+
     /*$('.datepicker').datepicker({
         dateFormat: 'dd/mm/yy',
         minDate: 0
