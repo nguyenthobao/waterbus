@@ -462,3 +462,9 @@ body {
 #depatureDateTaxi {
     padding-left: 40px;
 }
+
+#seachWaterTaxi {
+    background-color: #5ba446;
+    color: #fff;
+    font-weight: 500;
+}
