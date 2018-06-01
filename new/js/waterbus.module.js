@@ -472,31 +472,30 @@ $(document).ready(function() {
         }
         listOptionData += ']';
 
-        dataOneway = {
-            "startDate": startDateOneway,
-            "scheduleId": scheduleOnewayId,
-            "paymentTicketPrice": totalMoneyOneway,
-            "packageName": "web",
-            "tripId": tripOnewayId,
-            "timeZone": "7",
-            "originalTicketPrice": totalMoneyOneway,
-            "numberOfAdults": numberTicket,
-            "getOffPointId": getOffPointOnewayId,
-            "phoneNumber": listPhoneOneway[0],
-            "numberOfChildren": "0",
-            "description": noteOneway,
-            "getOffTimePlan": getOffTimePlanOneway,
-            "listOption": JSON.parse(listOptionData),
-            "getInTimePlan": getInTimePlanOneway,
-            "fullName": listFullNameOneWay[0],
-            "paidMoney":"0",
-            "companyId": systemId,
-            "getInPointId": getInPointOnewayId,
-            "agencyPrice": totalMoneyOneway
-        };
-
 
         if(!isRoundWaterBus) {
+            dataOneway = {
+                "startDate": startDateOneway,
+                "scheduleId": scheduleOnewayId,
+                "paymentTicketPrice": totalMoneyOneway,
+                "packageName": "web",
+                "tripId": tripOnewayId,
+                "timeZone": "7",
+                "originalTicketPrice": totalMoneyOneway,
+                "numberOfAdults": numberTicket,
+                "getOffPointId": getOffPointOnewayId,
+                "phoneNumber": listPhoneOneway[0],
+                "numberOfChildren": "0",
+                "description": noteOneway,
+                "getOffTimePlan": getOffTimePlanOneway,
+                "listOption": JSON.parse(listOptionData),
+                "getInTimePlan": getInTimePlanOneway,
+                "fullName": listFullNameOneWay[0],
+                "paidMoney":"0",
+                "companyId": systemId,
+                "getInPointId": getInPointOnewayId,
+                "agencyPrice": totalMoneyOneway
+            };
             payment(dataOneway);
         } else {
             var paymentCode = generatePaymentCode();
@@ -600,6 +599,8 @@ $(document).ready(function() {
     });
     
     function payment(dataPayment, dataPaymentReturn, ticketId) {
+        console.log('dataPayment', dataPayment);
+        console.log('dataPaymentReturn', dataPaymentReturn);
         $.ajax({
             type: "POST",
             url: "https://anvui.vn/createnoseatid",
@@ -646,7 +647,7 @@ $(document).ready(function() {
             }),
             success: function (data) {
                 url = data.results.redirect;
-                // window.location.href = url;
+                window.location.href = url;
             }
         });
     }
