@@ -1,6 +1,10 @@
 $(document).ready(function() {
     var numberTicket = 1;
     var promotionPrice = 0;
+
+    var prices;
+    var totalMoney = 0;
+
     var depatureDate = $('#booingSaigonRiver #depatureDateRiver');
 
     var vehicleType = $('#booingSaigonRiver #vehicleType');
@@ -39,9 +43,16 @@ $(document).ready(function() {
     });
 
     /*Back tro lai man hinh chon so luong ve*/
-    $('.saigon-river-list .backScreen').click(function () {
+    $('.list-schedule .backScreen').click(function () {
         $('#booingSaigonRiver .list-schedule').hide(300);
         $('#booingSaigonRiver .booing-form').show(300);
+        return false;
+    });
+
+    /*Back lại chọn chuyến*/
+    $('.ticket-info .backScreen').click(function () {
+        $('#booingSaigonRiver .ticket-info').hide(300);
+        $('#booingSaigonRiver .list-schedule').show(300);
         return false;
     });
 
@@ -113,6 +124,96 @@ $(document).ready(function() {
         });
     }
 
+    /*Thanh toán*/
+    $('#booingSaigonRiver .payment').click(function () {
+
+        var listFullName = $("#booingSaigonRiver #ticketOnewayInfo .fullname").map(function() {
+            return $(this).val();
+        }).get();
+
+        var listPhone = $("#booingSaigonRiver #ticketOnewayInfo .phoneNumber").map(function() {
+            return $(this).val();
+        }).get();
+
+        /*Thong tin khach chuyen di*/
+        var scheduleId = $("#booingSaigonRiver #ticketOnewayInfo #scheduleId").val();
+        var tripId = $("#booingSaigonRiver #ticketOnewayInfo #tripId").val();
+        var getInPointId = $("#booingSaigonRiver #ticketOnewayInfo #getInPointId").val();
+        var getOffPointId = $("#booingSaigonRiver #ticketOnewayInfo #getOffPointId").val();
+        var getInTimePlan = $("#booingSaigonRiver #ticketOnewayInfo #getInTimePlan").val();
+        var getOffTimePlan = $("#booingSaigonRiver #ticketOnewayInfo #getOffTimePlan").val();
+        var note = $("#booingSaigonRiver #ticketOnewayInfo #note").val();
+        var startDate = $("#booingSaigonRiver #ticketOnewayInfo #startDate").val();
+
+        if(listFullName[0] === '') {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Chưa nhập họ tên chuyến đi',
+            });
+            return false;
+        }
+
+        if(listPhone[0] === '') {
+            $.alert({
+                title: 'Thông báo!',
+                type: 'orange',
+                typeAnimated: true,
+                content: 'Chưa nhập số điện thoại chuyến đi',
+            });
+            return false;
+        }
+
+        var listOptionData = '[';
+        var listOption = {};
+        for ( var i = 0 ; i < numberTicket ; i++ ){
+            listOption['paymentTicketPrice'] = prices[i];
+            listOption['phoneNumber'] = listPhone[i];
+            listOption['originalPrice'] = prices[i];
+            listOption['seatId'] = '';
+            listOption['priceInsurance'] = 0;
+            listOption['extraPrice'] = 0;
+            listOption['ticketPrice'] = prices[i];
+            listOption['isAdult'] = true;
+            listOption['fullName'] = listFullName[i];
+            listOption['surcharge'] = 0;
+            listOption['priceMeal'] = -1;
+            listOption['agencyPrice'] = prices[i];
+            listOption['totalPrice'] = prices[i];
+            if(i === (numberTicket -1)){
+                listOptionData += JSON.stringify(listOption);
+            } else {
+                listOptionData += JSON.stringify(listOption) + ',';
+            }
+        }
+        listOptionData += ']';
+
+        dataListOption = {
+            "startDate": startDate,
+            "scheduleId": scheduleId,
+            "paymentTicketPrice": totalMoney,
+            "packageName": "web",
+            "tripId": tripId,
+            "timeZone": "7",
+            "originalTicketPrice": totalMoney,
+            "numberOfAdults": numberTicket,
+            "getOffPointId": getOffPointId,
+            "phoneNumber": listPhone[0],
+            "numberOfChildren": "0",
+            "description": note,
+            "getOffTimePlan": getOffTimePlan,
+            "listOption": JSON.parse(listOptionData),
+            "getInTimePlan": getInTimePlan,
+            "fullName": listFullName[0],
+            "paidMoney":"0",
+            "companyId": systemId,
+            "getInPointId": getInPointId,
+            "agencyPrice": totalMoney
+        };
+        payment(dataListOption);
+    });
+
     $('body').on('click', '#booingSaigonRiver .schedule-item', function () {
         var getInPoint = $(this).data('getinpoint');
         var getOffPoint = $(this).data('getoffpoint');
@@ -151,4 +252,54 @@ $(document).ready(function() {
             $('#booingSaigonRiver .ticket-info-list').html(ticketHtml);
         }
     });
+
+    function payment(dataPayment) {
+        $.ajax({
+            type: "POST",
+            url: "https://anvui.vn/createnoseatid",
+            data: dataPayment,
+            success: function (result) {
+                console.log('ajax result', result);
+
+                if(result.code === 200) {
+                    $.dialog({
+                        title: 'Thông báo!',
+                        content: 'Hệ thống đang chuyển sang cổng thanh toán, vui lòng đợi trong giây lát...',
+                        onClose: function (e) {
+                            e.preventDefault();
+                        }
+                    });
+                    epayPayment(result.results.ticketId, dataPayment.phoneNumber);
+
+                } else {
+                    $.alert({
+                        title: 'Thông báo!',
+                        type: 'red',
+                        typeAnimated: true,
+                        content: 'Đã có lỗi xảy ra, vui lòng thử lại',
+                    });
+                }
+            }
+        });
+    }
+
+    function epayPayment(ticketId, phoneNumber) {
+        $.ajax({
+            type: 'POST',
+            url: 'https://dobody-anvui.appspot.com/ePay/',
+            dataType: 'json',
+            data: JSON.stringify({
+                ticketId: ticketId,
+                paymentType: 1,
+                packageName: 'web',
+                phoneNumber: phoneNumber,
+            }),
+            success: function (data) {
+                url = data.results.redirect;
+                setTimeout(function () {
+                    window.location.href = url;
+                }, 4000);
+            }
+        });
+    }
 });
