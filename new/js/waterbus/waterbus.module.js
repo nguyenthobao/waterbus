@@ -89,7 +89,7 @@ $(document).ready(function() {
 
         pointName = $(this).find(':selected').text();
 
-        initStartMarker(lat, long, pointName)
+        initStartMarker(lat, long, pointName);
 
     });
 
@@ -103,7 +103,7 @@ $(document).ready(function() {
 
         pointName = $(this).find(':selected').text();
 
-        initEndMarker(lat, long, pointName)
+        initEndMarker(lat, long, pointName);
     });
 
     /*Tìm kiếm lịch chạy*/
