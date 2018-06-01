@@ -27,8 +27,8 @@
       <file leaf-file-name="waterbus.module.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/new/js/waterbus.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="616" column="0" lean-forward="true" selection-start-line="616" selection-start-column="0" selection-end-line="616" selection-end-column="0" />
+            <state relative-caret-position="288">
+              <caret line="640" column="25" lean-forward="true" selection-start-line="640" selection-start-column="25" selection-end-line="640" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -239,14 +239,7 @@
       <workItem from="1527783455885" duration="593000" />
       <workItem from="1527816055414" duration="9756000" />
       <workItem from="1527841476189" duration="598000" />
-      <workItem from="1527844850812" duration="8988000" />
-    </task>
-    <task id="LOCAL-00033" summary="menu trong suot">
-      <created>1525762595022</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1525762595022</updated>
+      <workItem from="1527844850812" duration="10144000" />
     </task>
     <task id="LOCAL-00034" summary="button chuc nang khac">
       <created>1525767942680</created>
@@ -584,11 +577,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527850388458</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="thanh toan epay">
+      <created>1527858596058</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1527858596069</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="272047000" />
+    <option name="totallyTimeSpent" value="273203000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -774,8 +774,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new/js/waterbus.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="616" column="0" lean-forward="true" selection-start-line="616" selection-start-column="0" selection-end-line="616" selection-end-column="0" />
+        <state relative-caret-position="288">
+          <caret line="640" column="25" lean-forward="true" selection-start-line="640" selection-start-column="25" selection-end-line="640" selection-end-column="25" />
           <folding />
         </state>
       </provider>

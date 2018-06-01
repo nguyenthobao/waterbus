@@ -601,37 +601,39 @@ $(document).ready(function() {
     function payment(dataPayment, dataPaymentReturn, ticketId) {
         console.log('dataPayment', dataPayment);
         console.log('dataPaymentReturn', dataPaymentReturn);
-        $.ajax({
-            type: "POST",
-            url: "https://anvui.vn/createnoseatid",
-            data: dataPayment,
-            success: function (result) {
-                console.log('ajax result', result);
+        if(dataPayment !== undefined && dataPayment !== '') {
+            $.ajax({
+                type: "POST",
+                url: "https://anvui.vn/createnoseatid",
+                data: dataPayment,
+                success: function (result) {
+                    console.log('ajax result', result);
 
-                if(result.code === 200) {
-                    if(dataPaymentReturn !== undefined || dataPaymentReturn !== '') {
-                        var oneWayTicketId = result.results.ticketId;
-                        payment(dataPaymentReturn, '', oneWayTicketId)
-                    } else {
-                        var makeTicketId = result.results.ticketId;
+                    if(result.code === 200) {
+                        if(dataPaymentReturn !== undefined && dataPaymentReturn !== '') {
+                            var oneWayTicketId = result.results.ticketId;
+                            payment(dataPaymentReturn, '', oneWayTicketId)
+                        } else {
+                            var makeTicketId = result.results.ticketId;
 
-                        if(ticketId !== undefined || ticketId !== ''){
-                            makeTicketId = ticketId + '-' + result.results.ticketId;
+                            if(ticketId !== undefined && ticketId !== ''){
+                                makeTicketId = ticketId + '-' + result.results.ticketId;
+                            }
+
+                            epayPayment(makeTicketId, dataPayment.phoneNumber);
                         }
 
-                        epayPayment(makeTicketId, dataPayment.phoneNumber);
+                    } else {
+                        $.alert({
+                            title: 'Thông báo!',
+                            type: 'red',
+                            typeAnimated: true,
+                            content: 'Đã có lỗi xảy ra, vui lòng thử lại',
+                        });
                     }
-
-                } else {
-                    $.alert({
-                        title: 'Thông báo!',
-                        type: 'red',
-                        typeAnimated: true,
-                        content: 'Đã có lỗi xảy ra, vui lòng thử lại',
-                    });
                 }
-            }
-        });
+            });
+        }
     }
     
     function epayPayment(ticketId, phoneNumber) {
@@ -647,7 +649,7 @@ $(document).ready(function() {
             }),
             success: function (data) {
                 url = data.results.redirect;
-                window.location.href = url;
+                // window.location.href = url;
             }
         });
     }
