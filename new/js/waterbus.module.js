@@ -308,6 +308,14 @@ $(document).ready(function() {
             }
         });
 
+        $('#bookingWaterBus #ticketOnewayInfo .fullname:first').focusout(function () {
+            $('#bookingWaterBus #ticketReturnInfo .fullname:first').val($(this).val());
+        });
+
+        $('#bookingWaterBus #ticketOnewayInfo .phoneNumber:first').focusout(function () {
+            $('#bookingWaterBus #ticketReturnInfo .phoneNumber:first').val($(this).val());
+        });
+
     });
 
     /*Back trở lại chọn option*/
@@ -599,8 +607,6 @@ $(document).ready(function() {
     });
     
     function payment(dataPayment, dataPaymentReturn, ticketId) {
-        console.log('dataPayment', dataPayment);
-        console.log('dataPaymentReturn', dataPaymentReturn);
         if(dataPayment !== undefined && dataPayment !== '') {
             $.ajax({
                 type: "POST",
@@ -620,6 +626,13 @@ $(document).ready(function() {
                                 makeTicketId = ticketId + '-' + result.results.ticketId;
                             }
 
+                            $.dialog({
+                                title: 'Thông báo!',
+                                content: 'Hệ thống đang chuyển sang cổng thanh toán, vui lòng đợi trong giây lát...',
+                                onClose: function (e) {
+                                    e.preventDefault();
+                                }
+                            });
                             epayPayment(makeTicketId, dataPayment.phoneNumber);
                         }
 
@@ -649,7 +662,9 @@ $(document).ready(function() {
             }),
             success: function (data) {
                 url = data.results.redirect;
-                // window.location.href = url;
+                setTimeout(function () {
+                    window.location.href = url;
+                }, 4000);
             }
         });
     }
