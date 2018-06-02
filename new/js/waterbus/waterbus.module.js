@@ -635,7 +635,10 @@ $(document).ready(function() {
                                     e.preventDefault();
                                 }
                             });
-                            epayPayment(makeTicketId, dataPayment.phoneNumber);
+                            setTimeout(function () {
+                                epayPayment(makeTicketId, dataPayment.phoneNumber);
+                            }, 6000);
+
                         }
 
                     } else {
@@ -664,9 +667,7 @@ $(document).ready(function() {
             }),
             success: function (data) {
                 url = data.results.redirect;
-                setTimeout(function () {
-                    window.location.href = url;
-                }, 6000);
+                window.location.href = url;
             }
         });
     }

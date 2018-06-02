@@ -3,7 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d613a7ee-4ff7-4bd6-a533-bfc4da5e7629" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/new/css/styles.css" afterPath="$PROJECT_DIR$/new/css/styles.css" />
+      <change beforePath="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.js" afterPath="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.js" />
+      <change beforePath="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.min.js" afterPath="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.min.js" />
+      <change beforePath="$PROJECT_DIR$/new/js/waterbus/waterbus.module.js" afterPath="$PROJECT_DIR$/new/js/waterbus/waterbus.module.js" />
+      <change beforePath="$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js" afterPath="$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js" />
+      <change beforePath="$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.js" afterPath="$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,38 +21,28 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="368" column="40" lean-forward="false" selection-start-line="368" selection-start-column="40" selection-end-line="368" selection-end-column="40" />
+            <state relative-caret-position="275">
+              <caret line="372" column="64" lean-forward="true" selection-start-line="372" selection-start-column="64" selection-end-line="372" selection-end-column="64" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="waterbus.module.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.js">
+      <file leaf-file-name="watertaxi.module.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="656" column="26" lean-forward="true" selection-start-line="656" selection-start-column="26" selection-end-line="656" selection-end-column="26" />
+            <state relative-caret-position="173">
+              <caret line="477" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="505" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styles.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/new/css/styles.css">
+      <file leaf-file-name="watertaxi.module.min.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.min.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="466" column="22" lean-forward="false" selection-start-line="466" selection-start-column="22" selection-end-line="466" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="waterbus.module.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="0" column="12232" lean-forward="false" selection-start-line="0" selection-start-column="12232" selection-end-line="0" selection-end-column="12232" />
+            <state relative-caret-position="448">
+              <caret line="0" column="10772" lean-forward="false" selection-start-line="0" selection-start-column="10772" selection-end-line="0" selection-end-column="10772" />
               <folding />
             </state>
           </provider>
@@ -128,14 +122,14 @@
         <option value="$PROJECT_DIR$/js/creative.js" />
         <option value="$PROJECT_DIR$/js/creative.min.js" />
         <option value="$PROJECT_DIR$/booking.html" />
+        <option value="$PROJECT_DIR$/new/css/styles.css" />
         <option value="$PROJECT_DIR$/new/index.html" />
         <option value="$PROJECT_DIR$/new/js/waterbus/waterbus.module.js" />
-        <option value="$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js" />
-        <option value="$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.js" />
-        <option value="$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.min.js" />
         <option value="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.js" />
+        <option value="$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.js" />
+        <option value="$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js" />
         <option value="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.min.js" />
-        <option value="$PROJECT_DIR$/new/css/styles.css" />
+        <option value="$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.min.js" />
       </list>
     </option>
   </component>
@@ -223,6 +217,21 @@
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="waterbus.module.js" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="waterbus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="watertaxi" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="waterbus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="watertaxi" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="watertaxi.module.js" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -541,11 +550,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527927142602</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="sua css">
+      <created>1527929902651</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1527929902651</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107579000" />
+    <option name="totallyTimeSpent" value="108504000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -601,7 +617,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="tam xong css cac chuyen noi bat" />
     <MESSAGE value="chinh xong css" />
     <MESSAGE value="tam thoi xong diem du lich pho bien, chua chuan api" />
     <MESSAGE value="tam xong index" />
@@ -626,7 +641,8 @@
     <MESSAGE value="gioi han toi da 10 ve waterbus" />
     <MESSAGE value="tang thoi gian cho thanh toan len 6s" />
     <MESSAGE value="gioi han so luong ve duoc dat" />
-    <option name="LAST_COMMIT_MESSAGE" value="gioi han so luong ve duoc dat" />
+    <MESSAGE value="sua css" />
+    <option name="LAST_COMMIT_MESSAGE" value="sua css" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -694,49 +710,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js">
+    <entry file="file://$PROJECT_DIR$/new/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="0" column="12232" lean-forward="false" selection-start-line="0" selection-start-column="12232" selection-end-line="0" selection-end-column="12232" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" column="39" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="505" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="0" column="8617" lean-forward="true" selection-start-line="0" selection-start-column="8617" selection-end-line="0" selection-end-column="8617" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/new/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="368" column="40" lean-forward="false" selection-start-line="368" selection-start-column="40" selection-end-line="368" selection-end-column="40" />
+        <state relative-caret-position="209">
+          <caret line="466" column="22" lean-forward="false" selection-start-line="466" selection-start-column="22" selection-end-line="466" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="656" column="26" lean-forward="true" selection-start-line="656" selection-start-column="26" selection-end-line="656" selection-end-column="26" />
+        <state relative-caret-position="447">
+          <caret line="641" column="25" lean-forward="true" selection-start-line="641" selection-start-column="25" selection-end-line="641" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="0" column="10032" lean-forward="false" selection-start-line="0" selection-start-column="10032" selection-end-line="0" selection-end-column="10032" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="263">
-          <caret line="253" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="313" selection-end-column="3" />
+        <state relative-caret-position="209">
+          <caret line="282" column="23" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="313" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -749,10 +750,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/new/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="466" column="22" lean-forward="false" selection-start-line="466" selection-start-column="22" selection-end-line="466" selection-end-column="22" />
+        <state relative-caret-position="275">
+          <caret line="372" column="64" lean-forward="true" selection-start-line="372" selection-start-column="64" selection-end-line="372" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="477" column="26" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="505" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="0" column="10772" lean-forward="false" selection-start-line="0" selection-start-column="10772" selection-end-line="0" selection-end-column="10772" />
           <folding />
         </state>
       </provider>

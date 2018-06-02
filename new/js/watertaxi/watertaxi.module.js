@@ -469,7 +469,9 @@ $(document).ready(function() {
                             e.preventDefault();
                         }
                     });
-                    epayPayment(result.results.ticketId, dataPayment.phoneNumber);
+                    setTimeout(function () {
+                        epayPayment(result.results.ticketId, dataPayment.phoneNumber);
+                    }, 6000);
 
                 } else {
                     $.alert({
@@ -496,9 +498,7 @@ $(document).ready(function() {
             }),
             success: function (data) {
                 url = data.results.redirect;
-                setTimeout(function () {
-                    window.location.href = url;
-                }, 6000);
+                window.location.href = url;
             }
         });
     }
