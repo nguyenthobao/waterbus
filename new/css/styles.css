@@ -155,8 +155,12 @@ body {
     background-color: #fff;
     opacity: 1;
 }
-#startPoint, #endPoint, #depatureDate, #returnDate {
+#startPoint, #endPoint {
     padding-left: 40px;
+}
+
+#depatureDate, #returnDate {
+    text-indent: 40px;
 }
 
 .datepicker-icon, .fa-icon, .fa-icon-rotate{
@@ -394,7 +398,7 @@ body {
 }
 
 #depatureDateRiver {
-    padding-left: 40px;
+    text-indent: 40px;
 }
 
 .saigon-river-form {
@@ -460,7 +464,7 @@ body {
 }
 
 #depatureDateTaxi {
-    padding-left: 40px;
+    text-indent: 40px;
 }
 
 #seachWaterTaxi {
