@@ -5,10 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.js" afterPath="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.js" />
       <change beforePath="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.min.js" afterPath="$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.min.js" />
-      <change beforePath="$PROJECT_DIR$/new/js/waterbus/waterbus.module.js" afterPath="$PROJECT_DIR$/new/js/waterbus/waterbus.module.js" />
-      <change beforePath="$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js" afterPath="$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js" />
-      <change beforePath="$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.js" afterPath="$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.js" />
-      <change beforePath="$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.min.js" afterPath="$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.min.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,8 +28,18 @@
       <file leaf-file-name="saigonriver.module.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="20" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="306" selection-end-column="3" />
+            <state relative-caret-position="263">
+              <caret line="253" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="313" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="waterbus.module.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="353">
+              <caret line="262" column="11" lean-forward="true" selection-start-line="257" selection-start-column="8" selection-end-line="262" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -43,7 +49,7 @@
         <entry file="file://$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="5109" lean-forward="true" selection-start-line="0" selection-start-column="5109" selection-end-line="0" selection-end-column="5109" />
+              <caret line="0" column="5349" lean-forward="false" selection-start-line="0" selection-start-column="5349" selection-end-line="0" selection-end-column="5349" />
               <folding />
             </state>
           </provider>
@@ -88,6 +94,8 @@
       <find>.log</find>
       <find>4000</find>
       <find>numberTicket</find>
+      <find>schedule-item</find>
+      <find>phone</find>
     </findStrings>
     <replaceStrings>
       <replace>no-padding</replace>
@@ -192,6 +200,21 @@
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="saigonriver" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="saigonriver.module.js" type="620a8d5e:NestingTreeNode" />
+            </path>
+            <path>
+              <item name="waterbus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="waterbus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="waterbus.module.js" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -503,11 +526,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527926619857</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="gioi han so luong ve duoc dat">
+      <created>1527927142602</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1527927142602</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107315000" />
+    <option name="totallyTimeSpent" value="107468000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -563,7 +593,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fix image width" />
     <MESSAGE value="tam xong css cac chuyen noi bat" />
     <MESSAGE value="chinh xong css" />
     <MESSAGE value="tam thoi xong diem du lich pho bien, chua chuan api" />
@@ -588,7 +617,8 @@
     <MESSAGE value="add jquery dateformat" />
     <MESSAGE value="gioi han toi da 10 ve waterbus" />
     <MESSAGE value="tang thoi gian cho thanh toan len 6s" />
-    <option name="LAST_COMMIT_MESSAGE" value="tang thoi gian cho thanh toan len 6s" />
+    <MESSAGE value="gioi han so luong ve duoc dat" />
+    <option name="LAST_COMMIT_MESSAGE" value="gioi han so luong ve duoc dat" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -920,14 +950,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="71" column="9" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="71" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -952,10 +974,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="262" column="11" lean-forward="true" selection-start-line="257" selection-start-column="8" selection-end-line="262" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="20" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="306" selection-end-column="3" />
+        <state relative-caret-position="263">
+          <caret line="253" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="313" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -963,7 +993,7 @@
     <entry file="file://$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="5109" lean-forward="true" selection-start-line="0" selection-start-column="5109" selection-end-line="0" selection-end-column="5109" />
+          <caret line="0" column="5349" lean-forward="false" selection-start-line="0" selection-start-column="5349" selection-end-line="0" selection-end-column="5349" />
           <folding />
         </state>
       </provider>
