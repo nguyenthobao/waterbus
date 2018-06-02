@@ -155,11 +155,7 @@ body {
     background-color: #fff;
     opacity: 1;
 }
-#startPoint, #endPoint {
-    padding-left: 40px;
-}
-
-#depatureDate, #returnDate {
+#startPoint, #endPoint, #depatureDate, #returnDate {
     text-indent: 40px;
 }
 
