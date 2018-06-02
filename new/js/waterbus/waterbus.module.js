@@ -67,7 +67,10 @@ $(document).ready(function() {
     });
     
     $('#bookingWaterBus #upTicket').click(function () {
-        numberTicket++;
+        if(numberTicket <= 10) {
+            numberTicket++;
+        }
+
         $('#bookingWaterBus #numberTicket').val(numberTicket + " vé");
     });
 

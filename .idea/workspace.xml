@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d613a7ee-4ff7-4bd6-a533-bfc4da5e7629" name="Default" comment="merge code">
-      <change beforePath="" afterPath="$PROJECT_DIR$/new/js/jquery-dateformat.min.js" />
+    <list default="true" id="d613a7ee-4ff7-4bd6-a533-bfc4da5e7629" name="Default" comment="gioi han toi da 10 ve waterbus">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/new/index.html" afterPath="$PROJECT_DIR$/new/index.html" />
+      <change beforePath="$PROJECT_DIR$/new/js/waterbus/waterbus.module.js" afterPath="$PROJECT_DIR$/new/js/waterbus/waterbus.module.js" />
+      <change beforePath="$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js" afterPath="$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,21 +15,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/new/js/jquery-dateFormat/.gitignore">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="479">
+              <caret line="369" column="19" lean-forward="true" selection-start-line="369" selection-start-column="19" selection-end-line="369" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/new/index.html">
+      <file leaf-file-name="waterbus.module.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="357" column="65" lean-forward="true" selection-start-line="357" selection-start-column="65" selection-end-line="357" selection-end-column="65" />
+            <state relative-caret-position="408">
+              <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="waterbus.module.min.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1544">
+              <caret line="0" column="12233" lean-forward="false" selection-start-line="0" selection-start-column="12233" selection-end-line="0" selection-end-column="12233" />
               <folding />
             </state>
           </provider>
@@ -104,6 +114,8 @@
         <option value="$PROJECT_DIR$/js/creative.min.js" />
         <option value="$PROJECT_DIR$/booking.html" />
         <option value="$PROJECT_DIR$/new/index.html" />
+        <option value="$PROJECT_DIR$/new/js/waterbus/waterbus.module.js" />
+        <option value="$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js" />
       </list>
     </option>
   </component>
@@ -155,6 +167,21 @@
               <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="new" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="waterbus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="waterbus" type="b2602c69:ProjectViewProjectNode" />
+              <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="new" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="waterbus" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="waterbus.module.js" type="620a8d5e:NestingTreeNode" />
             </path>
           </expand>
           <select />
@@ -445,11 +472,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527915316621</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="add jquery dateformat">
+      <created>1527925986113</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1527925986113</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106166000" />
+    <option name="totallyTimeSpent" value="106545000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -505,8 +539,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add swich point" />
-    <MESSAGE value="make core js" />
     <MESSAGE value="xong section du lich" />
     <MESSAGE value="fix image width" />
     <MESSAGE value="tam xong css cac chuyen noi bat" />
@@ -530,29 +562,15 @@
     <MESSAGE value="man hinh trong suot" />
     <MESSAGE value="menu trong suot" />
     <MESSAGE value="merge code" />
-    <option name="LAST_COMMIT_MESSAGE" value="merge code" />
+    <MESSAGE value="add jquery dateformat" />
+    <MESSAGE value="gioi han toi da 10 ve waterbus" />
+    <option name="LAST_COMMIT_MESSAGE" value="gioi han toi da 10 ve waterbus" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/booking.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="87" column="33" lean-forward="true" selection-start-line="87" selection-start-column="33" selection-end-line="87" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/booking.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2159">
@@ -902,8 +920,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/new/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="357" column="65" lean-forward="true" selection-start-line="357" selection-start-column="65" selection-end-line="357" selection-end-column="65" />
+        <state relative-caret-position="479">
+          <caret line="369" column="19" lean-forward="true" selection-start-line="369" selection-start-column="19" selection-end-line="369" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="75" column="0" lean-forward="true" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1544">
+          <caret line="0" column="12233" lean-forward="false" selection-start-line="0" selection-start-column="12233" selection-end-line="0" selection-end-column="12233" />
           <folding />
         </state>
       </provider>
