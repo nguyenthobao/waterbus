@@ -496,7 +496,7 @@ $(document).ready(function() {
                 url = data.results.redirect;
                 setTimeout(function () {
                     window.location.href = url;
-                }, 4000);
+                }, 6000);
             }
         });
     }
