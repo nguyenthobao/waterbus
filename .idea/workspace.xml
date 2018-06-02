@@ -22,8 +22,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="479">
-              <caret line="369" column="19" lean-forward="true" selection-start-line="369" selection-start-column="19" selection-end-line="369" selection-end-column="19" />
+            <state relative-caret-position="411">
+              <caret line="365" column="34" lean-forward="true" selection-start-line="365" selection-start-column="34" selection-end-line="365" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -32,8 +32,8 @@
       <file leaf-file-name="saigonriver.module.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="297" column="40" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="303" selection-end-column="3" />
+            <state relative-caret-position="136">
+              <caret line="20" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="306" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -43,7 +43,7 @@
         <entry file="file://$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.min.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="54" lean-forward="false" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
+              <caret line="0" column="5109" lean-forward="true" selection-start-line="0" selection-start-column="5109" selection-end-line="0" selection-end-column="5109" />
               <folding />
             </state>
           </provider>
@@ -87,6 +87,7 @@
       <find>navbar-shrink</find>
       <find>.log</find>
       <find>4000</find>
+      <find>numberTicket</find>
     </findStrings>
     <replaceStrings>
       <replace>no-padding</replace>
@@ -495,11 +496,18 @@
       <option name="project" value="LOCAL" />
       <updated>1527926356532</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="tang thoi gian cho thanh toan len 6s">
+      <created>1527926619857</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1527926619857</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106795000" />
+    <option name="totallyTimeSpent" value="107315000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -555,7 +563,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="xong section du lich" />
     <MESSAGE value="fix image width" />
     <MESSAGE value="tam xong css cac chuyen noi bat" />
     <MESSAGE value="chinh xong css" />
@@ -580,7 +587,8 @@
     <MESSAGE value="merge code" />
     <MESSAGE value="add jquery dateformat" />
     <MESSAGE value="gioi han toi da 10 ve waterbus" />
-    <option name="LAST_COMMIT_MESSAGE" value="gioi han toi da 10 ve waterbus" />
+    <MESSAGE value="tang thoi gian cho thanh toan len 6s" />
+    <option name="LAST_COMMIT_MESSAGE" value="tang thoi gian cho thanh toan len 6s" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -904,50 +912,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="670" column="11" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="686" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="0" column="12233" lean-forward="false" selection-start-line="0" selection-start-column="12233" selection-end-line="0" selection-end-column="12233" />
+        <state relative-caret-position="466">
+          <caret line="0" column="12232" lean-forward="false" selection-start-line="0" selection-start-column="12232" selection-end-line="0" selection-end-column="12232" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/new/index.html">
+    <entry file="file://$PROJECT_DIR$/new/js/waterbus/waterbus.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="369" column="19" lean-forward="true" selection-start-line="369" selection-start-column="19" selection-end-line="369" selection-end-column="19" />
+        <state relative-caret-position="136">
+          <caret line="71" column="9" lean-forward="true" selection-start-line="69" selection-start-column="8" selection-end-line="71" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="490" column="29" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="503" selection-end-column="3" />
+        <state relative-caret-position="170">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="505" selection-end-column="3" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new/js/watertaxi/watertaxi.module.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="0" column="10766" lean-forward="false" selection-start-line="0" selection-start-column="10766" selection-end-line="0" selection-end-column="10766" />
+        <state relative-caret-position="176">
+          <caret line="0" column="8617" lean-forward="true" selection-start-line="0" selection-start-column="8617" selection-end-line="0" selection-end-column="8617" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="365" column="34" lean-forward="true" selection-start-line="365" selection-start-column="34" selection-end-line="365" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="297" column="40" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="303" selection-end-column="3" />
+        <state relative-caret-position="136">
+          <caret line="20" column="27" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="306" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -955,7 +963,7 @@
     <entry file="file://$PROJECT_DIR$/new/js/saigonriver/saigonriver.module.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="54" lean-forward="false" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
+          <caret line="0" column="5109" lean-forward="true" selection-start-line="0" selection-start-column="5109" selection-end-line="0" selection-end-column="5109" />
           <folding />
         </state>
       </provider>

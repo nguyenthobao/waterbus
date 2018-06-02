@@ -20,7 +20,9 @@ $(document).ready(function() {
     $('#bookingWaterTaxi #numberTicket').val(numberTicket + " vé");
 
     $('#bookingWaterTaxi #upTicket').click(function () {
-        numberTicket++;
+        if(numberTicket < 19) {
+            numberTicket++;
+        }
         $('#bookingWaterTaxi #numberTicket').val(numberTicket + " vé");
     });
 

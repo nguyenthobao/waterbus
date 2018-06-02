@@ -67,7 +67,7 @@ $(document).ready(function() {
     });
     
     $('#bookingWaterBus #upTicket').click(function () {
-        if(numberTicket <= 10) {
+        if(numberTicket < 10) {
             numberTicket++;
         }
 

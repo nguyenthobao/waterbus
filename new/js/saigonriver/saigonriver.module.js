@@ -17,7 +17,10 @@ $(document).ready(function() {
     $('#booingSaigonRiver #numberTicket').val(numberTicket + " vé");
 
     $('#booingSaigonRiver #upTicket').click(function () {
-        numberTicket++;
+        if(numberTicket < 19) {
+            numberTicket++;
+        }
+
         $('#booingSaigonRiver #numberTicket').val(numberTicket + " vé");
     });
 
